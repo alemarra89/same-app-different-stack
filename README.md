@@ -8,10 +8,10 @@ La demo gestisce il check-in locale dei sei partecipanti al **Tech Meetup 2026 Â
 
 | Cartella | Tecnologia | Documentazione |
 | --- | --- | --- |
-| `same-app-different-stack-flutter/` | Flutter e Dart | [Requisiti, avvio e verifiche](same-app-different-stack-flutter/README.md) |
-| `same-app-different-stack-ionic/` | Ionic React, TypeScript e Capacitor | [Requisiti, avvio e verifiche](same-app-different-stack-ionic/README.md) |
-| `same-app-different-stack-kmp/` | Kotlin Multiplatform e Compose Multiplatform | [Requisiti, avvio e verifiche](same-app-different-stack-kmp/README.md) |
-| `same-app-different-stack-rn/` | React Native, Expo e TypeScript | [Requisiti, avvio e verifiche](same-app-different-stack-rn/README.md) |
+| `flutter/` | Flutter e Dart | [Requisiti, avvio e verifiche](flutter/README.md) |
+| `ionic/` | Ionic React, TypeScript e Capacitor | [Requisiti, avvio e verifiche](ionic/README.md) |
+| `kotlin-multiplatform/` | Kotlin Multiplatform e Compose Multiplatform | [Requisiti, avvio e verifiche](kotlin-multiplatform/README.md) |
+| `react-native/` | React Native, Expo e TypeScript | [Requisiti, avvio e verifiche](react-native/README.md) |
 
 Ogni cartella Ã¨ un progetto autonomo, con dipendenze, toolchain, test e configurazione nativa propri. Eseguire installazione, avvio e build dalla cartella dell'app scelta. Non esiste un'installazione delle dipendenze comune alla radice.
 
@@ -22,7 +22,7 @@ I comandi seguenti partono dalla radice del repository, ciascuno in un terminale
 ### Flutter
 
 ```sh
-cd same-app-different-stack-flutter
+cd flutter
 flutter pub get
 flutter run
 ```
@@ -30,7 +30,7 @@ flutter run
 ### Ionic
 
 ```sh
-cd same-app-different-stack-ionic
+cd ionic
 npm ci
 npm run android
 ```
@@ -40,7 +40,7 @@ npm run android
 ### Kotlin Multiplatform
 
 ```sh
-cd same-app-different-stack-kmp
+cd kotlin-multiplatform
 ./gradlew :shared:jvmTest :androidApp:assembleDebug
 ```
 
@@ -49,7 +49,7 @@ Su Windows usare `.\gradlew.bat`. Aprire questa cartella in Android Studio per e
 ### React Native / Expo
 
 ```sh
-cd same-app-different-stack-rn
+cd react-native
 npm ci
 npm run android
 ```
