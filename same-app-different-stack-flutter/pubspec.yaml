@@ -1,0 +1,25 @@
+name: event_check_in
+description: Controllo accessi locale per Tech Meetup 2026.
+publish_to: none
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+  flutter: '>=3.35.6'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  mobile_scanner: 7.4.2
+  shared_preferences: 2.5.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: 5.0.0
+  shared_preferences_platform_interface: 2.4.2
+
+flutter:
+  uses-material-design: true

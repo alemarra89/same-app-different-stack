@@ -1,41 +1,43 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
-
-# dependencies
+# Dipendenze e cache locali (ogni app mantiene anche il proprio .gitignore).
 node_modules/
-
-# Expo
-.expo/
-dist/
-web-build/
-expo-env.d.ts
-
-# Native
+.gradle/
 .kotlin/
-*.orig.*
+.dart_tool/
+.pub-cache/
+.expo/
+__pycache__/
+*.pyc
+
+# Output di compilazione e verifica.
+build/
+dist/
+coverage/
+.test-build/
+test-results/
+playwright-report/
+*.tsbuildinfo
+*.apk
+*.aab
+*.ipa
+
+# Configurazioni locali, credenziali e firma.
+.env
+.env.*
+!.env.example
+!.env.*.example
+local.properties
+key.properties
 *.jks
+*.keystore
 *.p8
 *.p12
+*.pem
 *.key
 *.mobileprovision
 
-# Metro
-.metro-health-check*
-
-# debug
-npm-debug.*
-yarn-debug.*
-yarn-error.*
-
-# macOS
+# IDE e sistema operativo.
+.idea/
+*.iml
 .DS_Store
-*.pem
-
-# local env files
-.env*.local
-
-# typescript
-*.tsbuildinfo
-
-# generated native folders
-/ios
-/android
+Thumbs.db
+*.log

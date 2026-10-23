@@ -1,0 +1,80 @@
+ion-toolbar { --min-height: 72px; --padding-start: max(20px, env(safe-area-inset-left)); --padding-end: max(20px, env(safe-area-inset-right)); border-bottom: 1px solid #e4eae6; }
+ion-title { padding-inline: 12px; font-size: 17px; font-weight: 700; letter-spacing: -.3px; }
+.brand-mark { display: grid; place-items: center; width: 35px; height: 35px; border-radius: 10px; background: #25785b; color: white; margin: 0; font-size: 24px; }
+.local-indicator { display: flex; gap: 7px; align-items: center; font-size: 12px; color: #56695f; }
+.local-indicator > span { width: 6px; height: 6px; border-radius: 50%; background: #25785b; }
+.page-shell { width: 100%; max-width: 1020px; margin: auto; padding: 30px max(20px, env(safe-area-inset-right)) max(20px, env(safe-area-inset-bottom)) max(20px, env(safe-area-inset-left)); }
+.event-heading { margin-bottom: 24px; }
+.eyebrow { color: #25785b; font-size: 10px; font-weight: 800; letter-spacing: 1.8px; margin: 0 0 9px; }
+h1 { font-size: clamp(27px, 4.5vw, 36px); font-weight: 750; letter-spacing: -1.3px; margin: 0 0 12px; }
+.event-date { display: flex; align-items: center; gap: 8px; color: #607168; font-size: 13px; margin: 0; }
+.event-date ion-icon { font-size: 16px; }
+.date-dot { margin-inline: 3px; color: #8e9a93; }
+ion-card { margin: 0; border: 1px solid #e0e8e2; border-radius: 16px; box-shadow: 0 3px 8px #192e2503; }
+.attendance-card { background: #eaf2ed; border-color: #d7e7dd; margin-bottom: 28px; }
+.attendance-card ion-card-content { padding: 20px 23px; }
+.attendance-top { display: flex; justify-content: space-between; align-items: center; color: #39715a; }
+.attendance-top ion-icon { font-size: 23px; }
+.card-label { font-size: 10px; font-weight: 750; letter-spacing: 1.5px; }
+.attendance-count { font-size: 40px !important; line-height: 1.3 !important; font-weight: 750; color: #205d47; letter-spacing: -1px; margin: 7px 0 15px !important; }
+.attendance-count span { font-size: 18px; font-weight: 450; letter-spacing: -.4px; color: #416553; }
+.attendance-track { height: 6px; background: #d3e3d9; border-radius: 9px; overflow: hidden; }
+.attendance-track span { height: 100%; display: block; background: #25785b; transition: width .2s ease; border-radius: 9px; }
+.attendance-caption { font-size: 12px !important; color: #526c5e; margin: 9px 0 0 !important; }
+.work-area { display: grid; gap: 26px; }
+.section-heading { min-height: 30px; margin-bottom: 13px; display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+h2 { font-size: 17px; font-weight: 700; margin: 0; letter-spacing: -.35px; }
+.step-label { font-size: 9px; letter-spacing: 1.4px; color: #67796d; font-weight: 700; }
+.entry-card ion-card-content { padding: 23px 20px 20px; }
+.scan-symbol { height: 56px; width: 56px; background: #eef5f0; border: 1px solid #dce9df; color: #25785b; border-radius: 15px; display: grid; place-items: center; font-size: 31px; margin: 0 auto 14px; }
+.entry-card ion-card-content h3 { font-size: 20px; font-weight: 700; letter-spacing: -.6px; text-align: center; margin: 0 0 8px; color: #192e25; }
+.entry-card p { text-align: center; font-size: 13px; line-height: 1.6; color: #607168; margin: 0 0 20px; }
+ion-button { --border-radius: 9px; --box-shadow: none; min-height: 48px; font-size: 14px; font-weight: 650; text-transform: none; letter-spacing: 0; margin: 0; }
+ion-button ion-icon { font-size: 20px; }
+.entry-card .web-note { font-size: 11px; margin: 9px 0 0; }
+.divider { display: flex; align-items: center; gap: 12px; font-size: 11px; color: #66766c; margin: 24px 0 18px; }
+.divider::before, .divider::after { content: ''; height: 1px; background: #e5ebe6; flex: 1; }
+ion-input { --border-color: #c5d2c9; --border-radius: 8px !important; --highlight-color-focused: #25785b; --padding-start: 12px; --padding-end: 12px; font-size: 15px; min-height: 58px; }
+.entry-card .input-help { text-align: left; font-size: 11px; margin: 8px 0 15px; }
+.participants-section ion-searchbar { --background: #ffffff; --box-shadow: none; --border-radius: 10px; --placeholder-color: #66766c; --placeholder-opacity: 1; --icon-color: #718176; padding: 0; margin-bottom: 13px; min-height: 49px; }
+ion-searchbar .searchbar-input-container { min-height: 49px; border: 1px solid #dde5df; border-radius: 10px; }
+ion-searchbar input.searchbar-input { font-size: 13px; }
+.participant-list { background: white; border: 1px solid #e0e8e2; border-radius: 13px; padding: 0; overflow: hidden; }
+.participant-row { --padding-start: 14px; --inner-padding-end: 13px; --min-height: 79px; }
+.participant-row + .participant-row { border-top: 1px solid #edf0ed; }
+.avatar { flex-shrink: 0; width: 36px; height: 36px; border-radius: 50%; background: #f0f3ef; color: #617064; font-weight: 600; font-size: 11px; margin-inline-end: 12px; display: grid; place-items: center; }
+.participant-row.is-present .avatar { background: #e7f3eb; color: #25785b; }
+.participant-row ion-label { margin: 13px 0; }
+.participant-row ion-label h3 { font-weight: 650; font-size: 14px; color: #263c30; margin-bottom: 5px; white-space: normal; }
+.participant-row ion-label p { font-size: 11px; color: #66766c; letter-spacing: .7px; }
+.status-badge { display: inline-flex; align-items: center; gap: 5px; font-size: 10px; font-weight: 650; padding: 6px 8px; border-radius: 6px; white-space: nowrap; margin-inline-start: 6px; }
+.waiting { color: #647064; background: #f1f3ee; }
+.present { color: #226443; background: #e5f2e9; }
+.status-dot { height: 4px; width: 4px; border-radius: 50%; background: #859080; }
+.count-pill { font-size: 10px; color: #607168; background: #e9eeea; border: 1px solid #dfe6df; border-radius: 6px; padding: 5px 8px; }
+.list-caption { font-size: 11px; text-align: center; color: #6a796f; margin: 13px 0 0; }
+.empty-state { padding: 35px 18px; text-align: center; font-size: 14px; line-height: 1.8; }
+.empty-state span { color: #607168; font-size: 12px; }
+.notice:empty { display: none; }
+.notice { padding: 14px; margin-top: 13px; border: 1px solid #d5e2d9; border-radius: 10px; background: #eaf2ed; color: #244d38; font-size: 13px; line-height: 1.5; }
+.notice strong, .notice span { display: block; }
+.notice-warning { background: #fcf4e6; border-color: #ebdcc0; color: #785318; }
+.notice-danger { background: #fff0ed; border-color: #efd3cd; color: #973c2b; }
+.loading-state { display: flex; gap: 8px; align-items: center; font-size: 13px; }
+.page-footer { margin-top: 30px; padding-top: 17px; border-top: 1px solid #e0e7e1; display: flex; flex-direction: column; align-items: center; gap: 5px; }
+.page-footer p { display: flex; align-items: center; gap: 6px; color: #647569; font-size: 11px; margin: 0; }
+.page-footer ion-button { font-size: 12px; min-height: 44px; }
+@media (min-width: 740px) {
+  .page-shell { padding-top: 42px; padding-inline: 32px; }
+  .work-area { grid-template-columns: .9fr 1.1fr; gap: 28px; align-items: start; }
+  .attendance-card ion-card-content { padding: 22px 26px; }
+  .page-footer { flex-direction: row; justify-content: space-between; }
+}
+@media (max-width: 359px) {
+  .page-shell { padding-inline: 14px; }
+  .local-indicator { font-size: 10px; }
+  .participant-row { --padding-start: 10px; --inner-padding-end: 8px; }
+  .avatar { width: 30px; height: 30px; margin-inline-end: 8px; }
+  .status-badge { padding: 5px; }
+}
+@media (prefers-reduced-motion: reduce) { .attendance-track span { transition: none; } }

@@ -1,0 +1,5 @@
+{
+  "name": "Event Check-in",
+  "integrations": { "capacitor": {} },
+  "type": "react-vite"
+}

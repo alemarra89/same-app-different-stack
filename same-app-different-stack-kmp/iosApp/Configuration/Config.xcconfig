@@ -1,0 +1,16 @@
+PRODUCT_BUNDLE_IDENTIFIER = it.eventcheckin.app
+PRODUCT_NAME = EventCheckIn
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon
+IPHONEOS_DEPLOYMENT_TARGET = 15.0
+SWIFT_VERSION = 5.0
+SWIFT_STRICT_CONCURRENCY = minimal
+ENABLE_USER_SCRIPT_SANDBOXING = NO
+CODE_SIGN_STYLE = Automatic
+INFOPLIST_FILE = iosApp/Info.plist
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$(SRCROOT)/../shared/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)"
+OTHER_LDFLAGS = $(inherited) -framework Shared
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks
+TARGETED_DEVICE_FAMILY = 1,2
+SUPPORTED_PLATFORMS = iphoneos iphonesimulator
+SUPPORTS_MACCATALYST = NO
+#include? "Local.xcconfig"
