@@ -36,7 +36,7 @@ $env:ANDROID_HOME = "$env:LOCALAPPDATA\Android\Sdk"
 & "$env:ANDROID_HOME\cmdline-tools\latest\bin\sdkmanager.bat" 'platform-tools' 'platforms;android-37' 'build-tools;37.0.0'
 .\gradlew.bat :shared:jvmTest :androidApp:assembleDebug
 .\gradlew.bat :androidApp:installDebug
-& "$env:ANDROID_HOME\platform-tools\adb.exe" shell am start -n it.eventcheckin.app/.MainActivity
+& "$env:ANDROID_HOME\platform-tools\adb.exe" shell am start -n it.demo.eventcheckin.kmp/.MainActivity
 ```
 
 Su macOS/Linux, impostare `JAVA_HOME` e `ANDROID_HOME` per le proprie installazioni, usare `./gradlew` al posto di `.\gradlew.bat`. Se lo checkout non conserva i permessi Unix, eseguire `chmod +x gradlew`. In alternativa indicare `sdk.dir` in un `local.properties` locale, escluso dal repository. Il primo download Gradle richiede Internet; l’app installata funziona offline.
@@ -47,7 +47,7 @@ Aprire il progetto radice in Android Studio e lanciare `androidApp` su AVD o dis
 
 ### Fotocamera Android
 
-Premere **Scansiona QR** e concedere il permesso. La camera non è una funzionalità hardware obbligatoria nel manifest. Al rifiuto, a camera assente/occupata o ad avvio non supportato, si torna alla schermata con un errore e il modulo manuale attivo. Per ripristinare un permesso negato: Impostazioni Android → App → Event Check-in → Autorizzazioni → Fotocamera. In un AVD di prova si può anche usare `adb shell pm grant it.eventcheckin.app android.permission.CAMERA`.
+Premere **Scansiona QR** e concedere il permesso. La camera non è una funzionalità hardware obbligatoria nel manifest. Al rifiuto, a camera assente/occupata o ad avvio non supportato, si torna alla schermata con un errore e il modulo manuale attivo. Per ripristinare un permesso negato: Impostazioni Android → App → Event Check-in → Autorizzazioni → Fotocamera. In un AVD di prova si può anche usare `adb shell pm grant it.demo.eventcheckin.kmp android.permission.CAMERA`.
 
 Lo scanner usa una Activity interna, anteprima CameraX e analisi in un executor dedicato, solo formato QR con ZXing. Rispetta il lifecycle, chiude sempre gli ImageProxy, scarta i frame in eccesso e rilascia i casi d’uso alla chiusura. Preferisce la camera posteriore e ripiega sull’anteriore. Non salva immagini o video.
 
@@ -58,7 +58,7 @@ Lo scanner usa una Activity interna, anteprima CameraX e analisi in un executor 
 1. Installare JDK 17, Xcode 26.4 e un runtime simulatore iOS compatibile; eseguire `xcode-select --install`, selezionare Xcode con `sudo xcode-select -s /Applications/Xcode.app/Contents/Developer` e accettarne la licenza.
 2. Dal repository eseguire `chmod +x gradlew`. Configurare `JAVA_HOME` per JDK 17. Se Xcode avviato dal Finder non vede Java, aggiungere `export JAVA_HOME=$(/usr/libexec/java_home -v 17)` prima della chiamata Gradle nella fase **Compile Kotlin Framework**.
 3. Aprire `iosApp/iosApp.xcodeproj`; selezionare schema **iosApp**, simulatore iPhone **arm64**, quindi Run. La fase Gradle produce e integra `Shared.framework` tramite `:shared:embedAndSignAppleFrameworkForXcode`.
-4. Su iPhone reale, scegliere il proprio Team in Signing & Capabilities, collegare il dispositivo e autorizzare lo sviluppatore. Il bundle ID predefinito è `it.eventcheckin.app`; personalizzarlo se già occupato.
+4. Su iPhone reale, scegliere il proprio Team in Signing & Capabilities, collegare il dispositivo e autorizzare lo sviluppatore. Il bundle ID predefinito è `it.demo.eventcheckin.kmp`; personalizzarlo se già occupato.
 
 Configurazione locale opzionale non versionata: `iosApp/Configuration/Local.xcconfig`:
 

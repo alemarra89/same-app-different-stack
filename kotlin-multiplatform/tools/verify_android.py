@@ -1,6 +1,6 @@
 """Android acceptance smoke test using only Python's standard library and adb.
 
-Clears data of it.eventcheckin.app. Run on a disposable demo installation.
+Clears data of it.demo.eventcheckin.kmp. Run on a disposable demo installation.
 The APK must be installed and the emulator/device unlocked, with a portrait display.
 """
 import argparse
@@ -16,7 +16,7 @@ parser.add_argument("--adb", default=str(Path(os.environ.get("ANDROID_HOME", "")
 parser.add_argument("--serial", required=True)
 parser.add_argument("--output", default="verification/local")
 args = parser.parse_args()
-package = "it.eventcheckin.app"
+package = "it.demo.eventcheckin.kmp"
 output = Path(args.output)
 output.mkdir(parents=True, exist_ok=True)
 

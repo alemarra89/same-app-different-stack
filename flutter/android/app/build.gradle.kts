@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "it.demo.event_check_in"
+    namespace = "it.demo.eventcheckin.flutter"
     compileSdk = 36
     ndkVersion = flutter.ndkVersion
 
@@ -20,7 +20,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "it.demo.event_check_in"
+        applicationId = "it.demo.eventcheckin.flutter"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = 24

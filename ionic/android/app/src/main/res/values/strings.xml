@@ -2,6 +2,6 @@
 <resources>
     <string name="app_name">Event Check-in</string>
     <string name="title_activity_main">Event Check-in</string>
-    <string name="package_name">it.demo.eventcheckin</string>
-    <string name="custom_url_scheme">it.demo.eventcheckin</string>
+    <string name="package_name">it.demo.eventcheckin.ionic</string>
+    <string name="custom_url_scheme">it.demo.eventcheckin.ionic</string>
 </resources>

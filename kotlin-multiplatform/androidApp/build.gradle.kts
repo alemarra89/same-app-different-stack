@@ -4,10 +4,10 @@ plugins {
 }
 
 android {
-    namespace = "it.eventcheckin.app"
+    namespace = "it.demo.eventcheckin.kmp"
     compileSdk = 37
     defaultConfig {
-        applicationId = "it.eventcheckin.app"
+        applicationId = "it.demo.eventcheckin.kmp"
         minSdk = 24
         targetSdk = 37
         versionCode = 1

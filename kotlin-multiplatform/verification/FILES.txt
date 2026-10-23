@@ -1,8 +1,8 @@
 .gitignore
 androidApp/build.gradle.kts
-androidApp/src/androidTest/kotlin/it/eventcheckin/app/LocalPersistenceTest.kt
+androidApp/src/androidTest/kotlin/it/demo/eventcheckin/kmp/LocalPersistenceTest.kt
 androidApp/src/main/AndroidManifest.xml
-androidApp/src/main/kotlin/it/eventcheckin/app/MainActivity.kt
+androidApp/src/main/kotlin/it/demo/eventcheckin/kmp/MainActivity.kt
 androidApp/src/main/res/drawable/ic_launcher.xml
 androidApp/src/main/res/values/styles.xml
 androidApp/src/main/res/xml/backup_rules.xml

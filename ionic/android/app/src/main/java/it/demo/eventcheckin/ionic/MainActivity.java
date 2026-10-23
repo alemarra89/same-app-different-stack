@@ -1,4 +1,4 @@
-package it.demo.eventcheckin;
+package it.demo.eventcheckin.ionic;
 
 import com.getcapacitor.BridgeActivity;
 import android.os.Bundle;

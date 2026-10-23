@@ -15,6 +15,23 @@ La demo gestisce il check-in locale dei sei partecipanti al **Tech Meetup 2026 �
 
 Ogni cartella è un progetto autonomo, con dipendenze, toolchain, test e configurazione nativa propri. Eseguire installazione, avvio e build dalla cartella dell'app scelta. Non esiste un'installazione delle dipendenze comune alla radice.
 
+## Installazione simultanea
+
+Ogni app ha un identificativo distinto, uguale su Android (`applicationId`) e iOS (`bundle identifier`):
+
+| Progetto | Identificativo Android e iOS |
+| --- | --- |
+| Flutter | `it.demo.eventcheckin.flutter` |
+| Ionic | `it.demo.eventcheckin.ionic` |
+| Kotlin Multiplatform | `it.demo.eventcheckin.kmp` |
+| React Native | `it.demo.eventcheckin.reactnative` |
+
+Le quattro build native possono quindi essere installate sullo stesso dispositivo come app separate, ognuna con i propri dati locali. Ricompilare dai sorgenti aggiornati: gli APK precedenti conservano i vecchi identificativi e i dati delle vecchie installazioni non vengono migrati automaticamente. Su iOS configurare il proprio team e il provisioning per ciascun nuovo bundle ID.
+
+Per React Native, se `android/` o `ios/` erano già stati generati, rigenerarli con `npx expo prebuild --clean --platform android` oppure, su macOS, `npx expo prebuild --clean --platform ios` prima della build. Queste cartelle sono output locali: conservare eventuali modifiche manuali prima di rigenerarle. I report e i manifest in `react-native/docs/verification/` documentano le build iniziali con il vecchio identificativo.
+
+Verifica del cambio identificativi su Windows (23/10/2026): compilati i quattro APK Android debug, controllati con `aapt` i package e le attività di avvio, e verificata l'assenza di autorità dei provider e permessi dichiarati duplicati fra le app. Passati typecheck/lint React Native e i 12 test JVM KMP; compilato anche l'APK dei test Android KMP. Questi ultimi non sono stati eseguiti su dispositivo. L'installazione simultanea su dispositivo e le build iOS non sono state eseguite in questa verifica.
+
 ## Avvio rapido
 
 I comandi seguenti partono dalla radice del repository, ciascuno in un terminale separato. Consultare i README delle app per versioni SDK/JDK, permessi e istruzioni complete Android/iOS.

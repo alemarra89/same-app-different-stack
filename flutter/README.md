@@ -71,7 +71,7 @@ flutter build ipa --release
 
 Per il confronto richiesto il comando breve è `flutter build ios`; richiede comunque macOS e la configurazione di firma. L’APK è in `build/app/outputs/flutter-apk/`, l’AAB in `build/app/outputs/bundle/release/`.
 
-**La configurazione Android release usa intenzionalmente la chiave debug per la demo.** Un APK release così prodotto non è pronto per Play Store. Per distribuzione sostituire `signingConfigs.getByName("debug")` con una signing config privata; keystore e `key.properties` sono esclusi dal versionamento. Bundle ID demo: `it.demo.event_check_in`. Nessun certificato o segreto è incluso. AAB, IPA e firma di distribuzione: NON VERIFICATI.
+**La configurazione Android release usa intenzionalmente la chiave debug per la demo.** Un APK release così prodotto non è pronto per Play Store. Per distribuzione sostituire `signingConfigs.getByName("debug")` con una signing config privata; keystore e `key.properties` sono esclusi dal versionamento. Bundle ID demo: `it.demo.eventcheckin.flutter`. Nessun certificato o segreto è incluso. AAB, IPA e firma di distribuzione: NON VERIFICATI.
 
 ## Target Web separato
 

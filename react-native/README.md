@@ -135,7 +135,7 @@ Il runner Node non richiede Jest o un’altra libreria di test. TypeScript compi
 
 Il progetto usa **Continuous Native Generation**: `app.json` e i plugin sono la sorgente della configurazione. `android/` e `ios/` sono output generati e sono ignorati da Git. Il progetto Android è stato realmente generato qui; Expo non consente di generare iOS su Windows. Su Mac/Linux si può generare senza installare i pod con `npx expo prebuild --platform ios --no-install`; la compilazione iOS richiede poi macOS/Xcode. Non modificare a mano i manifest generati.
 
-Il plugin locale `plugins/withShortAndroidPaths.cjs` imposta la proprietà Expo `expo.android.cmakeObjectPathMax=240` durante prebuild. Questo fa accorciare con hash i percorsi degli oggetti C++ e risolve il limite Windows di Ninja incluso con CMake 3.22.1, senza modificare le dipendenze o il codice nativo generato a mano. È una configurazione di build Android, non logica applicativa.
+Il plugin locale `plugins/withShortAndroidPaths.cjs` imposta la proprietà Expo `expo.android.cmakeObjectPathMax=240` durante prebuild e sposta lo staging CMake in `.cxx/` nella cartella di questa app, esclusa da Git. La directory più corta permette a CMake di accorciare con hash i percorsi degli oggetti C++ anche dentro il monorepository, rispettando il limite Windows di Ninja incluso con CMake 3.22.1. Il plugin configura il progetto generato, senza modificare dipendenze o file nativi a mano. È una configurazione di build Android, non logica applicativa.
 
 Build debug Android senza installare su un dispositivo, PowerShell:
 

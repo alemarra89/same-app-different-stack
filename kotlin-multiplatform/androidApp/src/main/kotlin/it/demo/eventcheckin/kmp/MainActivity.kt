@@ -1,4 +1,4 @@
-package it.eventcheckin.app
+package it.demo.eventcheckin.kmp
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

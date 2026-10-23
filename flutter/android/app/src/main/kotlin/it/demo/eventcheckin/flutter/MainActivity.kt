@@ -1,4 +1,4 @@
-package it.demo.event_check_in
+package it.demo.eventcheckin.flutter
 
 import io.flutter.embedding.android.FlutterActivity
 

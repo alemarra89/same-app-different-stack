@@ -1,4 +1,4 @@
-package it.demo.eventcheckin;
+package it.demo.eventcheckin.ionic;
 
 import android.content.Context;
 import android.hardware.camera2.CameraAccessException;

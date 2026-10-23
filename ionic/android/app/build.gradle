@@ -1,10 +1,10 @@
 apply plugin: 'com.android.application'
 
 android {
-    namespace = "it.demo.eventcheckin"
+    namespace = "it.demo.eventcheckin.ionic"
     compileSdk = rootProject.ext.compileSdkVersion
     defaultConfig {
-        applicationId "it.demo.eventcheckin"
+        applicationId "it.demo.eventcheckin.ionic"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

@@ -16,8 +16,8 @@ Dipendenze dirette: 10 runtime + 16 sviluppo = 26.
 - `android/app/capacitor.build.gradle`
 - `android/app/proguard-rules.pro`
 - `android/app/src/main/AndroidManifest.xml`
-- `android/app/src/main/java/it/demo/eventcheckin/CheckInCameraAvailabilityPlugin.java`
-- `android/app/src/main/java/it/demo/eventcheckin/MainActivity.java`
+- `android/app/src/main/java/it/demo/eventcheckin/ionic/CheckInCameraAvailabilityPlugin.java`
+- `android/app/src/main/java/it/demo/eventcheckin/ionic/MainActivity.java`
 - `android/app/src/main/res/drawable-land-hdpi/splash.png`
 - `android/app/src/main/res/drawable-land-mdpi/splash.png`
 - `android/app/src/main/res/drawable-land-xhdpi/splash.png`

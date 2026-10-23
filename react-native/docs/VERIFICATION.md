@@ -109,7 +109,7 @@ npm run export:web
 
 Per gli APK senza dispositivo è stato usato `gradlew.bat app:assembleDebug --no-daemon --console=plain -PreactNativeArchitectures=x86_64` e poi la stessa invocazione con `-PreactNativeArchitectures=arm64-v8a` nel progetto Android generato. Le copie separate sono in `artifacts/android/event-check-in-debug-x86_64.apk` e `artifacts/android/event-check-in-debug-arm64-v8a.apk`. Le istruzioni complete di firma e distribuzione sono nel README.
 
-`aapt dump badging` conferma package `it.demo.eventcheckin`, nome Event Check-in, min SDK 24, target SDK 36 e i rispettivi ABI. Questo controlla il contenuto degli APK, non il loro avvio su un dispositivo.
+`aapt dump badging` confermava package `it.demo.eventcheckin`, nome Event Check-in, min SDK 24, target SDK 36 e i rispettivi ABI nelle build iniziali. Questo controlla il contenuto degli APK, non il loro avvio su un dispositivo. Dopo la separazione degli identificativi, il package corrente è `it.demo.eventcheckin.reactnative`: ricompilare per ottenere il nuovo APK. I manifest e l'introspezione allegati in `docs/verification/` sono evidenze storiche delle build iniziali.
 
 ## Web e criticità Desktop
 

@@ -13,7 +13,7 @@ Sorgenti Dart applicativi: **9**. File Dart di test/supporto: **5**.
 - `android/app/build.gradle.kts`
 - `android/app/src/debug/AndroidManifest.xml`
 - `android/app/src/main/AndroidManifest.xml`
-- `android/app/src/main/kotlin/it/demo/event_check_in/MainActivity.kt`
+- `android/app/src/main/kotlin/it/demo/eventcheckin/flutter/MainActivity.kt`
 - `android/app/src/main/res/drawable-v21/launch_background.xml`
 - `android/app/src/main/res/drawable/launch_background.xml`
 - `android/app/src/main/res/mipmap-hdpi/ic_launcher.png`

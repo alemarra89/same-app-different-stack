@@ -14,7 +14,7 @@ const adbPath = path.join(sdk, 'platform-tools', process.platform === 'win32' ? 
 const run = promisify(execFile);
 const adb = async (...args) => (await run(adbPath, ['-s', serial, ...args])).stdout.trim();
 const pause = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-const appId = 'it.demo.eventcheckin';
+const appId = 'it.demo.eventcheckin.ionic';
 const port = '19223';
 await mkdir('docs/screenshots', { recursive: true });
 const screenshot = async (name) => {
