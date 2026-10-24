@@ -1,0 +1,12 @@
+{
+  "path": "artifacts/android/event-check-in-flutter-release.apk",
+  "bytes": 63823414,
+  "sha256": "20205ECC0F6ED88F24422AF6A613FB901D4078246BA831DC875FCBE7ECA6642A",
+  "aotLibraries": [
+    "lib/arm64-v8a/libapp.so",
+    "lib/armeabi-v7a/libapp.so",
+    "lib/x86_64/libapp.so"
+  ],
+  "kernelBlobPresent": false,
+  "internetPermissionPresent": false
+}

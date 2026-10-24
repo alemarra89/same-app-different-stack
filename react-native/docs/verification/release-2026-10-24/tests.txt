@@ -1,0 +1,94 @@
+
+> event-check-in@1.0.0 test
+> tsc -p tsconfig.test.json && node --test tests/*.test.cjs
+
+TAP version 13
+# Subtest: prima apertura: i sei partecipanti invarianti sono tutti in attesa
+ok 1 - prima apertura: i sei partecipanti invarianti sono tutti in attesa
+  ---
+  duration_ms: 3.6233
+  ...
+# Subtest: valido: registra Giulia e non modifica l’input
+ok 2 - valido: registra Giulia e non modifica l’input
+  ---
+  duration_ms: 0.2997
+  ...
+# Subtest: duplicato: nessun incremento, stesso stato
+ok 3 - duplicato: nessun incremento, stesso stato
+  ---
+  duration_ms: 0.1477
+  ...
+# Subtest: sconosciuto: ERR-999 non altera le presenze
+ok 4 - sconosciuto: ERR-999 non altera le presenze
+  ---
+  duration_ms: 0.1323
+  ...
+# Subtest: trim: accetta spazi, tab e newline ai bordi
+ok 5 - trim: accetta spazi, tab e newline ai bordi
+  ---
+  duration_ms: 0.2469
+  ...
+# Subtest: schema esatto: URL, JSON, lowercase e spazi interni non sono ID validi
+ok 6 - schema esatto: URL, JSON, lowercase e spazi interni non sono ID validi
+  ---
+  duration_ms: 0.2279
+  ...
+# Subtest: sei check-in distinti: contatore massimo 6
+ok 7 - sei check-in distinti: contatore massimo 6
+  ---
+  duration_ms: 0.287
+  ...
+# Subtest: scanner: blocco duplicati in finestra mobile di 1000 ms, anche tra secondi diversi
+ok 8 - scanner: blocco duplicati in finestra mobile di 1000 ms, anche tra secondi diversi
+  ---
+  duration_ms: 0.4707
+  ...
+# Subtest: storage: persiste solo gli ID e ripristina nomi dal seed
+ok 9 - storage: persiste solo gli ID e ripristina nomi dal seed
+  ---
+  duration_ms: 0.659
+  ...
+# Subtest: persistenza su file: nuova istanza rilegge il check-in, reset elimina la chiave
+ok 10 - persistenza su file: nuova istanza rilegge il check-in, reset elimina la chiave
+  ---
+  duration_ms: 24.522
+  ...
+# Subtest: storage corrotto o ID estranei: errore esplicito, nessuna sovrascrittura
+ok 11 - storage corrotto o ID estranei: errore esplicito, nessuna sovrascrittura
+  ---
+  duration_ms: 0.6501
+  ...
+# Subtest: criteri 1–6: apertura, valido, duplicato, sconosciuto, riapertura, reset
+ok 12 - criteri 1–6: apertura, valido, duplicato, sconosciuto, riapertura, reset
+  ---
+  duration_ms: 0.3253
+  ...
+# Subtest: errore scrittura: non conferma e non incrementa, consente di riprovare
+ok 13 - errore scrittura: non conferma e non incrementa, consente di riprovare
+  ---
+  duration_ms: 0.2267
+  ...
+# Subtest: concorrenza: durante il salvataggio non si perdono aggiornamenti e non si avvia reset
+ok 14 - concorrenza: durante il salvataggio non si perdono aggiornamenti e non si avvia reset
+  ---
+  duration_ms: 0.198
+  ...
+# Subtest: errore reset: conserva lo stato precedente
+ok 15 - errore reset: conserva lo stato precedente
+  ---
+  duration_ms: 0.1815
+  ...
+# Subtest: scanner e manuale condividono il processo; manuale non viene limitato dal debounce
+ok 16 - scanner e manuale condividono il processo; manuale non viene limitato dal debounce
+  ---
+  duration_ms: 0.1648
+  ...
+1..16
+# tests 16
+# suites 0
+# pass 16
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 148.4733

@@ -93,7 +93,9 @@ cd android
 ./gradlew bundleRelease
 ```
 
-Per una release distribuibile usare Android Studio → Build → Generate Signed Bundle / APK, selezionare/creare il proprio keystore, incrementare `versionCode`/`versionName` in `android/app/build.gradle` e firmare l'AAB. Il repository non contiene chiavi o credenziali. **Build release e firma NON VERIFICATI**; `bundleRelease` da solo non configura una chiave di produzione.
+Per una release distribuibile usare Android Studio → Build → Generate Signed Bundle / APK, selezionare/creare il proprio keystore, incrementare `versionCode`/`versionName` in `android/app/build.gradle` e firmare l'AAB. Il repository non contiene chiavi o credenziali. `bundleRelease` da solo non configura una chiave di produzione.
+
+**Release Android verificata il 24/10/2026:** APK universale non debuggabile, firmato con il certificato Android locale di test, installato e usato sul telefono senza server di sviluppo. Pipeline Web + sync + Android **197,227 s**, firma separata **2,038 s**, APK **35.753.922 byte**. Primo tentativo riuscito, nuovo check-in e persistenza dopo arresto completo verificati. [Report, APK, video di 26 secondi e screenshot](docs/RELEASE_BUILD_2026-10-24.md). Firma per lo store e pubblicazione non eseguite.
 
 ## iOS
 
@@ -177,7 +179,7 @@ Vitest verifica ID valido/duplicato/sconosciuto/trim, immutabilità, schema QR, 
 6. Reimposta e conferma: 0/6; annullare deve preservare lo stato.
 7. Su un altro schermo/cartoncino prepara un QR **testuale** con contenuto esatto `EVT-002`. Scansiona su telefono reale: Marco Presente, 1/6. Prova rifiuto permesso, annullamento e ripetizione, poi verifica che il modulo manuale resti utilizzabile.
 
-Il criterio 7 resta **NON VERIFICATO** su telefono reale. La persistenza è verificata sia con reload Web sia dopo force-stop e riapertura dell'app Android nell'emulatore API 36.
+Il **24/10/2026 il criterio 7 è stato verificato su telefono Android reale**: scansione di `EVT-002`, Marco presente, contatore 1/6 e persistenza dopo force-stop/riapertura con lettura delle Preferences native. Passati anche check-in manuale, duplicato, invalido e reset sul telefono. Tempi della build debug e prove nel [report dedicato](docs/DEBUG_BUILD_2026-10-24.md). La precedente verifica su emulatore API 36 e quella Web restano documentate separatamente.
 
 ## Web e Desktop
 

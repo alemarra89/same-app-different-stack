@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CheckInTest[jvm]" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-24T16:01:24.903Z" hostname="DESKTOP-8NFRLHE" time="0.173">
+  <properties/>
+  <testcase name="unknownCodeIsInvalid[jvm]" classname="it.eventcheckin.CheckInTest" time="0.102"/>
+  <testcase name="seedIsExactlyTheInvariantDataset[jvm]" classname="it.eventcheckin.CheckInTest" time="0.015"/>
+  <testcase name="trimsWhitespace[jvm]" classname="it.eventcheckin.CheckInTest" time="0.045"/>
+  <testcase name="validCodeRegistersOnlyGiuliaWithoutMutatingInput[jvm]" classname="it.eventcheckin.CheckInTest" time="0.0"/>
+  <testcase name="acceptsOnlyExactIdSchema[jvm]" classname="it.eventcheckin.CheckInTest" time="0.0"/>
+  <testcase name="duplicateDoesNotIncrement[jvm]" classname="it.eventcheckin.CheckInTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

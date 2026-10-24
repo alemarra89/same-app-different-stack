@@ -1,0 +1,432 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.4.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :gradle-plugin:settings-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle-plugin:shared:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :expo-gradle-plugin:expo-autolinking-plugin-shared:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :expo-gradle-plugin:expo-autolinking-settings-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle-plugin:settings-plugin:pluginDescriptors UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-settings-plugin:pluginDescriptors UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:processResources UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-settings-plugin:processResources UP-TO-DATE
+> Task :gradle-plugin:shared:compileKotlin UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-plugin-shared:compileKotlin UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-plugin-shared:compileJava NO-SOURCE
+> Task :gradle-plugin:shared:compileJava NO-SOURCE
+> Task :gradle-plugin:shared:processResources NO-SOURCE
+> Task :expo-gradle-plugin:expo-autolinking-plugin-shared:processResources NO-SOURCE
+> Task :gradle-plugin:shared:classes UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-plugin-shared:classes UP-TO-DATE
+> Task :gradle-plugin:shared:jar UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-plugin-shared:jar UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:compileKotlin UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:compileJava NO-SOURCE
+> Task :gradle-plugin:settings-plugin:classes UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:jar UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-settings-plugin:compileKotlin UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-settings-plugin:compileJava NO-SOURCE
+> Task :expo-gradle-plugin:expo-autolinking-settings-plugin:classes UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-settings-plugin:jar UP-TO-DATE
+> Task :expo-gradle-plugin:expo-max-sdk-override-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :expo-gradle-plugin:expo-autolinking-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle-plugin:react-native-gradle-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :expo-module-gradle-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :expo-module-gradle-plugin:pluginDescriptors UP-TO-DATE
+> Task :expo-module-gradle-plugin:processResources UP-TO-DATE
+> Task :expo-gradle-plugin:expo-max-sdk-override-plugin:compileKotlin UP-TO-DATE
+> Task :expo-gradle-plugin:expo-max-sdk-override-plugin:compileJava NO-SOURCE
+> Task :expo-gradle-plugin:expo-max-sdk-override-plugin:pluginDescriptors UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-plugin:compileKotlin UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-plugin:compileJava NO-SOURCE
+> Task :expo-gradle-plugin:expo-max-sdk-override-plugin:processResources UP-TO-DATE
+> Task :expo-gradle-plugin:expo-max-sdk-override-plugin:classes UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-plugin:pluginDescriptors UP-TO-DATE
+> Task :expo-gradle-plugin:expo-max-sdk-override-plugin:jar UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-plugin:processResources UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-plugin:classes UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-plugin:jar UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:compileKotlin UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:compileJava NO-SOURCE
+> Task :gradle-plugin:react-native-gradle-plugin:pluginDescriptors UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:processResources UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:classes UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:jar UP-TO-DATE
+> Task :expo-module-gradle-plugin:compileKotlin UP-TO-DATE
+> Task :expo-module-gradle-plugin:compileJava NO-SOURCE
+> Task :expo-module-gradle-plugin:classes UP-TO-DATE
+> Task :expo-module-gradle-plugin:jar UP-TO-DATE
+
+> Configure project :
+[32m[ExpoRootProject][0m The Kotlin Gradle plugin used by this build is [32m2.2.10[0m, but the version catalog declares [33m2.2.0[0m. Using the plugin version.
+[32m[ExpoRootProject][0m Using the following versions:
+  - buildTools:  [32m37.0.0[0m
+  - minSdk:      [32m24[0m
+  - compileSdk:  [32m37[0m
+  - targetSdk:   [32m36[0m
+  - ndk:         [32m27.1.12297006[0m
+  - kotlin:      [32m2.2.10[0m
+  - ksp:         [32m2.2.10-2.0.2[0m
+
+> Configure project :app
+WARNING: The option setting 'android.builtInKotlin=false' is deprecated.
+The current default is 'true'.
+It will be removed in version 10.0 of the Android Gradle plugin.
+WARNING: The option setting 'android.newDsl=false' is deprecated.
+The current default is 'true'.
+It will be removed in version 10.0 of the Android Gradle plugin.
+ ??  [33mApplying gradle plugin[0m '[32mexpo-max-sdk-override-plugin[0m'
+  [expo-max-sdk-override-plugin] This plugin will find all permissions declared with `android:maxSdkVersion`. If there exists a declaration with the `android:maxSdkVersion` annotation and another one without, the plugin will remove the annotation from the final merged manifest. In order to see a log with the changes run a clean build of the app.
+WARNING: API 'applicationVariants' is obsolete and has been replaced with 'AndroidComponentsExtension'.
+It will be removed in version 10.0 of the Android Gradle plugin.
+The legacy variant API is disabled by default in AGP 9.0, but can be re-enabled by adding 
+    android.newDsl=false
+to this project's gradle.properties file.
+For more information, see http://developer.android.com/build/r/new-dsl.
+
+To determine what is calling applicationVariants, use -Pandroid.debug.obsoleteApi=true on the command line to display more information.
+WARNING: API 'testVariants' is obsolete and has been replaced with 'AndroidComponentsExtension'.
+It will be removed in version 10.0 of the Android Gradle plugin.
+The legacy variant API is disabled by default in AGP 9.0, but can be re-enabled by adding 
+    android.newDsl=false
+to this project's gradle.properties file.
+For more information, see http://developer.android.com/build/r/new-dsl.
+
+To determine what is calling testVariants, use -Pandroid.debug.obsoleteApi=true on the command line to display more information.
+WARNING: API 'unitTestVariants' is obsolete and has been replaced with 'AndroidComponentsExtension'.
+It will be removed in version 10.0 of the Android Gradle plugin.
+The legacy variant API is disabled by default in AGP 9.0, but can be re-enabled by adding 
+    android.newDsl=false
+to this project's gradle.properties file.
+For more information, see http://developer.android.com/build/r/new-dsl.
+
+To determine what is calling unitTestVariants, use -Pandroid.debug.obsoleteApi=true on the command line to display more information.
+
+> Configure project :expo
+WARNING: API 'libraryVariants' is obsolete and has been replaced with 'AndroidComponentsExtension'.
+It will be removed in version 10.0 of the Android Gradle plugin.
+The legacy variant API is disabled by default in AGP 9.0, but can be re-enabled by adding 
+    android.newDsl=false
+to this project's gradle.properties file.
+For more information, see http://developer.android.com/build/r/new-dsl.
+
+To determine what is calling libraryVariants, use -Pandroid.debug.obsoleteApi=true on the command line to display more information.
+
+Using expo modules
+  - [32mexpo-dom-webview[0m (58.0.2)
+  - [32mexpo-log-box[0m (58.0.13)
+  - [32mexpo-constants[0m (58.0.13)
+  - [32mexpo-modules-core[0m (58.0.24)
+  - [33m[?][0m [32mexpo-asset[0m (58.0.18)
+  - [33m[?][0m [32mexpo-camera[0m (58.0.12)
+  - [33m[?][0m [32mexpo-file-system[0m (58.0.10)
+  - [33m[?][0m [32mexpo-font[0m (58.0.9)
+  - [33m[?][0m [32mexpo-keep-awake[0m (58.0.3)
+  - [33m[?][0m [32mexpo-status-bar[0m (58.0.4)
+  - [33m[?][0m [32mexpo-system-ui[0m (58.0.6)
+
+
+> Task :expo-dom-webview:preBuild UP-TO-DATE
+> Task :expo-dom-webview:preDebugBuild UP-TO-DATE
+> Task :expo-constants:preBuild UP-TO-DATE
+> Task :expo-log-box:preBuild UP-TO-DATE
+> Task :expo-log-box:preDebugBuild UP-TO-DATE
+> Task :expo-dom-webview:processDebugNavigationResources
+> Task :app:generateAutolinkingNewArchitectureFiles
+> Task :expo-log-box:processDebugNavigationResources
+> Task :expo-dom-webview:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :expo-log-box:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:generateAutolinkingPackageList
+> Task :expo-dom-webview:generateDebugResources
+> Task :app:generateCodegenSchemaFromJavaScript SKIPPED
+> Task :app:generateCodegenArtifactsFromSchema SKIPPED
+> Task :expo-log-box:generateDebugBuildConfig
+> Task :app:generateReactNativeEntryPoint
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :expo-log-box:generateDebugResources
+> Task :expo-dom-webview:packageDebugResources
+> Task :expo-log-box:packageDebugResources
+> Task :expo-dom-webview:generateDebugAssets UP-TO-DATE
+> Task :expo-log-box:generateDebugAssets UP-TO-DATE
+> Task :expo-log-box:mergeDebugAssets
+> Task :expo-dom-webview:javaPreCompileDebug
+> Task :expo-dom-webview:mergeDebugAssets
+> Task :expo-log-box:javaPreCompileDebug
+> Task :expo-dom-webview:parseDebugLocalResources
+> Task :expo-log-box:parseDebugLocalResources
+> Task :expo-dom-webview:writeDebugAarMetadata
+> Task :expo-log-box:writeDebugAarMetadata
+> Task :expo-log-box:extractDeepLinksDebug
+> Task :expo:generateInlineModules
+> Task :expo-dom-webview:extractDeepLinksDebug
+> Task :expo:generatePackagesList
+> Task :expo:preBuild
+> Task :expo:preDebugBuild
+> Task :expo:processDebugNavigationResources
+> Task :expo:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :expo:generateDebugResources
+> Task :expo-dom-webview:mapDebugSourceSetPaths
+> Task :expo-log-box:mapDebugSourceSetPaths
+> Task :expo-log-box:generateDebugRFile
+> Task :expo:packageDebugResources
+> Task :expo-dom-webview:generateDebugRFile
+> Task :expo:generateDebugAssets UP-TO-DATE
+> Task :expo:javaPreCompileDebug
+> Task :expo:parseDebugLocalResources
+> Task :expo:mergeDebugAssets
+> Task :expo-modules-core:decompressPrebuiltNativeLibs
+> Task :expo-modules-core:preBuild
+> Task :expo-modules-core:preDebugBuild
+> Task :expo-dom-webview:mergeDebugJniLibFolders
+> Task :expo-dom-webview:mergeDebugNativeLibs NO-SOURCE
+> Task :expo-log-box:mergeDebugJniLibFolders
+> Task :expo-modules-core:processDebugNavigationResources
+> Task :expo-modules-core:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :expo-log-box:mergeDebugNativeLibs NO-SOURCE
+> Task :expo-dom-webview:compileDebugLibraryResources
+> Task :expo-log-box:compileDebugLibraryResources
+> Task :expo-modules-core:generateDebugBuildConfig
+> Task :expo:writeDebugAarMetadata
+> Task :expo:generateDebugRFile
+> Task :expo:extractDeepLinksDebug
+> Task :expo-dom-webview:copyDebugJniLibsProjectOnly
+> Task :expo-log-box:copyDebugJniLibsProjectOnly
+> Task :expo-modules-core:generateDebugResources
+> Task :expo-modules-core:packageDebugResources
+> Task :expo:mapDebugSourceSetPaths
+> Task :expo-modules-core:generateDebugAssets UP-TO-DATE
+> Task :expo-modules-core:javaPreCompileDebug
+> Task :expo:compileDebugLibraryResources
+> Task :expo:mergeDebugJniLibFolders
+> Task :expo-modules-core:parseDebugLocalResources
+> Task :expo-modules-core:mergeDebugAssets
+> Task :expo:mergeDebugNativeLibs NO-SOURCE
+> Task :expo:copyDebugJniLibsProjectOnly
+> Task :expo-modules-core:writeDebugAarMetadata
+> Task :expo-modules-core:extractDeepLinksDebug
+> Task :expo-modules-core:generateDebugRFile
+> Task :expo:processDebugManifest
+> Task :expo-dom-webview:processDebugManifest
+> Task :expo-log-box:processDebugManifest
+
+> Task :expo-modules-core:processDebugManifest
+C:\Users\utente\progetti\same-app-different-stack\react-native\node_modules\expo-modules-core\android\src\main\AndroidManifest.xml:8:9-11:45 Warning:
+	meta-data#com.facebook.soloader.enabled@android:value was tagged at AndroidManifest.xml:8 to replace other declarations but no other declaration present
+
+> Task :react-native-async-storage_async-storage:generateCodegenSchemaFromJavaScript
+> Task :react-native-safe-area-context:generateCodegenSchemaFromJavaScript
+> Task :expo-modules-core:mapDebugSourceSetPaths
+> Task :expo-modules-core:compileDebugLibraryResources
+> Task :expo-modules-core:unpackExpoModulesV2Cpp
+> Task :expo-constants:createDebugExpoConfig
+> Task :react-native-async-storage_async-storage:generateCodegenArtifactsFromSchema
+> Task :react-native-async-storage_async-storage:preBuild
+> Task :react-native-async-storage_async-storage:preDebugBuild
+> Task :react-native-async-storage_async-storage:processDebugNavigationResources
+> Task :react-native-async-storage_async-storage:generateDebugBuildConfig
+> Task :react-native-safe-area-context:generateCodegenArtifactsFromSchema
+> Task :react-native-safe-area-context:preBuild
+> Task :app:preBuild
+> Task :react-native-safe-area-context:preDebugBuild
+> Task :app:preDebugBuild
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :react-native-safe-area-context:processDebugNavigationResources
+> Task :react-native-safe-area-context:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :react-native-async-storage_async-storage:generateDebugResources
+> Task :app:generateDebugBuildConfig
+> Task :react-native-safe-area-context:generateDebugBuildConfig
+> Task :app:generateDebugResValues
+> Task :react-native-safe-area-context:generateDebugResources
+> Task :react-native-async-storage_async-storage:packageDebugResources
+> Task :react-native-async-storage_async-storage:generateDebugAssets UP-TO-DATE
+> Task :react-native-async-storage_async-storage:javaPreCompileDebug
+> Task :react-native-safe-area-context:packageDebugResources
+> Task :react-native-async-storage_async-storage:parseDebugLocalResources
+> Task :react-native-async-storage_async-storage:mergeDebugAssets
+> Task :app:generateDebugResources
+> Task :react-native-safe-area-context:generateDebugAssets UP-TO-DATE
+> Task :react-native-safe-area-context:parseDebugLocalResources
+> Task :react-native-safe-area-context:javaPreCompileDebug
+> Task :react-native-async-storage_async-storage:processDebugJavaRes NO-SOURCE
+> Task :react-native-safe-area-context:mergeDebugAssets
+> Task :react-native-async-storage_async-storage:generateDebugRFile
+> Task :react-native-async-storage_async-storage:writeDebugAarMetadata
+> Task :react-native-async-storage_async-storage:extractDeepLinksDebug
+> Task :react-native-safe-area-context:writeDebugAarMetadata
+> Task :react-native-safe-area-context:extractDeepLinksDebug
+> Task :react-native-safe-area-context:generateDebugRFile
+
+> Task :react-native-safe-area-context:processDebugManifest
+package="com.th3rdwave.safeareacontext" found in source AndroidManifest.xml: C:\Users\utente\progetti\same-app-different-stack\react-native\node_modules\react-native-safe-area-context\android\src\main\AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="com.th3rdwave.safeareacontext" from the source AndroidManifest.xml: C:\Users\utente\progetti\same-app-different-stack\react-native\node_modules\react-native-safe-area-context\android\src\main\AndroidManifest.xml.
+
+> Task :app:packageDebugResources
+> Task :app:javaPreCompileDebug
+> Task :react-native-safe-area-context:mapDebugSourceSetPaths
+> Task :react-native-safe-area-context:compileDebugLibraryResources
+> Task :react-native-safe-area-context:mergeDebugJniLibFolders
+> Task :react-native-safe-area-context:mergeDebugNativeLibs NO-SOURCE
+> Task :react-native-safe-area-context:copyDebugJniLibsProjectOnly
+
+> Task :react-native-async-storage_async-storage:compileDebugJavaWithJavac
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: C:\Users\utente\progetti\same-app-different-stack\react-native\node_modules\@react-native-async-storage\async-storage\android\src\javaPackage\java\com\reactnativecommunity\asyncstorage\AsyncStoragePackage.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+> Task :react-native-async-storage_async-storage:mapDebugSourceSetPaths
+
+> Task :react-native-async-storage_async-storage:processDebugManifest
+package="com.reactnativecommunity.asyncstorage" found in source AndroidManifest.xml: C:\Users\utente\progetti\same-app-different-stack\react-native\node_modules\@react-native-async-storage\async-storage\android\src\main\AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="com.reactnativecommunity.asyncstorage" from the source AndroidManifest.xml: C:\Users\utente\progetti\same-app-different-stack\react-native\node_modules\@react-native-async-storage\async-storage\android\src\main\AndroidManifest.xml.
+
+> Task :react-native-async-storage_async-storage:bundleLibCompileToJarDebug
+> Task :react-native-async-storage_async-storage:bundleLibRuntimeToDirDebug
+> Task :react-native-async-storage_async-storage:compileDebugLibraryResources
+> Task :react-native-async-storage_async-storage:mergeDebugJniLibFolders
+> Task :react-native-async-storage_async-storage:mergeDebugNativeLibs NO-SOURCE
+> Task :react-native-async-storage_async-storage:copyDebugJniLibsProjectOnly
+
+> Task :expo-modules-core:configureCMakeDebug[arm64-v8a]
+C/C++: CMake Warning in build/expo-modules-v2-cpp/CMakeLists.txt:
+C/C++:   The object file directory
+C/C++:     C:/Users/utente/progetti/same-app-different-stack/react-native/node_modules/expo-modules-core/android/.cxx/Debug/42j40m28/arm64-v8a/expo-modules-v2-build/CMakeFiles/expo-modules-v2.dir/./
+C/C++:   has 187 characters.  The maximum full path to an object file is 240
+C/C++:   characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+C/C++:     expo-modules-v2/converter/decoders/DynamicJniDecoder.cpp.o
+C/C++:   cannot be safely placed under this directory.  The build may not work
+C/C++:   correctly.
+
+> Task :app:generateDebugGlobalSynthetics
+> Task :app:desugarDebugFileDependencies
+> Task :app:mapDebugSourceSetPaths
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug
+> Task :app:checkDebugDuplicateClasses
+> Task :app:configureCMakeDebug[arm64-v8a]
+> Task :expo-modules-core:compileDebugKotlin
+> Task :expo-constants:createExpoFingerprint
+> Task :react-native-safe-area-context:compileDebugKotlin
+> Task :expo-modules-core:buildCMakeDebug[arm64-v8a]
+> Task :app:mergeExtDexDebug
+
+> Task :react-native-safe-area-context:compileDebugKotlin
+w: file:///C:/Users/utente/progetti/same-app-different-stack/react-native/node_modules/react-native-safe-area-context/android/src/main/java/com/th3rdwave/safeareacontext/SafeAreaProviderManager.kt:40:19 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+w: file:///C:/Users/utente/progetti/same-app-different-stack/react-native/node_modules/react-native-safe-area-context/android/src/main/java/com/th3rdwave/safeareacontext/SafeAreaView.kt:8:8 'class UIManagerModule : ReactContextBaseJavaModule, LifecycleEventListener, UIManager' is deprecated. This class is part of Legacy Architecture and will be removed in a future release.
+w: file:///C:/Users/utente/progetti/same-app-different-stack/react-native/node_modules/react-native-safe-area-context/android/src/main/java/com/th3rdwave/safeareacontext/SafeAreaView.kt:46:54 'class UIManagerModule : ReactContextBaseJavaModule, LifecycleEventListener, UIManager' is deprecated. This class is part of Legacy Architecture and will be removed in a future release.
+w: file:///C:/Users/utente/progetti/same-app-different-stack/react-native/node_modules/react-native-safe-area-context/android/src/main/java/com/th3rdwave/safeareacontext/SafeAreaViewShadowNode.kt:9:32 'class LayoutShadowNode : ReactShadowNodeImpl' is deprecated. This class is part of Legacy Architecture and will be removed in a future release.
+w: file:///C:/Users/utente/progetti/same-app-different-stack/react-native/node_modules/react-native-safe-area-context/android/src/main/java/com/th3rdwave/safeareacontext/SafeAreaViewShadowNode.kt:110:61 'class NativeViewHierarchyOptimizer : Any' is deprecated. This class is part of Legacy Architecture and will be removed in a future release.
+
+> Task :app:buildCMakeDebug[arm64-v8a]
+> Task :expo-constants:preDebugBuild
+> Task :expo-constants:processDebugNavigationResources
+> Task :expo-constants:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :expo-constants:generateDebugResources
+> Task :expo-constants:packageDebugResources
+> Task :expo-constants:generateDebugAssets UP-TO-DATE
+> Task :expo-constants:javaPreCompileDebug
+> Task :expo-constants:parseDebugLocalResources
+> Task :expo-constants:mergeDebugAssets
+> Task :expo-constants:writeDebugAarMetadata
+> Task :expo-constants:generateDebugRFile
+> Task :expo-constants:extractDeepLinksDebug
+> Task :expo-constants:mapDebugSourceSetPaths
+> Task :expo-constants:processDebugManifest
+> Task :expo-constants:mergeDebugJniLibFolders
+> Task :expo-constants:mergeDebugNativeLibs NO-SOURCE
+> Task :expo-constants:copyDebugJniLibsProjectOnly
+> Task :expo-constants:compileDebugLibraryResources
+> Task :expo-modules-core:buildCMakeDebug[arm64-v8a] FAILED
+> Task :react-native-safe-area-context:compileDebugJavaWithJavac
+
+> Task :expo-modules-core:compileDebugKotlin
+w: file:///C:/Users/utente/progetti/same-app-different-stack/react-native/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/jni/CppType.kt:42:23 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+w: file:///C:/Users/utente/progetti/same-app-different-stack/react-native/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/jni/JavaCallback.kt:38:10 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+w: file:///C:/Users/utente/progetti/same-app-different-stack/react-native/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/jni/JavaCallback.kt:96:45 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+w: file:///C:/Users/utente/progetti/same-app-different-stack/react-native/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/jni/NativeArrayBuffer.kt:49:15 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+w: file:///C:/Users/utente/progetti/same-app-different-stack/react-native/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/jni/NativeArrayBuffer.kt:64:30 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+w: file:///C:/Users/utente/progetti/same-app-different-stack/react-native/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/jni/NativeArrayBuffer.kt:66:14 'constructor(byteBuffer: ByteBuffer): NativeArrayBuffer' is deprecated. Use ArrayBuffer instead.
+w: file:///C:/Users/utente/progetti/same-app-different-stack/react-native/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/jni/NativeArrayBuffer.kt:74:39 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+w: file:///C:/Users/utente/progetti/same-app-different-stack/react-native/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/jni/NativeArrayBuffer.kt:75:7 'constructor(byteBuffer: ByteBuffer): NativeArrayBuffer' is deprecated. Use ArrayBuffer instead.
+w: file:///C:/Users/utente/progetti/same-app-different-stack/react-native/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/jni/NativeArrayBuffer.kt:80:37 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+w: file:///C:/Users/utente/progetti/same-app-different-stack/react-native/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/jni/NativeArrayBuffer.kt:86:47 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+w: file:///C:/Users/utente/progetti/same-app-different-stack/react-native/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/jni/NativeArrayBuffer.kt:92:23 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+w: file:///C:/Users/utente/progetti/same-app-different-stack/react-native/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/jni/NativeArrayBuffer.kt:92:43 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+w: file:///C:/Users/utente/progetti/same-app-different-stack/react-native/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/jni/NativeArrayBuffer.kt:95:41 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+w: file:///C:/Users/utente/progetti/same-app-different-stack/react-native/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/jni/NativeArrayBuffer.kt:105:14 'constructor(byteBuffer: ByteBuffer): NativeArrayBuffer' is deprecated. Use ArrayBuffer instead.
+w: file:///C:/Users/utente/progetti/same-app-different-stack/react-native/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/types/ColorCompat.kt:115:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to field.
+- To opt in to applying to both value parameter and field, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///C:/Users/utente/progetti/same-app-different-stack/react-native/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/types/JSTypeConverter.kt:7:8 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+w: file:///C:/Users/utente/progetti/same-app-different-stack/react-native/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/types/JSTypeConverter.kt:245:55 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+w: file:///C:/Users/utente/progetti/same-app-different-stack/react-native/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/types/JSTypeConverter.kt:247:19 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+w: file:///C:/Users/utente/progetti/same-app-different-stack/react-native/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/types/ReturnType.kt:6:8 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+w: file:///C:/Users/utente/progetti/same-app-different-stack/react-native/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/types/ReturnType.kt:45:5 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+w: file:///C:/Users/utente/progetti/same-app-different-stack/react-native/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/types/TypeConverterProvider.kt:19:8 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+w: file:///C:/Users/utente/progetti/same-app-different-stack/react-native/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/types/TypeConverterProvider.kt:254:7 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+
+[Incubating] Problems report is available at: file:///C:/Users/utente/progetti/same-app-different-stack/react-native/android/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':expo-modules-core:buildCMakeDebug[arm64-v8a]'.
+> com.android.ide.common.process.ProcessException: ninja: Entering directory `C:\Users\utente\progetti\same-app-different-stack\react-native\node_modules\expo-modules-core\android\.cxx\Debug\42j40m28\arm64-v8a'
+  [0/2] Re-checking globbed directories...
+  [1/61] Building CXX object expo-modules-v2-build/CMakeFiles/expo-modules-v2.dir/expo-modules-v2/converter/ByteView.cpp.o
+  [2/61] Building CXX object expo-modules-v2-build/CMakeFiles/expo-modules-v2.dir/expo-modules-v2/converter/decoders/BufferDecode.cpp.o
+  [3/61] Building CXX object expo-modules-v2-build/CMakeFiles/expo-modules-v2.dir/expo-modules-v2/converter/decoders/JniDecode.cpp.o
+  [4/61] Building CXX object expo-modules-v2-build/CMakeFiles/expo-modules-v2.dir/expo-modules-v2/converter/AsciiKeyCache.cpp.o
+  [5/61] Building CXX object expo-modules-v2-build/CMakeFiles/expo-modules-v2.dir/8d6c82b8f8b2d86d9fb40cfa4644b4c9/BufferEncoder.cpp.o
+  [6/61] Building CXX object expo-modules-v2-build/CMakeFiles/expo-modules-v2.dir/expo-modules-v2/converter/encoders/BufferEncode.cpp.o
+  [7/61] Building CXX object expo-modules-v2-build/CMakeFiles/expo-modules-v2.dir/625c57061cf445d8cb71093d596ec347/BufferDecoder.cpp.o
+  [8/61] Building CXX object expo-modules-v2-build/CMakeFiles/expo-modules-v2.dir/expo-modules-v2/converter/RecordPropertyCache.cpp.o
+  [9/61] Building CXX object expo-modules-v2-build/CMakeFiles/expo-modules-v2.dir/expo-modules-v2/converter/decoders/DynamicBufferDecoder.cpp.o
+  [10/61] Building CXX object expo-modules-v2-build/CMakeFiles/expo-modules-v2.dir/expo-modules-v2/converter/decoders/DynamicJniDecoder.cpp.o
+  [11/61] Building CXX object expo-modules-v2-build/CMakeFiles/expo-modules-v2.dir/expo-modules-v2/JniMethodInvoker.cpp.o
+  [12/61] Building CXX object expo-modules-v2-build/CMakeFiles/expo-modules-v2.dir/expo-modules-v2/async/AsyncRuntimeState.cpp.o
+  [13/61] Building CXX object expo-modules-v2-build/CMakeFiles/expo-modules-v2.dir/expo-modules-v2/converter/encoders/JniEncoder.cpp.o
+  [14/61] Building CXX object expo-modules-v2-build/CMakeFiles/expo-modules-v2.dir/expo-modules-v2/converter/decoders/JniDecoder.cpp.o
+  [15/61] Building CXX object expo-modules-v2-build/CMakeFiles/expo-modules-v2.dir/expo-modules-v2/decoders/SharedClassDecoder.cpp.o
+  FAILED: expo-modules-v2-build/CMakeFiles/expo-modules-v2.dir/expo-modules-v2/decoders/SharedClassDecoder.cpp.o 
+  C:\Users\utente\AppData\Local\Android\Sdk\ndk\27.1.12297006\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=aarch64-none-linux-android24 --sysroot=C:/Users/utente/AppData/Local/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dexpo_modules_v2_EXPORTS -IC:/Users/utente/progetti/same-app-different-stack/react-native/node_modules/expo-modules-core/android/build/expo-modules-v2-cpp -IC:/Users/utente/progetti/same-app-different-stack/react-native/node_modules/expo-modules-core/android/build/expo-modules-v2-cpp/expo-jsi -isystem C:/Users/utente/.gradle/caches/9.4.1/transforms/8ecdea8e879178aa1e721829f4e819fb/transformed/kolibri-android-0.2.3/prefab/modules/kolibri/include -isystem C:/Users/utente/.gradle/caches/9.4.1/transforms/892e41b78f62a347e26edf02bde8c06c/transformed/react-android-0.88.0-debug/prefab/modules/jsi/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -Wall -Wextra -Wpedantic -std=gnu++20 -MD -MT expo-modules-v2-build/CMakeFiles/expo-modules-v2.dir/expo-modules-v2/decoders/SharedClassDecoder.cpp.o -MF expo-modules-v2-build\CMakeFiles\expo-modules-v2.dir\expo-modules-v2\decoders\SharedClassDecoder.cpp.o.d -o expo-modules-v2-build/CMakeFiles/expo-modules-v2.dir/expo-modules-v2/decoders/SharedClassDecoder.cpp.o -c C:/Users/utente/progetti/same-app-different-stack/react-native/node_modules/expo-modules-core/android/build/expo-modules-v2-cpp/expo-modules-v2/decoders/SharedClassDecoder.cpp
+  [16/61] Building CXX object expo-modules-v2-build/CMakeFiles/expo-modules-v2.dir/expo-modules-v2/decoders/ModuleDescriptorDecoder.cpp.o
+  [17/61] Building CXX object expo-modules-v2-build/CMakeFiles/expo-modules-v2.dir/expo-modules-v2/decoders/PropertyDecoder.cpp.o
+  [18/61] Building CXX object expo-modules-v2-build/CMakeFiles/expo-modules-v2.dir/expo-modules-v2/decoders/ExpectedTypeDecoder.cpp.o
+  [19/61] Building CXX object expo-modules-v2-build/CMakeFiles/expo-modules-v2.dir/expo-modules-v2/decoders/EventDecoder.cpp.o
+  [20/61] Building CXX object expo-modules-v2-build/CMakeFiles/expo-modules-v2.dir/expo-modules-v2/decoders/FunctionDecoder.cpp.o
+  [21/61] Building CXX object expo-modules-v2-build/CMakeFiles/expo-modules-v2.dir/expo-modules-v2/jni/JDynamicTypes.cpp.o
+  [22/61] Building CXX object expo-modules-v2-build/CMakeFiles/expo-modules-v2.dir/expo-modules-v2/converter/encoders/JniEncode.cpp.o
+  [23/61] Building CXX object expo-modules-v2-build/CMakeFiles/expo-modules-v2.dir/expo-modules-v2/descriptor/FunctionSpec.cpp.o
+  [24/61] Building CXX object expo-modules-v2-build/CMakeFiles/expo-modules-v2.dir/expo-modules-v2/descriptor/HostFunctionSpec.cpp.o
+  [25/61] Building CXX object expo-modules-v2-build/CMakeFiles/expo-modules-v2.dir/expo-modules-v2/descriptor/StaticFunctionSpec.cpp.o
+  [26/61] Building CXX object expo-modules-v2-build/CMakeFiles/expo-modules-v2.dir/expo-modules-v2/descriptor/ExpectedType.cpp.o
+  [27/61] Building CXX object expo-modules-v2-build/CMakeFiles/expo-modules-v2.dir/expo-modules-v2/events/EventEmitter.cpp.o
+  [28/61] Building CXX object expo-modules-v2-build/CMakeFiles/expo-modules-v2.dir/expo-modules-v2/events/ListenerTable.cpp.o
+  ninja: build stopped: subcommand failed.
+  
+  C++ build system [build] failed while executing:
+      @echo off
+      "C:\\Users\\utente\\AppData\\Local\\Android\\Sdk\\cmake\\3.22.1\\bin\\ninja.exe" ^
+        -C ^
+        "C:\\Users\\utente\\progetti\\same-app-different-stack\\react-native\\node_modules\\expo-modules-core\\android\\.cxx\\Debug\\42j40m28\\arm64-v8a" ^
+        expo-modules-v2
+    from C:\Users\utente\progetti\same-app-different-stack\react-native\node_modules\expo-modules-core\android
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+> Get more help at https://help.gradle.org.
+
+For more on this, please refer to https://docs.gradle.org/9.4.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+163 actionable tasks: 135 executed, 28 up-to-date
+BUILD FAILED in 1m 46s

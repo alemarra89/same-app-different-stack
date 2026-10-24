@@ -1,0 +1,35 @@
+{
+  "bytes": 10987109,
+  "megabytes": 10.987,
+  "mebibytes": 10.478,
+  "sha256": "FE0B09DDEF9D3F04B124D38C35A14814EA39F1DDFA962BE8FDA85F3B869A0B24",
+  "abis": [
+    "arm64-v8a",
+    "armeabi-v7a",
+    "x86",
+    "x86_64"
+  ],
+  "native_libraries": [
+    "lib/arm64-v8a/libandroidx.graphics.path.so",
+    "lib/arm64-v8a/libimage_processing_util_jni.so",
+    "lib/arm64-v8a/libsurface_util_jni.so",
+    "lib/armeabi-v7a/libandroidx.graphics.path.so",
+    "lib/armeabi-v7a/libimage_processing_util_jni.so",
+    "lib/armeabi-v7a/libsurface_util_jni.so",
+    "lib/x86/libandroidx.graphics.path.so",
+    "lib/x86/libimage_processing_util_jni.so",
+    "lib/x86/libsurface_util_jni.so",
+    "lib/x86_64/libandroidx.graphics.path.so",
+    "lib/x86_64/libimage_processing_util_jni.so",
+    "lib/x86_64/libsurface_util_jni.so"
+  ],
+  "dex_files": [
+    "classes.dex",
+    "classes2.dex",
+    "classes3.dex"
+  ],
+  "debuggable": false,
+  "internet_permission": false,
+  "minify_enabled": false,
+  "signing": "Local Android debug certificate, Release build type; not store signing"
+}

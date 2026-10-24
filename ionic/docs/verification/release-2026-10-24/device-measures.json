@@ -1,0 +1,7 @@
+{
+  "install_seconds": 0.993,
+  "first_cold_launch": {
+    "command_seconds": 0.711,
+    "android_total_time_ms": 656
+  }
+}

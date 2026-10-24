@@ -1,0 +1,16 @@
+{
+  "segmentsSeconds": [
+    [
+      18,
+      37
+    ],
+    [
+      65,
+      75.759689
+    ]
+  ],
+  "source": "build/release-recordings/release-demo-raw.mp4",
+  "operation": "Trim idle periods and concatenate; no changes to app content; no audio",
+  "sourceSeconds": 75.759689,
+  "output": "docs/event-check-in-flutter-release-demo.mp4"
+}

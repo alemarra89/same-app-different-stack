@@ -1,0 +1,19 @@
+00:00 +0: loading C:/Users/utente/progetti/same-app-different-stack/flutter/test/check_in_test.dart
+00:00 +0: C:/Users/utente/progetti/same-app-different-stack/flutter/test/check_in_test.dart: seed invariabile e nessun presente
+00:00 +1: C:/Users/utente/progetti/same-app-different-stack/flutter/test/check_in_test.dart: valido: nuova lista, Giulia presente, input immutato
+00:00 +2: C:/Users/utente/progetti/same-app-different-stack/flutter/test/check_in_test.dart: duplicato: nessun incremento, messaggio esatto
+00:00 +3: C:/Users/utente/progetti/same-app-different-stack/flutter/test/check_in_test.dart: sconosciuto: stato invariato, messaggio esatto
+00:00 +4: C:/Users/utente/progetti/same-app-different-stack/flutter/test/check_in_test.dart: trim di spazi, tab e newline
+00:00 +5: C:/Users/utente/progetti/same-app-different-stack/flutter/test/check_in_test.dart: payload strettamente ID: niente URL, JSON o case conversion
+00:01 +6: C:/Users/utente/progetti/same-app-different-stack/flutter/test/event_screen_test.dart: flusso manuale: valido, duplicato, sconosciuto, ricerca e reset con conferma
+00:02 +7: C:/Users/utente/progetti/same-app-different-stack/flutter/test/event_screen_test.dart: flusso manuale: valido, duplicato, sconosciuto, ricerca e reset con conferma
+00:02 +8: C:/Users/utente/progetti/same-app-different-stack/flutter/test/event_screen_test.dart: flusso manuale: valido, duplicato, sconosciuto, ricerca e reset con conferma
+00:02 +9: C:/Users/utente/progetti/same-app-different-stack/flutter/test/event_screen_test.dart: flusso manuale: valido, duplicato, sconosciuto, ricerca e reset con conferma
+00:02 +10: C:/Users/utente/progetti/same-app-different-stack/flutter/test/event_screen_test.dart: flusso manuale: valido, duplicato, sconosciuto, ricerca e reset con conferma
+00:02 +11: C:/Users/utente/progetti/same-app-different-stack/flutter/test/event_screen_test.dart: flusso manuale: valido, duplicato, sconosciuto, ricerca e reset con conferma
+00:02 +12: C:/Users/utente/progetti/same-app-different-stack/flutter/test/event_screen_test.dart: flusso manuale: valido, duplicato, sconosciuto, ricerca e reset con conferma
+00:02 +13: C:/Users/utente/progetti/same-app-different-stack/flutter/test/event_screen_test.dart: flusso manuale: valido, duplicato, sconosciuto, ricerca e reset con conferma
+00:02 +14: C:/Users/utente/progetti/same-app-different-stack/flutter/test/event_screen_test.dart: flusso manuale: valido, duplicato, sconosciuto, ricerca e reset con conferma
+00:04 +15: C:/Users/utente/progetti/same-app-different-stack/flutter/test/event_screen_test.dart: schermo 320px e testo ingrandito: nessun overflow
+00:04 +16: C:/Users/utente/progetti/same-app-different-stack/flutter/test/event_screen_test.dart: scanner non supportato: ritorno al modulo manuale (variant: TargetPlatform.windows)
+00:04 +17: All tests passed!

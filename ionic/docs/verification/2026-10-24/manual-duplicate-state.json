@@ -1,0 +1,15 @@
+{
+  "stage": "manual-duplicate",
+  "pid": "16864",
+  "attendance": "1 / 6 presenti",
+  "notice": "Informazione\nCheck-in già effettuato",
+  "participants": [
+    "GRGiulia RossiEVT-001Presente",
+    "MBMarco BianchiEVT-002In attesa",
+    "SDSara De LucaEVT-003In attesa",
+    "DGDavide GrecoEVT-004In attesa",
+    "FCFabio ContiEVT-005In attesa",
+    "IMIvan MorettiEVT-006In attesa"
+  ],
+  "native": true
+}

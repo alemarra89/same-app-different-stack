@@ -1,5 +1,9 @@
 # Resoconto standard dell’esperimento
 
+Questo resoconto conserva la verifica del **23/10/2026**. Per la nuova misura offline e le prove su telefono Android reale del **24/10/2026**, vedere [build debug, scanner e persistenza](DEBUG_BUILD_2026-10-24.md). I limiti sul dispositivo fisico riportati sotto descrivono la sessione originaria.
+
+Disponibile anche la [verifica Release del 24/10/2026](RELEASE_BUILD_2026-10-24.md), con misura della compilazione, APK firmato localmente, prova senza server di sviluppo e breve video del telefono.
+
 Data: **23/10/2026**. Workspace inizialmente vuoto; tutti i file di consegna sono nuovi. Implementazione **Kotlin Multiplatform + Compose Multiplatform**, priorità Android/iOS.
 
 ## Framework, versioni e dipendenze

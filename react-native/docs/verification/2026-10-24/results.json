@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-24",
+  "timezone": "Europe/Rome",
+  "platform": "Android",
+  "package": "it.demo.eventcheckin.reactnative",
+  "firstAttemptSucceeded": false,
+  "preparation": {
+    "phase": "offline-preparation-and-clean",
+    "seconds": 63.983158,
+    "exitCode": 0,
+    "downloads": 0
+  },
+  "attempts": [
+    {
+      "phase": "assembleDebug",
+      "attempt": 1,
+      "abi": "arm64-v8a",
+      "offline": true,
+      "buildCache": false,
+      "afterClean": true,
+      "startedAt": "2026-10-24T17:19:02.3016223+02:00",
+      "finishedAt": "2026-10-24T17:20:49.1622222+02:00",
+      "seconds": 106.8502716,
+      "exitCode": 1,
+      "downloads": 0
+    },
+    {
+      "phase": "assembleDebug",
+      "attempt": 2,
+      "abi": "arm64-v8a",
+      "offline": true,
+      "buildCache": false,
+      "afterClean": false,
+      "maxWorkers": 2,
+      "cmakeBuildParallelLevel": 2,
+      "startedAt": "2026-10-24T17:21:29.1228026+02:00",
+      "finishedAt": "2026-10-24T17:23:37.0169148+02:00",
+      "seconds": 127.8864717,
+      "exitCode": 0,
+      "downloads": 0
+    }
+  ],
+  "totalBuildAttemptSeconds": 234.7367433,
+  "initialDownloadsSeconds": 0,
+  "preexistingToolchainDownloadSeconds": null,
+  "metroInitialBundleSeconds": 13.444,
+  "apk": "artifacts/android/event-check-in-debug-arm64-v8a.apk",
+  "apkBytes": 61356687,
+  "apkSha256": "AF91C5D59A7EB52ABEEBAA516652AC72AE331CE9045094168D8A53A465E23525",
+  "device": {
+    "model": "M2101K9G",
+    "android": "12",
+    "abi": "arm64-v8a",
+    "api": 31
+  },
+  "checks": {
+    "nativeManual": "NOT VERIFIED, device blocks INJECT_EVENTS",
+    "nativePersistence": "PASS, force-stop + fresh launch stays 1/6",
+    "nativeDuplicate": "PASS, repeated QR stays 1/6",
+    "lint": "PASS",
+    "nativeCheckIn": "PASS, 0/6 to 1/6",
+    "unitTestsPassed": 16,
+    "unitTestsFailed": 0,
+    "typecheck": "PASS",
+    "nativeQr": "PASS, human-assisted scan EVT-002"
+  },
+  "nativeStorage": [
+    {
+      "key": "@event-check-in/tech-meetup-2026/check-ins/v1",
+      "value": "[\"EVT-002\"]"
+    }
+  ]
+}

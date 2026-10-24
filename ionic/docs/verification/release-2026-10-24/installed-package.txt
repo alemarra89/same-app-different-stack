@@ -1,0 +1,350 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        42d0a89 it.demo.eventcheckin.ionic/.MainActivity filter f596a8e
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        f5dd2af it.demo.eventcheckin.ionic/androidx.profileinstaller.ProfileInstallReceiver filter a85a19a
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        f5dd2af it.demo.eventcheckin.ionic/androidx.profileinstaller.ProfileInstallReceiver filter 37e36bc
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      androidx.profileinstaller.action.SKIP_FILE:
+        f5dd2af it.demo.eventcheckin.ionic/androidx.profileinstaller.ProfileInstallReceiver filter 2d2c645
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        f5dd2af it.demo.eventcheckin.ionic/androidx.profileinstaller.ProfileInstallReceiver filter 93eeacb
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.android.gms.metadata.MODULE_DEPENDENCIES:
+        f5602a8 it.demo.eventcheckin.ionic/com.google.android.gms.metadata.ModuleDependencies filter 25e81c1
+          Action: "com.google.android.gms.metadata.MODULE_DEPENDENCIES"
+
+Domain verification status:
+
+Permissions:
+  Permission [it.demo.eventcheckin.ionic.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (240433f):
+    sourcePackage=it.demo.eventcheckin.ionic
+    uid=10662 gids=[] type=0 prot=signature
+    perm=PermissionInfo{b94040c it.demo.eventcheckin.ionic.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+
+Registered ContentProviders:
+  it.demo.eventcheckin.ionic/androidx.core.content.FileProvider:
+    Provider{4899155 it.demo.eventcheckin.ionic/androidx.core.content.FileProvider}
+  it.demo.eventcheckin.ionic/com.google.mlkit.common.internal.MlKitInitProvider:
+    Provider{598f76a it.demo.eventcheckin.ionic/com.google.mlkit.common.internal.MlKitInitProvider}
+  it.demo.eventcheckin.ionic/io.ionic.libs.ioncameralib.IONCAMRFileProvider:
+    Provider{98354f8 it.demo.eventcheckin.ionic/io.ionic.libs.ioncameralib.IONCAMRFileProvider}
+  it.demo.eventcheckin.ionic/androidx.startup.InitializationProvider:
+    Provider{9eedd1 it.demo.eventcheckin.ionic/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [it.demo.eventcheckin.ionic.mlkitinitprovider]:
+    Provider{598f76a it.demo.eventcheckin.ionic/com.google.mlkit.common.internal.MlKitInitProvider}
+      applicationInfo=ApplicationInfo{22273d3 it.demo.eventcheckin.ionic}
+  [it.demo.eventcheckin.ionic.androidx-startup]:
+    Provider{9eedd1 it.demo.eventcheckin.ionic/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{27cb10 it.demo.eventcheckin.ionic}
+  [it.demo.eventcheckin.ionic.fileprovider]:
+    Provider{4899155 it.demo.eventcheckin.ionic/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{f308609 it.demo.eventcheckin.ionic}
+  [it.demo.eventcheckin.ionic.camera.provider]:
+    Provider{98354f8 it.demo.eventcheckin.ionic/io.ionic.libs.ioncameralib.IONCAMRFileProvider}
+      applicationInfo=ApplicationInfo{476000e it.demo.eventcheckin.ionic}
+
+Key Set Manager:
+  [it.demo.eventcheckin.ionic]
+      Signing KeySets: 305
+
+Packages:
+  Package [it.demo.eventcheckin.ionic] (3167a2f):
+    userId=10662
+    pkg=Package{926883c it.demo.eventcheckin.ionic}
+    codePath=/data/app/~~LBd29kaQ0CjKi-B1Rb19DQ==/it.demo.eventcheckin.ionic-0SiZgTSnMhfw_jQ3TC2LcA==
+    resourcePath=/data/app/~~LBd29kaQ0CjKi-B1Rb19DQ==/it.demo.eventcheckin.ionic-0SiZgTSnMhfw_jQ3TC2LcA==
+    legacyNativeLibraryDir=/data/app/~~LBd29kaQ0CjKi-B1Rb19DQ==/it.demo.eventcheckin.ionic-0SiZgTSnMhfw_jQ3TC2LcA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=1 minSdk=26 targetSdk=36
+    minExtensionVersions=[]
+    versionName=1.0
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=4
+    applicationInfo=PackageImpl{926883c it.demo.eventcheckin.ionic}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[]
+    queriesIntents=[Intent { act=android.media.action.IMAGE_CAPTURE }, Intent { act=android.intent.action.GET_CONTENT }, Intent { act=android.intent.action.PICK }]
+    dataDir=/data/user/0/it.demo.eventcheckin.ionic
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+    timeStamp=2026-10-24 19:45:05
+    firstInstallTime=2026-10-24 18:21:25
+    lastUpdateTime=2026-10-24 19:45:05
+    loadingProgress=95%
+    signatures=PackageSignatures{d5279c5 version:4, signatures:[92585228], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    declared permissions:
+      it.demo.eventcheckin.ionic.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.CAMERA
+      it.demo.eventcheckin.ionic.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.ACCESS_NETWORK_STATE
+    install permissions:
+      it.demo.eventcheckin.ionic.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+    User 0: ceDataInode=844208 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-Jhhw.frro
+        /data/resource-cache/com.android.systemui-accent-cf8j.frro
+      gids=[3003]
+      runtime permissions:
+        android.permission.CAMERA: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via package name:
+  queries via intent:
+    com.android.thememanager:
+      it.demo.eventcheckin.ionic
+    com.miui.player:
+      it.demo.eventcheckin.ionic
+    com.xiaomi.midrop:
+      it.demo.eventcheckin.ionic
+    com.miui.weather2:
+      it.demo.eventcheckin.ionic
+    com.miui.videoplayer:
+      it.demo.eventcheckin.ionic
+    com.miui.global.packageinstaller:
+      it.demo.eventcheckin.ionic
+    com.xiaomi.account:
+      it.demo.eventcheckin.ionic
+    com.miui.android.fashiongallery:
+      it.demo.eventcheckin.ionic
+    com.amazon.mShop.android.shopping:
+      it.demo.eventcheckin.ionic
+    de.axelspringer.yana.zeropage:
+      it.demo.eventcheckin.ionic
+    com.tripadvisor.tripadvisor:
+      it.demo.eventcheckin.ionic
+    com.camerasideas.trimmer:
+      it.demo.eventcheckin.ionic
+    com.app.tgtg:
+      it.demo.eventcheckin.ionic
+    com.ryanair.cheapflights:
+      it.demo.eventcheckin.ionic
+    com.amazon.dee.app:
+      it.demo.eventcheckin.ionic
+    com.miniclip.eightballpool:
+      it.demo.eventcheckin.ionic
+    com.google.android.play.games:
+      it.demo.eventcheckin.ionic
+    beetles.puzzle.solitaire:
+      it.demo.eventcheckin.ionic
+    com.mi.globalbrowser:
+      it.demo.eventcheckin.ionic
+    com.mcdonalds.mobileapp:
+      it.demo.eventcheckin.ionic
+    it.demo.eventcheckin.ionic:
+      com.google.android.apps.docs
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Package Changes:
+  Sequence number=326
+  User 0:
+    seq=15, package=com.google.android.ext.services
+    seq=16, package=com.xiaomi.discover
+    seq=21, package=com.miui.android.fashiongallery
+    seq=22, package=com.facebook.system
+    seq=23, package=com.facebook.services
+    seq=135, package=com.miui.analytics
+    seq=136, package=com.miui.global.packageinstaller
+    seq=137, package=com.android.thememanager
+    seq=140, package=com.android.vending
+    seq=142, package=dev.cwolf.birthdaycalendar
+    seq=143, package=com.samsung.accessory
+    seq=197, package=com.google.android.tts
+    seq=198, package=com.google.android.gms
+    seq=199, package=com.amazon.mShop.android.shopping
+    seq=201, package=com.google.android.keep
+    seq=202, package=com.google.android.apps.walletnfcrel
+    seq=203, package=com.ebay.mobile
+    seq=206, package=com.thetrainline
+    seq=207, package=com.google.android.apps.docs
+    seq=208, package=com.idealista.android
+    seq=209, package=com.google.android.youtube
+    seq=210, package=net.easypark.android
+    seq=211, package=com.google.android.apps.photos
+    seq=212, package=com.canva.editor
+    seq=216, package=com.google.android.apps.messaging
+    seq=217, package=com.booking
+    seq=218, package=de.motain.iliga
+    seq=219, package=com.lafourchette.lafourchette
+    seq=221, package=de.zalando.mobile
+    seq=222, package=com.miui.videoplayer
+    seq=226, package=com.nianticlabs.pokemongo
+    seq=229, package=com.google.android.contacts
+    seq=231, package=com.tripadvisor.tripadvisor
+    seq=232, package=com.google.android.apps.maps
+    seq=234, package=com.app.tgtg
+    seq=235, package=it.ersel.mobile.valid
+    seq=236, package=com.lab73043.regalinus
+    seq=237, package=it.bancagenerali.ebmapp18devqa
+    seq=239, package=it.lacassa.lucca.mobile
+    seq=241, package=com.aura.oobe.vodafone
+    seq=242, package=it.csebo.mang_app09990_0
+    seq=243, package=it.csebo.fec3mobileValid09990
+    seq=244, package=host.exp.exponent
+    seq=245, package=com.marino.saltylab
+    seq=246, package=com.neo.caresoft
+    seq=247, package=com.centurymt.bijoylivescore
+    seq=248, package=com.alexdb.footcriclive
+    seq=249, package=it.sparkasse.retail.mobile
+    seq=250, package=it.bancagenerali.ebmapp18.valid
+    seq=251, package=it.copergmps.rt.pf.android.sp.bmps
+    seq=252, package=com.illimity.mobile.rtl
+    seq=253, package=com.paypal.android.p2pmobile
+    seq=254, package=com.satispay.customer
+    seq=255, package=com.posteitaliane.spim
+    seq=256, package=posteitaliane.posteapp.appposteid
+    seq=257, package=it.inps.mobile.app.servizi.activity
+    seq=258, package=it.tootech.mutuocredem
+    seq=259, package=com.socios
+    seq=260, package=com.edenred.mobiletr
+    seq=261, package=it.pagopa.io.app
+    seq=262, package=com.binance.dev
+    seq=263, package=posteitaliane.posteapp.appbpol
+    seq=264, package=eu.europa.publications.reopeneu
+    seq=265, package=posteitaliane.posteapp.apppostepay
+    seq=266, package=com.CredemMobile
+    seq=267, package=hr.asseco.android.mtoken.credem.credemprod
+    seq=268, package=it.csebo.aziapp.valid
+    seq=269, package=it.dispensaemilia
+    seq=270, package=com.rcplatform.nocrop
+    seq=271, package=com.Unisalute
+    seq=272, package=com.media.music.mp3.musicplayer
+    seq=274, package=it.lacassa.ravenna.aziapp.dev
+    seq=275, package=it.civibank.mobile
+    seq=276, package=it.lacassa.ravenna.aziapp.qa
+    seq=277, package=it.bancadelpiemonte.bp.edesk
+    seq=278, package=it.linksmt.linksmt_designsystem_example
+    seq=279, package=com.udemy.android
+    seq=280, package=com.sitael.vending
+    seq=281, package=com.shazam.android
+    seq=282, package=org.vernazza.androidfuel
+    seq=283, package=it.vodafone.my190
+    seq=284, package=remoteac.air.conditioner.remote.control.ac
+    seq=285, package=com.weward
+    seq=286, package=com.alexvas.dvr
+    seq=287, package=com.spotify.music
+    seq=288, package=com.microsoft.office.outlook
+    seq=289, package=com.azure.authenticator
+    seq=290, package=it.bancagenerali.mobile
+    seq=291, package=it.lacassa.ravenna.mobile
+    seq=292, package=it.bapr.lympha
+    seq=293, package=it.bapr.lympha.valid
+    seq=294, package=com.microsoft.teams
+    seq=295, package=com.facebook.pages.app
+    seq=307, package=com.facebook.appmanager
+    seq=308, package=com.dazn
+    seq=309, package=com.pokemontv
+    seq=310, package=com.nowtv.it
+    seq=311, package=com.amazon.avod.thirdpartyclient
+    seq=312, package=com.netflix.mediaclient
+    seq=313, package=tv.twitch.android.app
+    seq=314, package=com.effortel.unomobile
+    seq=315, package=org.chromium.webapk.a382ebbf3022f1918_v2
+    seq=316, package=it.cineca.app.uniba
+    seq=317, package=com.google.android.apps.docs.editors.sheets
+    seq=320, package=it.demo.eventcheckin.kmp.test
+    seq=322, package=it.demo.eventcheckin.reactnative
+    seq=323, package=it.demo.eventcheckin.flutter
+    seq=324, package=it.demo.eventcheckin.kmp
+    seq=325, package=it.demo.eventcheckin.ionic
+
+
+Dexopt state:
+  [it.demo.eventcheckin.ionic]
+    path: /data/app/~~LBd29kaQ0CjKi-B1Rb19DQ==/it.demo.eventcheckin.ionic-0SiZgTSnMhfw_jQ3TC2LcA==/base.apk
+      arm64: [status=run-from-apk] [reason=unknown]
+      odex file size: null
+
+
+Compiler stats:
+  [it.demo.eventcheckin.ionic]
+     base.apk - 1174
+
+APEX session state:
+  Session ID: 898488184
+    State: STAGED
+  Session ID: 1098688285
+    State: STAGED
+  Session ID: 188711598
+    State: STAGED
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+Snapshot statistics
+   Unrecorded-hits: 17771  Cork-level: 0
+   Summary stats               TotBlds     TotUsed     TotCork     BigBlds    ShortLvd     TotTime     MaxTime
+          0:29         now           3        4908           0           0           1           3           3
+          1:29        0:29           0           0           0           0           0           0           0
+          2:29        1:29           0           0           0           0           0           0           0
+          3:29        2:29           0           0           0           0           0           0           0
+          4:29        3:29           0           0           0           0           0           0           0
+          5:29        4:29           0           0           0           0           0           0           0
+          6:29        5:29           0           0           0           0           0           0           0
+          7:29        6:29           0           0           0           0           0           0           0
+          8:29        7:29           0           0           0           0           0           0           0
+          9:29        8:29           0           0           0           0           0           0           0
+   281:21:25:56         now        1532     5256263           0          76         350        3330          37
+
+   Build times                  <= 1ms      <= 2ms      <= 5ms     <= 10ms     <= 20ms     <= 50ms    <= 100ms     > 100ms
+          0:29         now           2           0           1           0           0           0           0           0
+          1:29        0:29           0           0           0           0           0           0           0           0
+          2:29        1:29           0           0           0           0           0           0           0           0
+          3:29        2:29           0           0           0           0           0           0           0           0
+          4:29        3:29           0           0           0           0           0           0           0           0
+          5:29        4:29           0           0           0           0           0           0           0           0
+          6:29        5:29           0           0           0           0           0           0           0           0
+          7:29        6:29           0           0           0           0           0           0           0           0
+          8:29        7:29           0           0           0           0           0           0           0           0
+          9:29        8:29           0           0           0           0           0           0           0           0
+   281:21:25:56         now        1134          93         184          56          53          12           0           0
+
+   Use counters                   <= 1        <= 2        <= 5       <= 10       <= 20       <= 50      <= 100       > 100
+          0:29         now           1           0           0           0           0           0           0           2
+          1:29        0:29           0           0           0           0           0           0           0           0
+          2:29        1:29           0           0           0           0           0           0           0           0
+          3:29        2:29           0           0           0           0           0           0           0           0
+          4:29        3:29           0           0           0           0           0           0           0           0
+          5:29        4:29           0           0           0           0           0           0           0           0
+          6:29        5:29           0           0           0           0           0           0           0           0
+          7:29        6:29           0           0           0           0           0           0           0           0
+          8:29        7:29           0           0           0           0           0           0           0           0
+          9:29        8:29           0           0           0           0           0           0           0           0
+   281:21:25:56         now         270          26          53          42          65         114         117         844

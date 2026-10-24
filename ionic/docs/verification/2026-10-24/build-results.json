@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-24",
+  "timezone": "Europe/Rome",
+  "java_home": "C:\\Program Files\\Android\\Android Studio\\jbr",
+  "android_home": "C:\\Users\\utente\\AppData\\Local\\Android\\Sdk",
+  "offline": true,
+  "download_seconds_this_run": 0,
+  "historical_download_seconds": null,
+  "phases": [
+    {
+      "name": "dependency-check",
+      "command": "npm ls --offline --depth=0",
+      "started_utc": "2026-10-24T16:18:22.6001256+00:00",
+      "finished_utc": "2026-10-24T16:18:39.8475492+00:00",
+      "elapsed_seconds": 17.236,
+      "exit_code": 0
+    },
+    {
+      "name": "prepare-offline",
+      "command": "gradlew clean app:dependencies --configuration debugRuntimeClasspath --offline --no-daemon --max-workers=2 --console=plain",
+      "started_utc": "2026-10-24T16:18:39.9045609+00:00",
+      "finished_utc": "2026-10-24T16:19:04.4838106+00:00",
+      "elapsed_seconds": 24.579,
+      "exit_code": 0
+    },
+    {
+      "name": "build-web-attempt-1",
+      "command": "npm run build",
+      "started_utc": "2026-10-24T16:19:04.5080156+00:00",
+      "finished_utc": "2026-10-24T16:19:43.3874259+00:00",
+      "elapsed_seconds": 38.879,
+      "exit_code": 0
+    },
+    {
+      "name": "sync-android",
+      "command": "cap sync android (installed local CLI)",
+      "started_utc": "2026-10-24T16:19:43.3994816+00:00",
+      "finished_utc": "2026-10-24T16:19:51.7644796+00:00",
+      "elapsed_seconds": 8.365,
+      "exit_code": 0
+    },
+    {
+      "name": "build-debug-attempt-1",
+      "command": "gradlew app:assembleDebug --offline --no-build-cache --no-daemon --max-workers=2 --console=plain",
+      "started_utc": "2026-10-24T16:19:51.7785368+00:00",
+      "finished_utc": "2026-10-24T16:20:59.6996833+00:00",
+      "elapsed_seconds": 67.921,
+      "exit_code": 0
+    }
+  ]
+}

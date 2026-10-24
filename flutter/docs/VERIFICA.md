@@ -1,5 +1,9 @@
 # Verifica e resoconto standard
 
+**Nuova verifica Release del 24/10/2026:** [misura separata della build e prova senza server sul telefono, con video e screenshot](RELEASE_BUILD_2026-10-24.md). Primo tentativo riuscito, APK universale 63,82 MB, check-in e persistenza dopo arresto completo verificati.
+
+**Report storico del 23/10/2026.** Per la nuova misura della build debug del 24/10, con preparazione/download separati e verifica reale di scanner, check-in e persistenza Android dopo arresto del processo, consultare [DEBUG_BUILD_2026-10-24.md](DEBUG_BUILD_2026-10-24.md). Le indicazioni «non verificato» sotto si riferiscono alla sessione originaria.
+
 Data: 23/10/2026. Host Windows. Progetto creato da zero con template ufficiali Flutter.
 
 ## Framework, librerie e dipendenze

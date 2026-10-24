@@ -9,6 +9,7 @@ local.properties
 DerivedData/
 *.jks
 *.keystore
+*.apk.idsig
 iosApp/Configuration/Local.xcconfig
 verification/local/
 __pycache__/

@@ -1,0 +1,7 @@
+Starting: Intent { cmp=it.demo.eventcheckin.flutter/.MainActivity }
+Status: ok
+LaunchState: COLD
+Activity: it.demo.eventcheckin.flutter/.MainActivity
+TotalTime: 292
+WaitTime: 298
+Complete

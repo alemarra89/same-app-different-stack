@@ -1,0 +1,24 @@
+{
+  "stage": "scanned",
+  "texts": [
+    "Scansiona QR",
+    "Inserimento manuale",
+    "Usa l’ID sul biglietto, anche senza fotocamera.",
+    "Codice partecipante",
+    "Registra check-in",
+    "Check-in effettuato: Marco Bianchi",
+    "Partecipanti",
+    "Cerca per nome o ID",
+    "Giulia Rossi",
+    "EVT-001",
+    "In attesa",
+    "Marco Bianchi",
+    "EVT-002",
+    "Presente"
+  ],
+  "present_ids": [
+    "EVT-002"
+  ],
+  "pid": "14647",
+  "restart": null
+}

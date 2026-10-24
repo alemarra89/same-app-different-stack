@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-24",
+  "timezone": "Europe/Rome",
+  "firstAttemptSucceeded": true,
+  "initialBuildSeconds": 138.368,
+  "preparationSeconds": 39.12,
+  "downloadsDuringVerificationSeconds": 0,
+  "historicalSdkDependencyDownloadSeconds": null,
+  "offline": true,
+  "cleanOutputs": true,
+  "gradleBuildCache": false,
+  "abis": [
+    "armeabi-v7a",
+    "arm64-v8a",
+    "x86_64"
+  ],
+  "apk": {
+    "path": "artifacts/android/event-check-in-flutter-debug.apk",
+    "bytes": 163196081,
+    "sha256": "E7897A92B822110D20C23133EB6907A6EFAAC2878A87F3D1CC8C72D090DDFDDB",
+    "package": "it.demo.eventcheckin.flutter"
+  },
+  "device": {
+    "model": "M2101K9G",
+    "android": "12",
+    "api": 31
+  },
+  "checks": {
+    "analyze": "PASS",
+    "testsPassed": 17,
+    "testsFailed": 0,
+    "initialState": "PASS: 0/6",
+    "qr": "PASS: human-assisted camera scan EVT-002",
+    "checkIn": "PASS: Marco Bianchi presente, 1/6",
+    "nativePersistence": "PASS: force-stop, new process, 1/6 restored",
+    "nativeDuplicate": "NOT TESTED ON DEVICE; covered by automated tests",
+    "nativeManualInvalidReset": "NOT TESTED ON DEVICE; covered by widget and domain tests"
+  },
+  "storage": {
+    "ids": [
+      "EVT-002"
+    ],
+    "file": "files/datastore/FlutterSharedPreferences.preferences_pb",
+    "key": "event_check_in.tech_meetup_2026.present_ids"
+  },
+  "restart": {
+    "afterPid": "13824",
+    "beforePid": "12961",
+    "stoppedPid": null
+  }
+}

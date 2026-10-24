@@ -1,5 +1,9 @@
 # Inventario della consegna
 
+Inventario storico della consegna del 23/10/2026. Le aggiunte del 24/10/2026 sono il [resoconto della build debug](DEBUG_BUILD_2026-10-24.md) e le relative evidenze in `verification/2026-10-24/`, elencate nel resoconto.
+
+La successiva [verifica Release](RELEASE_BUILD_2026-10-24.md) include evidenze in `verification/release-2026-10-24/` e l'aggiornamento del plugin dei percorsi CMake su Windows.
+
 44 file nel progetto sorgente, inclusi configurazioni, lockfile, asset del template, documentazione, test e immagini di verifica. Il repository era vuoto: sono tutti file creati in questa sessione.
 
 Esclusi: `node_modules/`, `android/`, `ios/`, `dist/`, `artifacts/`, `.test-build/`, `.git/`, `.expo/`. I progetti nativi e i bundle sono output generati, non inclusi nel conteggio comparativo.

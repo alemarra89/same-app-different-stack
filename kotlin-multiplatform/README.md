@@ -2,6 +2,10 @@
 
 Demo locale per **Tech Meetup 2026 · 23/10/2026**, interfaccia italiana, sei partecipanti invarianti. UI Compose condivisa in `shared/src/commonMain`; scanner e storage specifici per Android/iOS. Nessun server, login, analytics, chiamata remota o modello AI nell’app.
 
+**Verifica aggiornata al 24/10/2026:** [build debug e prova Android reale](verification/DEBUG_BUILD_2026-10-24.md). Primo tentativo riuscito in **57,567 s**, preparazione separata **29,991 s**, nessun download nella compilazione offline. Scanner QR, check-in di Marco e persistenza dopo arresto completo verificati sul telefono M2101K9G; 12 test JVM e 1 test Android passati, lint senza rilievi. [APK debug](artifacts/android/event-check-in-kmp-debug.apk) disponibile localmente, escluso da Git. iOS resta non verificato.
+
+**Release Android verificata il 24/10/2026:** [risultati, video e screenshot](verification/RELEASE_BUILD_2026-10-24.md). Prima compilazione riuscita in **82,670 s**, firma locale separata **1,633 s**, [APK universale](artifacts/android/event-check-in-kmp-release.apk) **10,99 MB**. Installazione, nuovo check-in e persistenza sul telefono riusciti senza server di sviluppo; variante non debuggabile, firmata con il certificato Debug locale per il test. La Release resta installata con Giulia e Marco presenti.
+
 ## Requisiti e versioni fissate
 
 Verifica delle fonti e degli artefatti Maven: **23 ottobre 2026**. Si parte dalla struttura del [template ufficiale Kotlin/KMP-App-Template](https://github.com/Kotlin/KMP-App-Template): modulo Android separato, libreria KMP, Gradle Kotlin DSL, version catalog e framework statico richiamato da Xcode. Sono rimossi rete, DI, navigazione e altre dipendenze del template non necessarie alla demo.
@@ -142,7 +146,7 @@ python tools/verify_android.py --serial emulator-5554
 
 **Il comando azzera i dati della sola app demo**, poi verifica criteri 1–6, stato Giulia, annullamento del reset, persistenza dopo force-stop, permesso negato con modulo manuale utilizzabile, apertura/annullamento scanner. Richiede device sbloccato, portrait, Android recente con `input keycombination`, lingua di sistema compatibile con il dialogo standard dei permessi. Non passa dal decoder per simulare una scansione reale. Screenshot in `verification/local/` (esclusi da Git).
 
-Per il criterio 7, su **entrambi i dispositivi reali**: azzerare → aprire scanner → concedere permesso → inquadrare `demo-qr/EVT-002.svg` → verificare Marco Bianchi Presente e **1 / 6** → ripetere (nessun incremento) → riaprire l’app. Provare anche rifiuto permesso e camera occupata. Il criterio 7 rimane **NON VERIFICATO** finché questi passaggi non vengono eseguiti realmente.
+Per il criterio 7, su **entrambi i dispositivi reali**: azzerare → aprire scanner → concedere permesso → inquadrare `demo-qr/EVT-002.svg` → verificare Marco Bianchi Presente e **1 / 6** → ripetere (nessun incremento) → riaprire l’app. Provare anche rifiuto permesso e camera occupata. Il **24/10/2026** lettura ottica, check-in e riapertura con persistenza sono stati verificati su Android reale: [risultati e limiti](verification/DEBUG_BUILD_2026-10-24.md). La lettura ripetuta nella UI del telefono, la camera occupata e iOS restano non verificati in questa sessione.
 
 ## Build release
 
@@ -160,7 +164,7 @@ Output: `androidApp/build/outputs/apk/release/androidApp-release-unsigned.apk` e
 & "$env:ANDROID_HOME\build-tools\37.0.0\apksigner.bat" verify build/EventCheckIn-release.apk
 ```
 
-Per AAB firmare con `jarsigner` oppure configurare la propria signing configuration in Android Studio. Generazione chiavi, firma e pubblicazione **non eseguite**.
+Per AAB firmare con `jarsigner` oppure configurare la propria signing configuration in Android Studio. Per la [prova Release del 24/10/2026](verification/RELEASE_BUILD_2026-10-24.md) l'APK è stato firmato con il certificato Android Debug locale e installato sul telefono. Generazione di chiavi per lo store, firma di distribuzione e pubblicazione **non eseguite**.
 
 iOS su Mac, dopo aver configurato Team e provisioning:
 

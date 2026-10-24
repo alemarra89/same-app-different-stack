@@ -12,7 +12,7 @@
 /dist
 /test-results
 /playwright-report
-/artifacts/*.apk
+/artifacts/
 *.tsbuildinfo
 *.jks
 *.keystore

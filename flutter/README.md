@@ -1,5 +1,9 @@
 # Event Check-in · Flutter
 
+**Release Android del 24/10/2026:** build pulita riuscita al primo tentativo in **184,14 s**, preparazione offline **26,90 s** separata, APK universale **63,82 MB (60,87 MiB)**. Installata e provata sul telefono senza server di sviluppo: nuovo check-in e persistenza di **2 / 6 presenti** dopo arresto completo verificati. [Report e APK](docs/RELEASE_BUILD_2026-10-24.md), [video di 22 secondi](docs/event-check-in-flutter-release-demo.mp4), [screenshot](docs/verification/release-2026-10-24/release-restored.png). Firma debug per il test locale.
+
+**Verifica Android del 24/10/2026:** APK debug riuscito al primo tentativo in **138,37 s**, dopo pulizia degli output e con dipendenze già disponibili offline; preparazione **39,12 s** separata, nessun download. Scanner QR reale, check-in e persistenza dopo arresto completo del processo verificati sul telefono Android; analisi pulita e **17 test passati**. [Report, APK ed evidenze](docs/DEBUG_BUILD_2026-10-24.md).
+
 Demo locale per **Tech Meetup 2026 · 23/10/2026**, interamente in italiano. Android e iOS sono i target principali; è incluso un target Web separato con inserimento manuale. Nessun account, backend, analytics o API remota. L’unica informazione persistita è l’insieme degli ID presenti.
 
 ## Requisiti e versioni
@@ -128,7 +132,7 @@ Usare QR contenenti il solo ID, senza URL, JSON o token. Per il test su telefono
 4. Inserire `ERR-999`: **QR non valido**, resta 1 / 6.
 5. Chiudere normalmente e riaprire: resta 1 / 6 sullo stesso dispositivo/origine.
 6. Reimposta demo → Annulla conserva gli stati; Reimposta li azzera a 0 / 6.
-7. Su dispositivo reale, Scansiona QR → concedere camera → leggere `EVT-002`: Marco **Presente**. Questo passaggio è **NON VERIFICATO** qui e non impedisce gli altri.
+7. Su dispositivo reale, Scansiona QR → concedere camera → leggere `EVT-002`: Marco **Presente**. Passaggio verificato su Android il 24/10/2026 con intervento umano; [QR di prova](docs/qr/EVT-002.png) e [riscontri](docs/DEBUG_BUILD_2026-10-24.md). iOS non verificato.
 
 Ricerca per nome/ID senza distinzione maiuscole, contatore globale anche quando l’elenco è filtrato. Layout a scorrimento, larghezza massima 760, righe adattive e font di sistema scalabile; pulsanti almeno 48 logical pixel, stati testuali e live region per feedback e contatore. Test del layout a 320 px con testo 200%. TalkBack/VoiceOver reali: NON VERIFICATI.
 
@@ -138,4 +142,4 @@ Consultare [docs/VERIFICA.md](docs/VERIFICA.md) per comandi, risultati realmente
 
 **Desktop:** non sono stati generati runner Windows/macOS/Linux. `mobile_scanner` dichiara macOS ma non Windows/Linux; qui l’adattatore abilita soltanto Android/iOS. Una futura build desktop richiede runner, toolchain e un adattatore scanner esplicito. Su macOS occorrono entitlement camera, descrizione privacy e verifiche hardware; su Windows/Linux occorre un altro backend. Il modulo manuale resta il fallback. Un target compilabile non prova che la camera funzioni. Visual Studio C++ non è installato su questo host. Desktop: NON VERIFICATO.
 
-Esito finale: **17 test passati**, analisi pulita, **APK Android debug e release compilati**, Web compilato e provato nel browser. **90 file consegnabili** ([inventario](docs/FILES.md)). Release Android senza permessi di rete, verificata sull’APK; firma debug per demo. iOS e scansione QR fisica restano NON VERIFICATI. Vedere il report per dettagli e avvisi residui.
+Esito: **17 test passati**, analisi pulita, **APK Android debug e release compilati**, Web compilato e provato nel browser. Inventario iniziale del 23/10: **90 file** ([inventario e integrazioni](docs/FILES.md)). Release Android senza permessi di rete, verificata sull’APK; firma debug per demo. Il 24/10 sono stati verificati anche scanner QR fisico, check-in e persistenza Android dopo arresto del processo. iOS resta NON VERIFICATO. Vedere i report per dettagli e avvisi residui.

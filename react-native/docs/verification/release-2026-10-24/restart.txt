@@ -1,0 +1,7 @@
+Starting: Intent { cmp=it.demo.eventcheckin.reactnative/.MainActivity }
+Status: ok
+LaunchState: COLD
+Activity: it.demo.eventcheckin.reactnative/.MainActivity
+TotalTime: 198
+WaitTime: 206
+Complete

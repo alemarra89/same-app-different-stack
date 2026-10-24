@@ -1,0 +1,152 @@
+{
+  "date": "2026-10-24",
+  "timezone": "Europe/Rome",
+  "platform": "Android",
+  "variant": "release",
+  "package": "it.demo.eventcheckin.reactnative",
+  "abi": "arm64-v8a",
+  "firstAttemptSucceeded": false,
+  "successfulAttempt": 3,
+  "attempts": [
+    {
+      "phase": "assembleRelease",
+      "attempt": 1,
+      "abi": "arm64-v8a",
+      "afterClean": true,
+      "offline": true,
+      "buildCache": false,
+      "maxWorkers": 2,
+      "cmakeBuildParallelLevel": 2,
+      "startedAt": "2026-10-24T18:49:08.5807806+02:00",
+      "finishedAt": "2026-10-24T18:49:36.5162841+02:00",
+      "seconds": 27.9270205,
+      "exitCode": 1,
+      "downloads": 0
+    },
+    {
+      "phase": "assembleRelease",
+      "attempt": 2,
+      "abi": "arm64-v8a",
+      "afterClean": true,
+      "previousAttemptCompiledSources": false,
+      "offline": true,
+      "buildCache": false,
+      "maxWorkers": 2,
+      "cmakeBuildParallelLevel": 2,
+      "startedAt": "2026-10-24T18:52:20.0082766+02:00",
+      "finishedAt": "2026-10-24T18:54:05.7863810+02:00",
+      "seconds": 105.7700245,
+      "exitCode": 1,
+      "downloads": 0
+    },
+    {
+      "phase": "assembleRelease",
+      "attempt": 3,
+      "abi": "arm64-v8a",
+      "androidRegenerated": true,
+      "reusesDependencyOutputs": true,
+      "offline": true,
+      "buildCache": false,
+      "maxWorkers": 2,
+      "cmakeBuildParallelLevel": 2,
+      "startedAt": "2026-10-24T18:55:54.7118617+02:00",
+      "finishedAt": "2026-10-24T19:01:23.6527802+02:00",
+      "seconds": 328.9319375,
+      "exitCode": 0,
+      "downloads": 0
+    }
+  ],
+  "totalBuildAttemptSeconds": 462.6289825,
+  "preparationPhases": [
+    {
+      "phase": "clean-and-release-prefetch",
+      "offline": true,
+      "seconds": 44.5670437,
+      "exitCode": 1,
+      "downloads": 0
+    },
+    {
+      "phase": "release-prefetch",
+      "offline": true,
+      "seconds": 28.1772806,
+      "exitCode": 1,
+      "downloads": 0
+    },
+    {
+      "phase": "release-downloads-and-resolution",
+      "offline": false,
+      "seconds": 354.9907947,
+      "exitCode": 1,
+      "includedInBuildTime": false
+    },
+    {
+      "phase": "release-downloads-and-resolution",
+      "attempt": 2,
+      "offline": false,
+      "seconds": 55.3017207,
+      "exitCode": 0,
+      "includedInBuildTime": false
+    },
+    {
+      "phase": "release-and-lint-downloads",
+      "offline": false,
+      "seconds": 81.3263623,
+      "exitCode": 1,
+      "includedInBuildTime": false
+    },
+    {
+      "phase": "final-release-lint-prefetch",
+      "offline": true,
+      "seconds": 28.6749254,
+      "exitCode": 0,
+      "downloads": 0
+    },
+    {
+      "phase": "prebuild-short-cmake-staging",
+      "seconds": 8.8007897,
+      "exitCode": 0,
+      "includedInBuildTime": false
+    }
+  ],
+  "totalPreparationSeconds": 601.8389171,
+  "downloadAndResolutionPhaseSeconds": 491.6188777,
+  "apk": {
+    "path": "artifacts/android/event-check-in-release-arm64-v8a.apk",
+    "bytes": 29652801,
+    "decimalMB": 29.652801,
+    "MiB": 28.279114723205566,
+    "sha256": "88CE48CF59863502A458CA3A89025151325D7C9F839762DA4221D2E6D6691708",
+    "embeddedBundle": "assets/index.android.bundle",
+    "debuggable": false,
+    "signing": "template debug key, release build type"
+  },
+  "device": {
+    "model": "M2101K9G",
+    "android": "12",
+    "api": 31
+  },
+  "noDevelopmentServer": {
+    "time": "2026-10-24T19:02:16.3644989+02:00",
+    "metroPort8081Listening": false,
+    "adbReverseList": ""
+  },
+  "checks": {
+    "typecheck": "PASS",
+    "lint": "PASS",
+    "unitTestsPassed": 16,
+    "unitTestsFailed": 0,
+    "nativeColdLaunch": "PASS, 1/6 restored after upgrade from debug",
+    "nativeManualCheckIn": "PASS, human enters EVT-001 and confirms; UI changes to 2/6",
+    "nativePersistence": "PASS, force-stop and fresh launch still 2/6",
+    "releaseQrScanner": "NOT RETESTED, previously tested on debug build"
+  },
+  "nativeColdLaunchTotalTimeMs": 225,
+  "media": {
+    "video": "artifacts/android/event-check-in-release-demo.mp4",
+    "seconds": 29.7876,
+    "bytes": 2077901,
+    "width": 720,
+    "height": 1600,
+    "codec": "h264"
+  }
+}

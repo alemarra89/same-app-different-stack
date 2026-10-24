@@ -1,0 +1,5 @@
+{
+  "adb_reverse": "",
+  "launch": "Direct Android Activity, no development server started",
+  "installed_flags": "HAS_CODE ALLOW_CLEAR_USER_DATA"
+}

@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "cases": [
+    "trim",
+    "valid",
+    "duplicate",
+    "invalid",
+    "cancel reset",
+    "force-stop persistence",
+    "confirmed reset"
+  ],
+  "mocks": false
+}

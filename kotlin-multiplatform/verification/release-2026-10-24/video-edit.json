@@ -1,0 +1,17 @@
+{
+  "source": "build/release-recordings/original.mp4",
+  "source_intervals_seconds": [
+    [
+      12,
+      32
+    ],
+    [
+      40,
+      null
+    ]
+  ],
+  "edits": "Removed idle waits; no changes to app content; no audio",
+  "output": "verification/event-check-in-kmp-release-demo.mp4",
+  "encoding": "H.264, 720x1600, 30fps, yuv420p",
+  "note": "Variable-frame-rate screenrecord; selected intervals begin at available frames."
+}

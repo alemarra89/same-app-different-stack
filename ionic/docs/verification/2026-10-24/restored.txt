@@ -1,0 +1,2 @@
+{"stage":"restored","pid":"17516","attendance":"1 / 6 presenti","notice":"","participants":["GRGiulia RossiEVT-001In attesa","MBMarco BianchiEVT-002Presente","SDSara De LucaEVT-003In attesa","DGDavide GrecoEVT-004In attesa","FCFabio ContiEVT-005In attesa","IMIvan MorettiEVT-006In attesa"],"native":true}
+PASS: restored, actual native Preferences contains EVT-002.

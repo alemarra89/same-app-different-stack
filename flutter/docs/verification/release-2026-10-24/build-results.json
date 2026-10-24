@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-24",
+  "timezone": "Europe/Rome",
+  "variant": "release",
+  "method": "Stopwatch around each process; clean outputs; dependency caches retained; offline Gradle; build cache disabled; universal APK",
+  "steps": [
+    {
+      "name": "clean-flutter",
+      "started": "2026-10-24T19:12:42.8078075+02:00",
+      "finished": "2026-10-24T19:12:44.7054390+02:00",
+      "seconds": 1.887,
+      "exitCode": 0,
+      "command": "C:\\Users\\utente\\flutter-sdk\\flutter\\bin\\cache\\dart-sdk\\bin\\dart.exe C:\\Users\\utente\\flutter-sdk\\flutter\\bin\\cache\\flutter_tools.snapshot clean"
+    },
+    {
+      "name": "pub-offline",
+      "started": "2026-10-24T19:12:44.7708833+02:00",
+      "finished": "2026-10-24T19:12:50.3139792+02:00",
+      "seconds": 5.543,
+      "exitCode": 0,
+      "command": "C:\\Users\\utente\\flutter-sdk\\flutter\\bin\\cache\\dart-sdk\\bin\\dart.exe C:\\Users\\utente\\flutter-sdk\\flutter\\bin\\cache\\flutter_tools.snapshot pub get --offline"
+    },
+    {
+      "name": "prepare-gradle-offline",
+      "started": "2026-10-24T19:12:50.3227514+02:00",
+      "finished": "2026-10-24T19:13:09.7956463+02:00",
+      "seconds": 19.473,
+      "exitCode": 0,
+      "command": ".\\gradlew.bat clean :app:dependencies --configuration releaseRuntimeClasspath --offline --no-daemon --console=plain"
+    },
+    {
+      "name": "build-release-attempt-1",
+      "started": "2026-10-24T19:13:09.7986397+02:00",
+      "finished": "2026-10-24T19:16:13.9406680+02:00",
+      "seconds": 184.142,
+      "exitCode": 0,
+      "command": ".\\gradlew.bat :app:assembleRelease --offline --no-build-cache --no-daemon --max-workers=2 --console=plain"
+    }
+  ]
+}

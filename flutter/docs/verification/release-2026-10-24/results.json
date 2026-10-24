@@ -1,0 +1,100 @@
+{
+  "date": "2026-10-24",
+  "timezone": "Europe/Rome",
+  "variant": "release",
+  "firstAttemptSucceeded": true,
+  "buildSeconds": 184.142,
+  "preparationSeconds": 26.903,
+  "downloadsDuringVerificationSeconds": 0,
+  "historicalSdkDependencyDownloadSeconds": null,
+  "cleanOutputs": true,
+  "offline": true,
+  "gradleBuildCache": false,
+  "maxWorkers": 2,
+  "apk": {
+    "path": "artifacts/android/event-check-in-flutter-release.apk",
+    "bytes": 63823414,
+    "sha256": "20205ECC0F6ED88F24422AF6A613FB901D4078246BA831DC875FCBE7ECA6642A",
+    "aotLibraries": [
+      "lib/arm64-v8a/libapp.so",
+      "lib/armeabi-v7a/libapp.so",
+      "lib/x86_64/libapp.so"
+    ],
+    "kernelBlobPresent": false,
+    "internetPermissionPresent": false
+  },
+  "apkMegabytes": 63.82,
+  "apkMebibytes": 60.87,
+  "device": {
+    "model": "M2101K9G",
+    "android": "12",
+    "api": 31
+  },
+  "deviceMeasures": [
+    {
+      "name": "apk-signature",
+      "seconds": 0.807,
+      "exitCode": 0
+    },
+    {
+      "name": "install",
+      "seconds": 4.114,
+      "exitCode": 0
+    },
+    {
+      "name": "launch-initial",
+      "seconds": 0.375,
+      "exitCode": 0
+    }
+  ],
+  "restart": {
+    "exitCode": 0,
+    "afterPid": "22457",
+    "beforePid": "22028",
+    "stoppedPid": "",
+    "relaunchSeconds": 0.355
+  },
+  "noDevelopmentServer": {
+    "capturedAt": "2026-10-24T19:16:27.8944493+02:00",
+    "adbReverse": "",
+    "flutterRunOrAttachProcesses": [],
+    "installedDebuggable": false,
+    "apkInternetPermissionPresent": false,
+    "aotLibraries": [
+      "lib/arm64-v8a/libapp.so",
+      "lib/armeabi-v7a/libapp.so",
+      "lib/x86_64/libapp.so"
+    ]
+  },
+  "checks": {
+    "applicationSourcesChanged": false,
+    "qrInRelease": "NOT REPEATED; physically verified in previous Debug session",
+    "persistenceAfterForceStop": "PASS: 2/6 in new process",
+    "coldLaunch": "PASS",
+    "install": "PASS",
+    "standaloneWithoutDevelopmentServer": "PASS: AOT, no INTERNET permission, no Flutter run/attach, no ADB reverse",
+    "installedApkHash": "PASS: matches built APK",
+    "manualCheckIn": "PASS: human-assisted EVT-001; Giulia Rossi, 2/6",
+    "lintVitalRelease": "PASS"
+  },
+  "video": {
+    "width": 720,
+    "sha256": "826186E7CAFF61288BEA41271FA0C66B9FC302B929ACFAE90D595D003314EFA6",
+    "edit": "Idle waits removed; original app content preserved",
+    "durationSeconds": 22.433333,
+    "height": 1600,
+    "path": "docs/event-check-in-flutter-release-demo.mp4",
+    "fps": 30,
+    "bytes": 1058524,
+    "audio": false,
+    "codec": "H.264"
+  },
+  "signing": "Android Debug certificate; local test only",
+  "warnings": [
+    "SDK XML tools version mismatch",
+    "Dependency manifest package attribute ignored",
+    "Optional proguard-rules.pro absent",
+    "R8 Kotlin metadata parsing warnings",
+    "Deprecated Gradle APIs"
+  ]
+}

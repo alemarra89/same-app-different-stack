@@ -1,0 +1,79 @@
+{
+  "date": "2026-10-24",
+  "timezone": "Europe/Rome",
+  "platform": "Android",
+  "device": {
+    "model": "M2101K9G",
+    "android": "12",
+    "api": 31
+  },
+  "package": "it.demo.eventcheckin.kmp",
+  "first_build_succeeded": true,
+  "initial_compile_seconds": 57.567,
+  "preparation_seconds_excluded": 29.991,
+  "downloads_seconds_this_run": 0,
+  "historical_download_seconds": null,
+  "measurement": "Clean project outputs, offline, no Gradle build cache; pre-existing SDK, dependencies and transformation caches retained. Full Gradle process timed; installation, tests and device interactions excluded.",
+  "compilation_errors": [],
+  "app_source_corrections": [],
+  "operational_issues": [
+    "ADB daemon unavailable inside sandbox; used authorized host access.",
+    "Capture assertion initially required an offscreen counter; corrected capture script to accept the visible check-in confirmation and repeated capture."
+  ],
+  "warnings": [
+    "Three native libraries packaged without stripping."
+  ],
+  "scanner": {
+    "passed": true,
+    "method": "User scanned EVT-002 with real camera and confirmed Marco registered, counter 1 / 6; UI and preferences acquired independently."
+  },
+  "check_in": {
+    "passed": true,
+    "present_ids": [
+      "EVT-002"
+    ],
+    "ui_confirmed": true
+  },
+  "persistence": {
+    "passed": true,
+    "counter_after_restart": "1 / 6 presenti",
+    "processes": {
+      "before_pid": "14647",
+      "pid_after_stop": null,
+      "after_pid": "15201"
+    },
+    "preferences_sha256": "D25255FBBD3DA715B3A1245BDF1E859E14F4754A6C7A10D68F7F8BCBF4F6A9AE"
+  },
+  "tests": {
+    "jvm": {
+      "tests": 12,
+      "failures": 0,
+      "errors": 0
+    },
+    "android_instrumentation": {
+      "tests": 1,
+      "passed": true
+    },
+    "lint": "No issues found."
+  },
+  "apk": {
+    "path": "artifacts/android/event-check-in-kmp-debug.apk",
+    "bytes": 14956843,
+    "sha256": "719794F4D18E042243C42D741461A4E5267C6322D5367CE0DB0D812E5F6AD3C6",
+    "abis": [
+      "arm64-v8a",
+      "armeabi-v7a",
+      "x86",
+      "x86_64"
+    ]
+  },
+  "not_verified": [
+    "iOS build and execution",
+    "Reboot/reinstall/upgrade persistence",
+    "Repeated optical scan, invalid/manual input and reset in phone UI this session",
+    "Camera denied or occupied, extended lifecycle this session"
+  ],
+  "final_demo_state": [
+    "EVT-002"
+  ]
+}

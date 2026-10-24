@@ -1,0 +1,9 @@
+{
+  "before_pid": "23326",
+  "pid_after_stop": null,
+  "after_pid": "23656",
+  "launch": {
+    "command_seconds": 0.342,
+    "android_total_time_ms": 287
+  }
+}

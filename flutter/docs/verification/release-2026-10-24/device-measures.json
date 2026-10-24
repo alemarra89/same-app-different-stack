@@ -1,0 +1,19 @@
+{
+  "steps": [
+    {
+      "name": "apk-signature",
+      "seconds": 0.807,
+      "exitCode": 0
+    },
+    {
+      "name": "install",
+      "seconds": 4.114,
+      "exitCode": 0
+    },
+    {
+      "name": "launch-initial",
+      "seconds": 0.375,
+      "exitCode": 0
+    }
+  ]
+}

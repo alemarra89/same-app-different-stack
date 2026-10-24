@@ -1,8 +1,12 @@
 # File creati e modificati
 
-Creati da zero: **90 file consegnabili**. Il conteggio comprende sorgenti, test, documentazione, configurazioni e asset dei template; esclude build, cache, file IDE e file locali rigenerabili ignorati dai .gitignore.
+Inventario iniziale del **23/10/2026**: **90 file consegnabili** creati da zero. Il conteggio comprende sorgenti, test, documentazione, configurazioni e asset dei template; esclude build, cache, file IDE e file locali rigenerabili ignorati dai .gitignore.
+
+Integrazione del **24/10/2026**: [report build debug e prove Android](DEBUG_BUILD_2026-10-24.md), QR in `docs/qr/`, script di misura, risultati, log e riscontri Android in `docs/verification/2026-10-24/`. Queste aggiunte documentali non sono incluse nel conteggio iniziale di 90 file. L'APK locale è in `artifacts/android/event-check-in-flutter-debug.apk`, ignorato da Git; nessun sorgente applicativo modificato in questa verifica.
 
 Sorgenti Dart applicativi: **9**. File Dart di test/supporto: **5**.
+
+Integrazione Release del **24/10/2026**: [report](RELEASE_BUILD_2026-10-24.md), [video della demo](event-check-in-flutter-release-demo.mp4), script di misura/installazione/cattura e riscontri in `docs/verification/release-2026-10-24/`. APK locale `artifacts/android/event-check-in-flutter-release.apk` e registrazione originale in `build/release-recordings/`, ignorati da Git. Nessuna modifica ai sorgenti applicativi.
 
 ## Inventario
 

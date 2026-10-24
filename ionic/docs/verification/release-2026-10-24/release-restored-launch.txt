@@ -1,0 +1,7 @@
+Starting: Intent { cmp=it.demo.eventcheckin.ionic/.MainActivity }
+Status: ok
+LaunchState: COLD
+Activity: it.demo.eventcheckin.ionic/.MainActivity
+TotalTime: 439
+WaitTime: 447
+Complete

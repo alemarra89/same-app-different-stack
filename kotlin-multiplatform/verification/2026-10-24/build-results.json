@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-24",
+  "timezone": "Europe/Rome",
+  "java_home": "C:\\Program Files\\Java\\jdk-17",
+  "android_home": "C:\\Users\\utente\\AppData\\Local\\Android\\Sdk",
+  "offline": true,
+  "download_seconds_this_run": 0,
+  "historical_download_seconds": null,
+  "phases": [
+    {
+      "name": "prepare-offline",
+      "command": ".\\gradlew.bat clean :androidApp:dependencies --configuration debugRuntimeClasspath --offline --no-daemon --max-workers=2 --console=plain",
+      "started_utc": "2026-10-24T15:58:33.0015930+00:00",
+      "finished_utc": "2026-10-24T15:59:03.0092446+00:00",
+      "elapsed_seconds": 29.991,
+      "exit_code": 0
+    },
+    {
+      "name": "build-debug-attempt-1",
+      "command": ".\\gradlew.bat :androidApp:assembleDebug --offline --no-build-cache --no-daemon --max-workers=2 --console=plain",
+      "started_utc": "2026-10-24T15:59:03.1411512+00:00",
+      "finished_utc": "2026-10-24T16:00:00.7085857+00:00",
+      "elapsed_seconds": 57.567,
+      "exit_code": 0
+    }
+  ]
+}

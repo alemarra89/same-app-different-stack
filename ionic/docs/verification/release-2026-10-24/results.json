@@ -1,0 +1,177 @@
+{
+  "date": "2026-10-24",
+  "timezone": "Europe/Rome",
+  "variant": "release",
+  "first_attempt_success": true,
+  "debuggable": false,
+  "pipeline_seconds": 197.227,
+  "compilation_only_seconds": 188.993,
+  "signing_seconds": 2.038,
+  "signature_verification_seconds": 1.563,
+  "preparation_seconds": 47.77,
+  "download_seconds_this_run": 0,
+  "historical_download_seconds": null,
+  "errors": [],
+  "application_source_changes": false,
+  "apk": {
+    "path": "artifacts\\android\\event-check-in-ionic-release.apk",
+    "bytes": 35753922,
+    "mb_decimal": 35.754,
+    "mib": 34.098,
+    "sha256": "58FA371739B43C2BE43E8B588C8566BDEB2B894B69DE84FB7E47E94FE31EB671",
+    "capacitor_config": {
+      "appId": "it.demo.eventcheckin.ionic",
+      "appName": "Event Check-in",
+      "webDir": "dist"
+    },
+    "development_server_url": null,
+    "embedded_web_asset_count": 26,
+    "dex_files": [
+      "classes.dex",
+      "classes2.dex",
+      "classes3.dex"
+    ],
+    "native_abis": [
+      "arm64-v8a",
+      "armeabi-v7a",
+      "x86",
+      "x86_64"
+    ]
+  },
+  "signature": {
+    "verified": true,
+    "certificate": "Local Android Debug certificate for device testing",
+    "alignment_verified": true,
+    "production_signing_configured": false
+  },
+  "device": {
+    "measures": {
+      "install_seconds": 0.993,
+      "first_cold_launch": {
+        "command_seconds": 0.711,
+        "android_total_time_ms": 656
+      }
+    },
+    "model": "M2101K9G",
+    "android": "12",
+    "api": 31
+  },
+  "no_development_server": {
+    "package_evidence": {
+      "adb_reverse": "",
+      "launch": "Direct Android Activity, no development server started",
+      "installed_flags": "HAS_CODE ALLOW_CLEAR_USER_DATA"
+    },
+    "embedded_asset_count": 26,
+    "host_evidence": {
+      "observed_utc": "2026-10-24T19:45:05.5332191+02:00",
+      "listeners": [],
+      "checked_development_ports": [
+        5173,
+        4173,
+        42831,
+        8100,
+        8080,
+        8081
+      ]
+    },
+    "passed": true,
+    "server_url": null
+  },
+  "new_checkin": {
+    "user_confirmed": true,
+    "participant": "Giulia Rossi",
+    "native_ui_captured": true,
+    "human_assisted": true,
+    "passed": true,
+    "attendance": "2 / 6 presenti",
+    "id": "EVT-001"
+  },
+  "persistence": {
+    "state": {
+      "texts": [
+        "Event Check-in · Tech Meetup 2026",
+        "Event Check-in",
+        "Solo locale",
+        "Tech Meetup 2026",
+        "CONTROLLO ACCESSI",
+        "Tech Meetup 2026",
+        "23/10/2026",
+        "·",
+        "Meetup",
+        "PARTECIPAZIONE",
+        "2 / 6 presenti",
+        "Partecipanti presenti",
+        "4 partecipanti in attesa",
+        "Registra un ingresso",
+        "Registra un ingresso",
+        "CHECK-IN",
+        "Un QR, e ci sei.",
+        "Inquadra il codice del partecipante\nper confermare la sua presenza.",
+        "Scansiona QR",
+        "oppure inserisci il codice",
+        "Il codice è riportato sotto il QR del biglietto.",
+        "Conferma check-in",
+        "Partecipanti",
+        "Partecipanti",
+        "6 iscritti",
+        "Elenco partecipanti",
+        "Giulia Rossi",
+        "EVT-001",
+        "Presente",
+        "Marco Bianchi",
+        "EVT-002",
+        "Presente",
+        "Sara De Luca",
+        "EVT-003",
+        "In attesa",
+        "Davide Greco",
+        "EVT-004",
+        "In attesa",
+        "Fabio Conti",
+        "EVT-005",
+        "In attesa",
+        "Ivan Moretti",
+        "EVT-006",
+        "In attesa",
+        "Tutti i partecipanti del meetup",
+        "I check-in restano su questo dispositivo.",
+        "Reimposta demo"
+      ],
+      "pid": "24882"
+    },
+    "restart": {
+      "before_pid": "24437",
+      "pid_after_stop": null,
+      "after_pid": "24882",
+      "launch": {
+        "command_seconds": 0.5,
+        "android_total_time_ms": 439
+      }
+    },
+    "passed": true,
+    "method": "Native UI after force-stop and new process"
+  },
+  "video": {
+    "height": 1600,
+    "visual_qa": true,
+    "path": "docs/event-check-in-ionic-release-demo.mp4",
+    "width": 720,
+    "bytes": 1014946,
+    "audio": false,
+    "seconds": 25.666667,
+    "codec": "h264",
+    "fps": 30
+  },
+  "previous_tests": {
+    "unit_passed": 30,
+    "rerun": false,
+    "reference": "docs/DEBUG_BUILD_2026-10-24.md",
+    "browser_passed": 10
+  },
+  "limitations": [
+    "Test certificate, not production store signing",
+    "Release scanner not retested; real QR verified in Debug",
+    "No reboot, reinstall, or iOS test"
+  ]
+}

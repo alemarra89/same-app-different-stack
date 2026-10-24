@@ -1,0 +1,25 @@
+{
+  "path": "artifacts\\android\\event-check-in-ionic-release.apk",
+  "bytes": 35753922,
+  "mb_decimal": 35.754,
+  "mib": 34.098,
+  "sha256": "58FA371739B43C2BE43E8B588C8566BDEB2B894B69DE84FB7E47E94FE31EB671",
+  "capacitor_config": {
+    "appId": "it.demo.eventcheckin.ionic",
+    "appName": "Event Check-in",
+    "webDir": "dist"
+  },
+  "development_server_url": null,
+  "embedded_web_asset_count": 26,
+  "dex_files": [
+    "classes.dex",
+    "classes2.dex",
+    "classes3.dex"
+  ],
+  "native_abis": [
+    "arm64-v8a",
+    "armeabi-v7a",
+    "x86",
+    "x86_64"
+  ]
+}

@@ -1,0 +1,58 @@
+
+> event-check-in@1.0.0 build
+> tsc --noEmit && vite build
+
+vite v8.3.5 building client environment for production...
+transforming...
+✓ 243 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/assets/p-ZjP4CjeZ-legacy-ClCrdaHU.js         0.17 kB │ gzip:   0.13 kB
+dist/assets/p-DD92Fw3n-legacy-BUVptc5n.js         0.54 kB │ gzip:   0.36 kB
+dist/assets/p-BVNUhOOf-legacy-DPeZFghw.js         0.66 kB │ gzip:   0.45 kB
+dist/assets/web-legacy-Cy4IqieU.js                1.29 kB │ gzip:   0.59 kB
+dist/assets/p-C1AxSUnp-legacy-CfHKilto.js         1.67 kB │ gzip:   0.83 kB
+dist/assets/web-legacy-CQdr5coB.js                3.06 kB │ gzip:   1.23 kB
+dist/assets/p-YNnH1_Hs-legacy-C1PNAD-J.js         4.76 kB │ gzip:   2.06 kB
+dist/assets/p-Ct2aBEue-legacy-CcEqkyNo.js        37.88 kB │ gzip:  14.43 kB
+dist/assets/polyfills-legacy-COIMDuab.js         77.06 kB │ gzip:  27.66 kB
+dist/assets/nativeScanner-legacy-DBoEUzPe.js    382.24 kB │ gzip: 112.67 kB
+dist/assets/index-legacy-BophKAMp.js          1,327.65 kB │ gzip: 294.05 kB
+
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+transforming...
+✓ 243 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                            2.17 kB │ gzip:   0.97 kB
+dist/assets/index-BMHxSLzw.css            23.80 kB │ gzip:   5.49 kB
+dist/assets/p-ZjP4CjeZ-DJ1DGIsW.js         0.09 kB │ gzip:   0.09 kB
+dist/assets/p-DD92Fw3n-BAu841Y3.js         0.45 kB │ gzip:   0.31 kB
+dist/assets/p-BVNUhOOf-5VNRykYe.js         0.57 kB │ gzip:   0.41 kB
+dist/assets/web-DPmB1zOw.js                1.19 kB │ gzip:   0.54 kB
+dist/assets/p-C1AxSUnp-CJLQL1kh.js         1.56 kB │ gzip:   0.79 kB
+dist/assets/web-RieL78vB.js                2.89 kB │ gzip:   1.16 kB
+dist/assets/p-YNnH1_Hs-BOX8liSL.js         4.64 kB │ gzip:   2.01 kB
+dist/assets/p-Ct2aBEue-Gm5kNagk.js        36.76 kB │ gzip:  13.95 kB
+dist/assets/nativeScanner-DlFV2HZm.js    381.91 kB │ gzip: 112.39 kB
+dist/assets/index-D5lj-pVy.js          1,303.75 kB │ gzip: 287.46 kB
+
+✓ built in 26.13s
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+[PLUGIN_TIMINGS] JavaScript callbacks ran for 19.9s of this 26.1s build (76%).
+The slowest callbacks, timed inside each callback (the wait before a callback starts is excluded, the time it awaits is included):
+  - plugin vite:css-post renderChunk (35%, 9.1s, 20 calls)
+  - plugin vite:legacy-generate-polyfill-chunk generateBundle (5%, 1.2s, 2 calls)
+Additional callback time came from the callbacks below and from callbacks under 1s.
+1 callback is listed without a time. Its calls overlapped, so the time inside one call includes work from other calls. To find its cost, profile the build with `node --cpu-prof`:
+  - plugin vite:legacy-post-process renderChunk (20 calls)
+See https://rolldown.rs/reference/InputOptions.checks#bundlertimings for more details.
+

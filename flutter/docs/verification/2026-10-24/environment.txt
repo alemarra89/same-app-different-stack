@@ -1,0 +1,10 @@
+Flutter 3.35.6 • channel stable • https://github.com/flutter/flutter.git
+Framework • revision 9f455d2486 (1 year, 1 month ago) • 2025-10-08 14:55:31 -0500
+Engine • hash a5f2c36e367c13f868cfe98db5806f562c52c35e (revision d2913632a4) (12 months ago) • 2025-10-07 17:26:21.000Z
+Tools • Dart 3.9.2 • DevTools 2.48.0
+openjdk version "21.0.8" 2025-07-15
+OpenJDK Runtime Environment (build 21.0.8+-14018985-b1038.68)
+OpenJDK 64-Bit Server VM (build 21.0.8+-14018985-b1038.68, mixed mode)
+M2101K9G
+12
+31

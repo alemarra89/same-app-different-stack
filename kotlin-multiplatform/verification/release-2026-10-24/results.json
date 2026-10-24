@@ -1,0 +1,120 @@
+{
+  "date": "2026-10-24",
+  "timezone": "Europe/Rome",
+  "platform": "Android",
+  "device": {
+    "model": "M2101K9G",
+    "android": "12",
+    "api": 31
+  },
+  "package": "it.demo.eventcheckin.kmp",
+  "variant": "Release",
+  "first_build_succeeded": true,
+  "compile_seconds": 82.67,
+  "preparation_seconds_excluded": 21.874,
+  "signing_seconds_separate": 1.633,
+  "compile_plus_signing_seconds": 84.303,
+  "downloads_seconds_this_run": 0,
+  "historical_download_seconds": null,
+  "measurement_scope": "Full offline Gradle process after clean, no build cache; pre-existing SDK, dependencies and transformation caches retained; signing, installation and runtime checks measured separately.",
+  "compilation_errors": [],
+  "app_source_corrections": [],
+  "warnings": [
+    "Three native libraries packaged without stripping."
+  ],
+  "apk": {
+    "bytes": 10987109,
+    "megabytes": 10.987,
+    "mebibytes": 10.478,
+    "sha256": "FE0B09DDEF9D3F04B124D38C35A14814EA39F1DDFA962BE8FDA85F3B869A0B24",
+    "abis": [
+      "arm64-v8a",
+      "armeabi-v7a",
+      "x86",
+      "x86_64"
+    ],
+    "native_libraries": [
+      "lib/arm64-v8a/libandroidx.graphics.path.so",
+      "lib/arm64-v8a/libimage_processing_util_jni.so",
+      "lib/arm64-v8a/libsurface_util_jni.so",
+      "lib/armeabi-v7a/libandroidx.graphics.path.so",
+      "lib/armeabi-v7a/libimage_processing_util_jni.so",
+      "lib/armeabi-v7a/libsurface_util_jni.so",
+      "lib/x86/libandroidx.graphics.path.so",
+      "lib/x86/libimage_processing_util_jni.so",
+      "lib/x86/libsurface_util_jni.so",
+      "lib/x86_64/libandroidx.graphics.path.so",
+      "lib/x86_64/libimage_processing_util_jni.so",
+      "lib/x86_64/libsurface_util_jni.so"
+    ],
+    "dex_files": [
+      "classes.dex",
+      "classes2.dex",
+      "classes3.dex"
+    ],
+    "debuggable": false,
+    "internet_permission": false,
+    "minify_enabled": false,
+    "signing": "Local Android debug certificate, Release build type; not store signing"
+  },
+  "device_measures": {
+    "install_seconds": 0.669,
+    "first_cold_launch": {
+      "command_seconds": 0.868,
+      "android_total_time_ms": 814
+    }
+  },
+  "standalone_runtime": {
+    "adb_reverse": "",
+    "launch": "Direct Android Activity, no development server started",
+    "installed_flags": "HAS_CODE ALLOW_CLEAR_USER_DATA",
+    "internet_permission": false,
+    "debuggable": false,
+    "standalone_runtime_verified": true,
+    "new_check_in": "EVT-001 / Giulia Rossi",
+    "initial_count": 1,
+    "count_after_check_in_and_restart": 2
+  },
+  "process_restart": {
+    "before_pid": "23326",
+    "pid_after_stop": null,
+    "after_pid": "23656",
+    "launch": {
+      "command_seconds": 0.342,
+      "android_total_time_ms": 287
+    }
+  },
+  "video": {
+    "path": "verification/event-check-in-kmp-release-demo.mp4",
+    "seconds": 23.766667,
+    "bytes": 1183005,
+    "codec": "H.264",
+    "width": 720,
+    "height": 1600,
+    "fps": 30,
+    "audio": false,
+    "edits": "Removed idle waits; original app content preserved."
+  },
+  "screenshots": [
+    "verification/release-2026-10-24/release-initial.png",
+    "verification/release-2026-10-24/release-checked-in.png",
+    "verification/release-2026-10-24/release-restored.png"
+  ],
+  "prior_debug_tests_not_rerun": {
+    "jvm_passed": 12,
+    "android_instrumented_passed": 1,
+    "reason": "Application sources unchanged"
+  },
+  "release_lint_vital": "passed as part of assembleRelease",
+  "not_verified_this_session": [
+    "Real QR camera scan on Release",
+    "Reset, invalid codes and camera permission denial",
+    "Device reboot, reinstall or version upgrade persistence",
+    "iOS",
+    "Store signing and publication"
+  ],
+  "final_present_participants": [
+    "EVT-001 / Giulia Rossi",
+    "EVT-002 / Marco Bianchi"
+  ]
+}

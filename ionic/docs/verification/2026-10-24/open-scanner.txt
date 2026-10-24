@@ -1,0 +1,1 @@
+Scanner requested. User must grant camera permission and scan the real QR.

@@ -1,0 +1,11 @@
+{
+  "adb_reverse": "",
+  "launch": "Direct Android Activity, no development server started",
+  "installed_flags": "HAS_CODE ALLOW_CLEAR_USER_DATA",
+  "internet_permission": false,
+  "debuggable": false,
+  "standalone_runtime_verified": true,
+  "new_check_in": "EVT-001 / Giulia Rossi",
+  "initial_count": 1,
+  "count_after_check_in_and_restart": 2
+}

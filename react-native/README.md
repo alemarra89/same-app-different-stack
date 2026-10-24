@@ -2,7 +2,11 @@
 
 App mobile per **Tech Meetup 2026 · 23/10/2026**, realizzata con React Native, Expo SDK 58 e TypeScript rigoroso. Una schermata in italiano, sei partecipanti invarianti, scanner QR e inserimento manuale indipendente dalla fotocamera. Nessun backend, account, analytics o chiamata API applicativa.
 
-Il [resoconto del confronto](docs/VERIFICATION.md) distingue test eseguiti, bundle prodotti, compilazioni native e prove ancora da fare. L’[inventario](docs/FILES.md) elenca i file consegnati.
+Il [resoconto del confronto](docs/VERIFICATION.md) distingue test eseguiti, bundle prodotti, compilazioni native e prove ancora da fare. L’[inventario iniziale](docs/FILES.md) elenca i file della consegna del 23/10/2026.
+
+**Verifica Android del 24/10/2026:** [build debug cronometrata e prova su telefono](docs/DEBUG_BUILD_2026-10-24.md). Primo tentativo fallito in 106,85 s; secondo incrementale riuscito in 127,89 s, senza download. Scanner QR, check-in e persistenza dopo arresto completo verificati su Android fisico, con scansione effettuata dall'utente.
+
+**Release Android del 24/10/2026:** [build, misure e video senza Metro](docs/RELEASE_BUILD_2026-10-24.md). APK ARM64 da 29,65 MB, compilato al terzo tentativo in 328,93 s; download e preparazione separati. Installazione, nuovo check-in e persistenza dopo arresto completo verificati sul telefono senza server di sviluppo. Release per test locale firmata con la chiave debug del template.
 
 ## Requisiti verificati al 23/10/2026
 
@@ -92,7 +96,7 @@ Aprire il [PNG](docs/qr/EVT-002.png) su un secondo schermo oppure stampare l’[
 npx --yes --package=qrcode@1.5.4 qrcode --type png --width 512 --output docs/qr/EVT-002.png EVT-002
 ```
 
-Il passo 7 su dispositivo reale è **NON VERIFICATO** qui. La verifica Web dei passi 1–6 non sostituisce quella mobile. Il contatore conta sempre tutti i sei partecipanti, anche quando la ricerca filtra l’elenco.
+Il passo 7 su dispositivo reale è stato **verificato il 24/10/2026** su Android, con scansione effettuata dall'utente e riscontro tramite ADB; verificata anche la persistenza dopo arresto completo. Vedere il [resoconto aggiornato](docs/DEBUG_BUILD_2026-10-24.md). La precedente verifica Web dei passi 1–6 non sostituisce quella mobile. Il contatore conta sempre tutti i sei partecipanti, anche quando la ricerca filtra l’elenco.
 
 ## Architettura e persistenza
 
@@ -135,7 +139,7 @@ Il runner Node non richiede Jest o un’altra libreria di test. TypeScript compi
 
 Il progetto usa **Continuous Native Generation**: `app.json` e i plugin sono la sorgente della configurazione. `android/` e `ios/` sono output generati e sono ignorati da Git. Il progetto Android è stato realmente generato qui; Expo non consente di generare iOS su Windows. Su Mac/Linux si può generare senza installare i pod con `npx expo prebuild --platform ios --no-install`; la compilazione iOS richiede poi macOS/Xcode. Non modificare a mano i manifest generati.
 
-Il plugin locale `plugins/withShortAndroidPaths.cjs` imposta la proprietà Expo `expo.android.cmakeObjectPathMax=240` durante prebuild e sposta lo staging CMake in `.cxx/` nella cartella di questa app, esclusa da Git. La directory più corta permette a CMake di accorciare con hash i percorsi degli oggetti C++ anche dentro il monorepository, rispettando il limite Windows di Ninja incluso con CMake 3.22.1. Il plugin configura il progetto generato, senza modificare dipendenze o file nativi a mano. È una configurazione di build Android, non logica applicativa.
+Il plugin locale `plugins/withShortAndroidPaths.cjs` imposta la proprietà Expo `expo.android.cmakeObjectPathMax=240` durante prebuild. Su Windows lo staging CMake è in `%TEMP%/rn-cxx/<hash del percorso del progetto>`, così anche il nome più lungo della variante Release `RelWithDebInfo` lascia spazio all'hash dei percorsi C++. Ogni checkout usa una cartella distinta; la pulizia dei file temporanei comporta soltanto una ricompilazione. Sugli altri sistemi lo staging resta in `.cxx/` nella cartella dell'app, esclusa da Git. Il plugin aggiorna la propria configurazione durante prebuild, senza modificare dipendenze o file nativi a mano.
 
 Build debug Android senza installare su un dispositivo, PowerShell:
 
@@ -148,7 +152,7 @@ Set-Location ..
 
 `x86_64` è per l’emulatore e limita il tempo di verifica. Per un telefono ARM usare `-PreactNativeArchitectures=arm64-v8a` oppure omettere l’opzione per gli ABI configurati. Output debug: `android/app/build/outputs/apk/debug/app-debug.apk`; richiede Metro. Una build debug non dimostra che la release funzioni.
 
-Sono stati prodotti entrambi gli APK debug: [ARM64 per telefoni](artifacts/android/event-check-in-debug-arm64-v8a.apk) e [x86_64 per emulatore](artifacts/android/event-check-in-debug-x86_64.apk). Non sono stati avviati su dispositivo. Per installare la copia ARM64 via USB: `adb install -r artifacts/android/event-check-in-debug-arm64-v8a.apk`, poi `adb reverse tcp:8081 tcp:8081` e `npx expo start --localhost`. Aprire Event Check-in dal telefono. Queste istruzioni di installazione non sono state eseguite qui.
+Sono stati prodotti entrambi gli APK debug: [ARM64 per telefoni](artifacts/android/event-check-in-debug-arm64-v8a.apk) e [x86_64 per emulatore](artifacts/android/event-check-in-debug-x86_64.apk). Il 24/10/2026 la copia ARM64 è stata ricompilata con il package corrente, installata e provata su telefono Android; la copia x86_64 conserva la build storica. Per installare la copia ARM64 via USB: `adb install -r artifacts/android/event-check-in-debug-arm64-v8a.apk`, poi `adb reverse tcp:8081 tcp:8081` e `npx.cmd expo start --offline --port 8081`. Aprire Event Check-in dal telefono. Installazione, avvio e verifiche eseguiti sono documentati nel [resoconto aggiornato](docs/DEBUG_BUILD_2026-10-24.md).
 
 Build release locale di prova:
 

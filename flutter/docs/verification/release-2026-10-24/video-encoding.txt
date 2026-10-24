@@ -1,0 +1,58 @@
+[in#0 @ 0000023775463c40] All samples in data stream index:id [1:2] have zero duration, stream set to be discarded by default. Override using AVStream->discard or -discard for ffmpeg command.
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'build\release-recordings\release-demo-raw.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: isommp42
+    creation_time   : 2026-10-24T17:18:09.000000Z
+    com.android.version: 12
+  Duration: 00:01:15.76, start: 0.000000, bitrate: 219 kb/s
+  Stream #0:0[0x1](eng): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 720x1600, 218 kb/s, 7.31 fps, 7.58 tbr, 90k tbn (default)
+    Metadata:
+      creation_time   : 2026-10-24T17:18:09.000000Z
+      handler_name    : VideoHandle
+  Stream #0:1[0x2](eng): Data: none (mett / 0x7474656D) (default)
+    Metadata:
+      creation_time   : 2026-10-24T17:18:09.000000Z
+      handler_name    : MetadHandle
+Stream mapping:
+  Stream #0:0 (h264) -> trim:default
+  Stream #0:0 (h264) -> trim:default
+  format:default -> Stream #0:0 (libx264)
+Press [q] to stop, [?] for help
+[libx264 @ 0000023777731040] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 0000023777731040] profile High, level 3.2, 4:2:0, 8-bit
+[libx264 @ 0000023777731040] 264 - core 165 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=1 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=2 psy=1 psy_rd=1.00:0.00 mixed_ref=0 me_range=16 chroma_me=1 trellis=0 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=18 lookahead_threads=6 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=10 rc=crf mbtree=1 crf=22.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'docs\event-check-in-flutter-release-demo.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: isommp42
+    com.android.version: 12
+    encoder         : Lavf62.13.102
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, bt470bg/bt470bg/smpte170m, progressive), 720x1600, q=2-31, 30 fps, 15360 tbn
+    Metadata:
+      encoder         : Lavc62.30.100 libx264
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=  184 fps=0.0 q=28.0 size=       0KiB time=00:00:06.06 bitrate=   0.1kbits/s speed=  12x elapsed=0:00:00.50    
+frame=  394 fps=386 q=28.0 size=     512KiB time=00:00:13.06 bitrate= 321.0kbits/s speed=12.8x elapsed=0:00:01.02    
+frame=  589 fps=381 q=28.0 size=     768KiB time=00:00:19.56 bitrate= 321.6kbits/s speed=12.7x elapsed=0:00:01.54    
+[mp4 @ 0000023775953ec0] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 00000237754b5a80] video:1026KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.791459%
+frame=  673 fps=399 q=-1.0 Lsize=    1034KiB time=00:00:22.36 bitrate= 378.6kbits/s speed=13.3x elapsed=0:00:01.68    
+[libx264 @ 0000023777731040] frame I:4     Avg QP:13.64  size: 28578
+[libx264 @ 0000023777731040] frame P:247   Avg QP:17.10  size:  3323
+[libx264 @ 0000023777731040] frame B:422   Avg QP:18.21  size:   271
+[libx264 @ 0000023777731040] consecutive B-frames: 14.3%  4.8%  4.9% 76.1%
+[libx264 @ 0000023777731040] mb I  I16..4: 82.8%  3.8% 13.4%
+[libx264 @ 0000023777731040] mb P  I16..4: 10.6%  0.8%  0.9%  P16..4:  3.2%  0.7%  0.3%  0.0%  0.0%    skip:83.5%
+[libx264 @ 0000023777731040] mb B  I16..4:  0.4%  0.0%  0.1%  B16..8:  0.8%  0.1%  0.0%  direct: 0.3%  skip:98.3%  L0:53.3% L1:42.6% BI: 4.0%
+[libx264 @ 0000023777731040] 8x8 transform intra:6.4% inter:26.3%
+[libx264 @ 0000023777731040] coded y,uvDC,uvAC intra: 9.6% 9.7% 3.1% inter: 0.5% 0.6% 0.0%
+[libx264 @ 0000023777731040] i16 v,h,dc,p: 62% 37%  1%  0%
+[libx264 @ 0000023777731040] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 18% 47% 20%  3%  3%  2%  3%  2%  3%
+[libx264 @ 0000023777731040] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 27% 19% 27%  4%  5%  5%  5%  4%  4%
+[libx264 @ 0000023777731040] i8c dc,h,v,p: 73% 22%  4%  0%
+[libx264 @ 0000023777731040] Weighted P-Frames: Y:2.0% UV:2.0%
+[libx264 @ 0000023777731040] kb/s:374.28

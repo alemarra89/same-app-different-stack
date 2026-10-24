@@ -1,5 +1,9 @@
 # Resoconto standard — Event Check-in
 
+**Aggiornamento 24/10/2026:** è disponibile il [resoconto della nuova build debug cronometrata e dei test su telefono Android](DEBUG_BUILD_2026-10-24.md), con scanner reale, check-in e persistenza verificati. Le tabelle sotto conservano gli esiti storici del 23/10/2026.
+
+È disponibile anche la [verifica Release Android senza server di sviluppo](RELEASE_BUILD_2026-10-24.md), con tempi separati dai download, APK, video, screenshot e prova del nuovo check-in sul telefono.
+
 Data di verifica: **23/10/2026**. Stack richiesto: **React Native + Expo, TypeScript rigoroso**. Gli esiti nella tabella derivano dai comandi realmente eseguiti nell’ambiente Windows del progetto; la sezione di riproduzione contiene anche istruzioni per target non eseguiti qui.
 
 ## Framework, versioni e dipendenze

@@ -17,7 +17,7 @@ async function visit(directory) {
     if (excludedPaths.has(relative) || entry.name.endsWith('.tsbuildinfo')) continue;
     if (entry.isDirectory()) {
       if (!excludedDirectories.has(entry.name)) await visit(absolute);
-    } else if (!/\.(apk|aab|log)$/.test(entry.name)) files.push(relative);
+    } else if (!/\.(apk|aab|idsig|log)$/.test(entry.name)) files.push(relative);
   }
 }
 await mkdir('docs', { recursive: true });

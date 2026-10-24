@@ -1,0 +1,97 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.4.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+Calculating task graph as no cached configuration is available for tasks: :androidApp:assembleRelease
+> Task :androidApp:preBuild UP-TO-DATE
+> Task :shared:androidPreBuild UP-TO-DATE
+> Task :shared:preAndroidMainBuild UP-TO-DATE
+> Task :androidApp:preReleaseBuild UP-TO-DATE
+> Task :androidApp:mergeReleaseJniLibFolders
+> Task :shared:mergeAndroidMainJniLibFolders
+> Task :shared:kmpPartiallyResolvedDependenciesChecker
+> Task :shared:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :shared:mergeAndroidMainNativeLibs NO-SOURCE
+> Task :shared:convertXmlValueResourcesForAndroidMain NO-SOURCE
+> Task :shared:copyNonXmlValueResourcesForAndroidMain NO-SOURCE
+> Task :shared:prepareComposeResourcesTaskForAndroidMain NO-SOURCE
+> Task :shared:generateResourceAccessorsForAndroidMain SKIPPED
+> Task :shared:convertXmlValueResourcesForCommonMain NO-SOURCE
+> Task :shared:copyNonXmlValueResourcesForCommonMain NO-SOURCE
+> Task :shared:prepareComposeResourcesTaskForCommonMain NO-SOURCE
+> Task :shared:generateResourceAccessorsForCommonMain SKIPPED
+> Task :shared:generateActualResourceCollectorsForAndroidMain SKIPPED
+> Task :shared:generateComposeResClass SKIPPED
+> Task :shared:generateExpectResourceCollectorsForCommonMain SKIPPED
+> Task :shared:copyAndroidMainJniLibsProjectOnly
+> Task :androidApp:mergeReleaseNativeLibs
+
+> Task :androidApp:stripReleaseDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libandroidx.graphics.path.so, libimage_processing_util_jni.so, libsurface_util_jni.so. Run with --info option to learn more.
+
+> Task :androidApp:extractReleaseNativeSymbolTables
+> Task :androidApp:mergeReleaseNativeDebugMetadata NO-SOURCE
+> Task :androidApp:checkReleaseDuplicateClasses
+> Task :androidApp:generateReleaseResources
+> Task :androidApp:packageReleaseResources
+> Task :shared:generateAndroidMainEmptyResourceFiles
+> Task :androidApp:processReleaseNavigationResources
+> Task :androidApp:parseReleaseLocalResources
+> Task :androidApp:generateReleaseRFile
+> Task :androidApp:javaPreCompileRelease
+> Task :shared:writeAndroidMainAarMetadata
+> Task :androidApp:checkReleaseAarMetadata
+> Task :androidApp:mapReleaseSourceSetPaths
+> Task :androidApp:compileReleaseNavigationResources
+> Task :androidApp:mergeReleaseResources
+> Task :androidApp:createReleaseCompatibleScreenManifests
+> Task :androidApp:extractDeepLinksRelease
+> Task :shared:processAndroidMainManifest
+> Task :androidApp:processReleaseMainManifest
+> Task :androidApp:processReleaseManifest
+> Task :androidApp:processReleaseManifestForPackage
+> Task :androidApp:processReleaseResources
+> Task :androidApp:desugarReleaseFileDependencies
+> Task :androidApp:mergeReleaseStartupProfile UP-TO-DATE
+> Task :shared:compileAndroidMain
+> Task :androidApp:mergeExtDexRelease
+> Task :shared:bundleLibRuntimeToDirAndroidMain
+> Task :shared:bundleAndroidMainClassesToCompileJar
+> Task :androidApp:compileReleaseKotlin
+> Task :androidApp:compileReleaseJavaWithJavac NO-SOURCE
+> Task :shared:prepareAndroidMainArtProfile UP-TO-DATE
+> Task :androidApp:dexBuilderRelease
+> Task :androidApp:mergeReleaseArtProfile
+> Task :shared:bundleAndroidMainClassesToRuntimeJar
+> Task :androidApp:mergeDexRelease
+> Task :androidApp:generateReleaseAssets UP-TO-DATE
+> Task :androidApp:mergeReleaseAssets
+> Task :androidApp:compressReleaseAssets
+> Task :androidApp:extractReleaseVersionControlInfo
+> Task :androidApp:extractProguardFiles
+> Task :shared:processAndroidMainJavaRes
+> Task :shared:createFullJarAndroidMain
+> Task :shared:prepareLintJarForPublish UP-TO-DATE
+> Task :androidApp:mergeReleaseGlobalSynthetics
+> Task :androidApp:generateReleaseLintVitalReportModel
+> Task :shared:checkAndroidMainAarMetadata
+> Task :shared:extractAndroidMainAnnotations
+> Task :shared:mergeAndroidMainJavaResource
+> Task :shared:syncAndroidMainLibJars
+> Task :shared:bundleAndroidMainLocalLintAar
+> Task :androidApp:compileReleaseArtProfile
+> Task :androidApp:processReleaseJavaRes
+> Task :androidApp:mergeReleaseJavaResource
+> Task :androidApp:optimizeReleaseResources
+> Task :androidApp:collectReleaseDependencies
+> Task :androidApp:sdkReleaseDependencyData
+> Task :androidApp:writeReleaseAppMetadata
+> Task :androidApp:writeReleaseSigningConfigVersions
+> Task :androidApp:lintVitalAnalyzeRelease
+> Task :androidApp:lintVitalReportRelease
+> Task :androidApp:lintVitalRelease
+> Task :androidApp:packageRelease
+> Task :androidApp:assembleRelease
+> Task :androidApp:createReleaseApkListingFileRedirect
+
+BUILD SUCCESSFUL in 1m 22s
+66 actionable tasks: 63 executed, 3 up-to-date
+Configuration cache entry stored.

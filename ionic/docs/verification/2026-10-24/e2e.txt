@@ -1,0 +1,21 @@
+
+> event-check-in@1.0.0 test:e2e
+> playwright test
+
+[WebServer] (node:28296) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 10 tests using 1 worker
+
+  ok  1 [mobile-chromium] › tests\e2e\check-in.spec.ts:3:1 › acceptance 1–6: manual, duplicate, invalid, persistence and reset (2.7s)
+  ok  2 [mobile-chromium] › tests\e2e\check-in.spec.ts:35:1 › search and Web scanner fallback keep manual entry available (1.2s)
+  ok  3 [mobile-chromium] › tests\e2e\check-in.spec.ts:55:1 › storage failure does not acknowledge a check-in (729ms)
+  ok  4 [mobile-chromium] › tests\e2e\check-in.spec.ts:64:1 › layout fits screen and captures initial appearance (932ms)
+  ok  5 [mobile-chromium] › tests\e2e\check-in.spec.ts:73:1 › keyboard submission and recovery from corrupted local state (5.2s)
+  ok  6 [desktop-chromium] › tests\e2e\check-in.spec.ts:3:1 › acceptance 1–6: manual, duplicate, invalid, persistence and reset (2.6s)
+  ok  7 [desktop-chromium] › tests\e2e\check-in.spec.ts:35:1 › search and Web scanner fallback keep manual entry available (969ms)
+  ok  8 [desktop-chromium] › tests\e2e\check-in.spec.ts:55:1 › storage failure does not acknowledge a check-in (696ms)
+  ok  9 [desktop-chromium] › tests\e2e\check-in.spec.ts:64:1 › layout fits screen and captures initial appearance (826ms)
+  ok 10 [desktop-chromium] › tests\e2e\check-in.spec.ts:73:1 › keyboard submission and recovery from corrupted local state (1.3s)
+
+  10 passed (23.5s)

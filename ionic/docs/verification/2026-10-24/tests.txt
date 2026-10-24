@@ -1,0 +1,13 @@
+
+> event-check-in@1.0.0 test
+> vitest run
+
+
+ RUN  v5.0.5 C:/Users/utente/progetti/same-app-different-stack/ionic
+
+
+ Test Files  3 passed (3)
+      Tests  30 passed (30)
+   Start at  18:21:14
+   Duration  725ms (transform 42%, import 40%, worker 12%, tests 6%)
+

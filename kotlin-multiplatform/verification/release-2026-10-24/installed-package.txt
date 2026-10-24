@@ -1,0 +1,326 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        f208e7b it.demo.eventcheckin.kmp/.MainActivity filter a685498
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        dc284f1 it.demo.eventcheckin.kmp/androidx.profileinstaller.ProfileInstallReceiver filter 4da2244
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        dc284f1 it.demo.eventcheckin.kmp/androidx.profileinstaller.ProfileInstallReceiver filter 3ba38d6
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      androidx.profileinstaller.action.SKIP_FILE:
+        dc284f1 it.demo.eventcheckin.kmp/androidx.profileinstaller.ProfileInstallReceiver filter f1f9757
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        dc284f1 it.demo.eventcheckin.kmp/androidx.profileinstaller.ProfileInstallReceiver filter be97f2d
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+
+Domain verification status:
+
+Permissions:
+  Permission [it.demo.eventcheckin.kmp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (c42eb22):
+    sourcePackage=it.demo.eventcheckin.kmp
+    uid=10660 gids=[] type=0 prot=signature
+    perm=PermissionInfo{a6ea9b3 it.demo.eventcheckin.kmp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+
+Registered ContentProviders:
+  it.demo.eventcheckin.kmp/androidx.startup.InitializationProvider:
+    Provider{c44fb70 it.demo.eventcheckin.kmp/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [it.demo.eventcheckin.kmp.androidx-startup]:
+    Provider{c44fb70 it.demo.eventcheckin.kmp/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{69b5ee9 it.demo.eventcheckin.kmp}
+
+Key Set Manager:
+  [it.demo.eventcheckin.kmp]
+      Signing KeySets: 305
+
+Packages:
+  Package [it.demo.eventcheckin.kmp] (848976e):
+    userId=10660
+    pkg=Package{2202e0f it.demo.eventcheckin.kmp}
+    codePath=/data/app/~~9C512fljxZu43AdFc6yROw==/it.demo.eventcheckin.kmp-Cl-g0UcdqWNnvK8YuDvuBQ==
+    resourcePath=/data/app/~~9C512fljxZu43AdFc6yROw==/it.demo.eventcheckin.kmp-Cl-g0UcdqWNnvK8YuDvuBQ==
+    legacyNativeLibraryDir=/data/app/~~9C512fljxZu43AdFc6yROw==/it.demo.eventcheckin.kmp-Cl-g0UcdqWNnvK8YuDvuBQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=1 minSdk=24 targetSdk=37
+    minExtensionVersions=[]
+    versionName=1.0.0
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=4
+    applicationInfo=PackageImpl{2202e0f it.demo.eventcheckin.kmp}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[]
+    dataDir=/data/user/0/it.demo.eventcheckin.kmp
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+    timeStamp=2026-10-24 19:29:07
+    firstInstallTime=2026-10-24 18:00:35
+    lastUpdateTime=2026-10-24 19:29:07
+    signatures=PackageSignatures{4565e9c version:4, signatures:[92585228], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    declared permissions:
+      it.demo.eventcheckin.kmp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.CAMERA
+      it.demo.eventcheckin.kmp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.ACCESS_NETWORK_STATE
+    install permissions:
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      it.demo.eventcheckin.kmp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+    User 0: ceDataInode=348275 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-Jhhw.frro
+        /data/resource-cache/com.android.systemui-accent-cf8j.frro
+      runtime permissions:
+        android.permission.CAMERA: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via package name:
+    it.demo.eventcheckin.kmp:
+      it.demo.eventcheckin.kmp.test
+    it.demo.eventcheckin.kmp.test:
+      it.demo.eventcheckin.kmp
+  queries via intent:
+    com.android.thememanager:
+      it.demo.eventcheckin.kmp
+    com.miui.player:
+      it.demo.eventcheckin.kmp
+    com.xiaomi.midrop:
+      it.demo.eventcheckin.kmp
+    com.miui.weather2:
+      it.demo.eventcheckin.kmp
+    com.miui.videoplayer:
+      it.demo.eventcheckin.kmp
+    com.miui.global.packageinstaller:
+      it.demo.eventcheckin.kmp
+    com.xiaomi.account:
+      it.demo.eventcheckin.kmp
+    com.miui.android.fashiongallery:
+      it.demo.eventcheckin.kmp
+    com.amazon.mShop.android.shopping:
+      it.demo.eventcheckin.kmp
+    de.axelspringer.yana.zeropage:
+      it.demo.eventcheckin.kmp
+    com.tripadvisor.tripadvisor:
+      it.demo.eventcheckin.kmp
+    com.camerasideas.trimmer:
+      it.demo.eventcheckin.kmp
+    com.app.tgtg:
+      it.demo.eventcheckin.kmp
+    com.ryanair.cheapflights:
+      it.demo.eventcheckin.kmp
+    com.amazon.dee.app:
+      it.demo.eventcheckin.kmp
+    com.miniclip.eightballpool:
+      it.demo.eventcheckin.kmp
+    com.google.android.play.games:
+      it.demo.eventcheckin.kmp
+    beetles.puzzle.solitaire:
+      it.demo.eventcheckin.kmp
+    com.mi.globalbrowser:
+      it.demo.eventcheckin.kmp
+    com.mcdonalds.mobileapp:
+      it.demo.eventcheckin.kmp
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Package Changes:
+  Sequence number=325
+  User 0:
+    seq=15, package=com.google.android.ext.services
+    seq=16, package=com.xiaomi.discover
+    seq=21, package=com.miui.android.fashiongallery
+    seq=22, package=com.facebook.system
+    seq=23, package=com.facebook.services
+    seq=135, package=com.miui.analytics
+    seq=136, package=com.miui.global.packageinstaller
+    seq=137, package=com.android.thememanager
+    seq=140, package=com.android.vending
+    seq=142, package=dev.cwolf.birthdaycalendar
+    seq=143, package=com.samsung.accessory
+    seq=197, package=com.google.android.tts
+    seq=198, package=com.google.android.gms
+    seq=199, package=com.amazon.mShop.android.shopping
+    seq=201, package=com.google.android.keep
+    seq=202, package=com.google.android.apps.walletnfcrel
+    seq=203, package=com.ebay.mobile
+    seq=206, package=com.thetrainline
+    seq=207, package=com.google.android.apps.docs
+    seq=208, package=com.idealista.android
+    seq=209, package=com.google.android.youtube
+    seq=210, package=net.easypark.android
+    seq=211, package=com.google.android.apps.photos
+    seq=212, package=com.canva.editor
+    seq=216, package=com.google.android.apps.messaging
+    seq=217, package=com.booking
+    seq=218, package=de.motain.iliga
+    seq=219, package=com.lafourchette.lafourchette
+    seq=221, package=de.zalando.mobile
+    seq=222, package=com.miui.videoplayer
+    seq=226, package=com.nianticlabs.pokemongo
+    seq=229, package=com.google.android.contacts
+    seq=231, package=com.tripadvisor.tripadvisor
+    seq=232, package=com.google.android.apps.maps
+    seq=234, package=com.app.tgtg
+    seq=235, package=it.ersel.mobile.valid
+    seq=236, package=com.lab73043.regalinus
+    seq=237, package=it.bancagenerali.ebmapp18devqa
+    seq=239, package=it.lacassa.lucca.mobile
+    seq=241, package=com.aura.oobe.vodafone
+    seq=242, package=it.csebo.mang_app09990_0
+    seq=243, package=it.csebo.fec3mobileValid09990
+    seq=244, package=host.exp.exponent
+    seq=245, package=com.marino.saltylab
+    seq=246, package=com.neo.caresoft
+    seq=247, package=com.centurymt.bijoylivescore
+    seq=248, package=com.alexdb.footcriclive
+    seq=249, package=it.sparkasse.retail.mobile
+    seq=250, package=it.bancagenerali.ebmapp18.valid
+    seq=251, package=it.copergmps.rt.pf.android.sp.bmps
+    seq=252, package=com.illimity.mobile.rtl
+    seq=253, package=com.paypal.android.p2pmobile
+    seq=254, package=com.satispay.customer
+    seq=255, package=com.posteitaliane.spim
+    seq=256, package=posteitaliane.posteapp.appposteid
+    seq=257, package=it.inps.mobile.app.servizi.activity
+    seq=258, package=it.tootech.mutuocredem
+    seq=259, package=com.socios
+    seq=260, package=com.edenred.mobiletr
+    seq=261, package=it.pagopa.io.app
+    seq=262, package=com.binance.dev
+    seq=263, package=posteitaliane.posteapp.appbpol
+    seq=264, package=eu.europa.publications.reopeneu
+    seq=265, package=posteitaliane.posteapp.apppostepay
+    seq=266, package=com.CredemMobile
+    seq=267, package=hr.asseco.android.mtoken.credem.credemprod
+    seq=268, package=it.csebo.aziapp.valid
+    seq=269, package=it.dispensaemilia
+    seq=270, package=com.rcplatform.nocrop
+    seq=271, package=com.Unisalute
+    seq=272, package=com.media.music.mp3.musicplayer
+    seq=274, package=it.lacassa.ravenna.aziapp.dev
+    seq=275, package=it.civibank.mobile
+    seq=276, package=it.lacassa.ravenna.aziapp.qa
+    seq=277, package=it.bancadelpiemonte.bp.edesk
+    seq=278, package=it.linksmt.linksmt_designsystem_example
+    seq=279, package=com.udemy.android
+    seq=280, package=com.sitael.vending
+    seq=281, package=com.shazam.android
+    seq=282, package=org.vernazza.androidfuel
+    seq=283, package=it.vodafone.my190
+    seq=284, package=remoteac.air.conditioner.remote.control.ac
+    seq=285, package=com.weward
+    seq=286, package=com.alexvas.dvr
+    seq=287, package=com.spotify.music
+    seq=288, package=com.microsoft.office.outlook
+    seq=289, package=com.azure.authenticator
+    seq=290, package=it.bancagenerali.mobile
+    seq=291, package=it.lacassa.ravenna.mobile
+    seq=292, package=it.bapr.lympha
+    seq=293, package=it.bapr.lympha.valid
+    seq=294, package=com.microsoft.teams
+    seq=295, package=com.facebook.pages.app
+    seq=307, package=com.facebook.appmanager
+    seq=308, package=com.dazn
+    seq=309, package=com.pokemontv
+    seq=310, package=com.nowtv.it
+    seq=311, package=com.amazon.avod.thirdpartyclient
+    seq=312, package=com.netflix.mediaclient
+    seq=313, package=tv.twitch.android.app
+    seq=314, package=com.effortel.unomobile
+    seq=315, package=org.chromium.webapk.a382ebbf3022f1918_v2
+    seq=316, package=it.cineca.app.uniba
+    seq=317, package=com.google.android.apps.docs.editors.sheets
+    seq=320, package=it.demo.eventcheckin.kmp.test
+    seq=321, package=it.demo.eventcheckin.ionic
+    seq=322, package=it.demo.eventcheckin.reactnative
+    seq=323, package=it.demo.eventcheckin.flutter
+    seq=324, package=it.demo.eventcheckin.kmp
+
+
+Dexopt state:
+  [it.demo.eventcheckin.kmp]
+    path: /data/app/~~9C512fljxZu43AdFc6yROw==/it.demo.eventcheckin.kmp-Cl-g0UcdqWNnvK8YuDvuBQ==/base.apk
+      arm64: [status=run-from-apk] [reason=unknown]
+      odex file size: null
+
+
+Compiler stats:
+  [it.demo.eventcheckin.kmp]
+     base.apk - 1125
+
+APEX session state:
+  Session ID: 898488184
+    State: STAGED
+  Session ID: 1098688285
+    State: STAGED
+  Session ID: 188711598
+    State: STAGED
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+Snapshot statistics
+   Unrecorded-hits: 14341  Cork-level: 0
+   Summary stats               TotBlds     TotUsed     TotCork     BigBlds    ShortLvd     TotTime     MaxTime
+          0:30         now           4        6899           0           0           1           4           3
+          1:30        0:30           0           0           0           0           0           0           0
+          2:30        1:30           0           0           0           0           0           0           0
+          3:30        2:30           0           0           0           0           0           0           0
+          4:30        3:30           0           0           0           0           0           0           0
+          5:30        4:30           0           0           0           0           0           0           0
+          6:30        5:30           0           0           0           0           0           0           0
+          7:30        6:30           0           0           0           0           0           0           0
+          8:30        7:30           0           0           0           0           0           0           0
+          9:30        8:30           0           0           0           0           0           0           0
+   281:21:09:58         now        1520     5219930           0          76         348        3317          37
+
+   Build times                  <= 1ms      <= 2ms      <= 5ms     <= 10ms     <= 20ms     <= 50ms    <= 100ms     > 100ms
+          0:30         now           3           0           1           0           0           0           0           0
+          1:30        0:30           0           0           0           0           0           0           0           0
+          2:30        1:30           0           0           0           0           0           0           0           0
+          3:30        2:30           0           0           0           0           0           0           0           0
+          4:30        3:30           0           0           0           0           0           0           0           0
+          5:30        4:30           0           0           0           0           0           0           0           0
+          6:30        5:30           0           0           0           0           0           0           0           0
+          7:30        6:30           0           0           0           0           0           0           0           0
+          8:30        7:30           0           0           0           0           0           0           0           0
+          9:30        8:30           0           0           0           0           0           0           0           0
+   281:21:09:58         now        1125          92         182          56          53          12           0           0
+
+   Use counters                   <= 1        <= 2        <= 5       <= 10       <= 20       <= 50      <= 100       > 100
+          0:30         now           1           0           0           0           0           0           0           3
+          1:30        0:30           0           0           0           0           0           0           0           0
+          2:30        1:30           0           0           0           0           0           0           0           0
+          3:30        2:30           0           0           0           0           0           0           0           0
+          4:30        3:30           0           0           0           0           0           0           0           0
+          5:30        4:30           0           0           0           0           0           0           0           0
+          6:30        5:30           0           0           0           0           0           0           0           0
+          7:30        6:30           0           0           0           0           0           0           0           0
+          8:30        7:30           0           0           0           0           0           0           0           0
+          9:30        8:30           0           0           0           0           0           0           0           0
+   281:21:09:58         now         269          25          53          42          65         113         116         836

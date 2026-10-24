@@ -1,0 +1,1 @@
+UI hierchary dumped to: /sdcard/event-check-in-kmp-release.xml

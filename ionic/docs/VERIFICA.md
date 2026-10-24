@@ -1,5 +1,9 @@
 # Resoconto standard — Event Check-in / Ionic React
 
+**Release 24/10/2026:** primo tentativo riuscito; pipeline Web + sync + Android **197,227 s**, firma di test separata **2,038 s**; APK universale **35.753.922 byte**. Installato sul telefono come Release non debuggabile, nuovo check-in e riapertura a 2/6 senza server di sviluppo. [Report Release, video e screenshot](RELEASE_BUILD_2026-10-24.md).
+
+**Aggiornamento 24/10/2026:** APK debug ricompilato al primo tentativo, pipeline Web + sync + Android **115,165 s**, download esclusi (nessun download richiesto). Scanner QR reale, check-in e persistenza dopo arresto completo verificati su telefono Android. Passati 30 test unitari, 10 test browser e lint. Vedi il [report aggiornato con misure ed evidenze](DEBUG_BUILD_2026-10-24.md). Le sezioni sotto conservano la verifica storica del 23/10, compresi i limiti allora presenti.
+
 Data: **23/10/2026**, ambiente **Windows**, fuso Europe/Rome. La directory iniziale era vuota e non era un repository Git: nessun file preesistente dell'utente modificato e nessun commit/PR creato.
 
 ## Framework/versioni e librerie principali

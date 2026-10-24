@@ -1,0 +1,7 @@
+Starting: Intent { cmp=it.demo.eventcheckin.kmp/.MainActivity }
+Status: ok
+LaunchState: COLD
+Activity: it.demo.eventcheckin.kmp/.MainActivity
+TotalTime: 287
+WaitTime: 291
+Complete

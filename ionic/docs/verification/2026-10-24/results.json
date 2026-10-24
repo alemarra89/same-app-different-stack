@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-24",
+  "timezone": "Europe/Rome",
+  "first_attempt_success": true,
+  "initial_pipeline_seconds": 115.165,
+  "compilation_only_seconds": 106.8,
+  "preparation_seconds": 41.815,
+  "download_seconds_this_run": 0,
+  "historical_download_seconds": null,
+  "device": {
+    "android": "12",
+    "api": 31,
+    "model": "M2101K9G"
+  },
+  "package": "it.demo.eventcheckin.ionic",
+  "compilation_errors": [],
+  "application_source_changes": false,
+  "unit_tests": {
+    "passed": 30,
+    "failed": 0
+  },
+  "browser_tests": {
+    "channel": "msedge",
+    "failed": 0,
+    "passed": 10
+  },
+  "lint_exit_code": 0,
+  "native_manual": {
+    "mocks": false,
+    "cases": [
+      "trim",
+      "valid",
+      "duplicate",
+      "invalid",
+      "reset cancelled",
+      "reset confirmed",
+      "force-stop persistence"
+    ],
+    "passed": true
+  },
+  "real_qr": {
+    "payload": "EVT-002",
+    "human_assisted": true,
+    "user_confirmed": true,
+    "passed": true,
+    "native_state_captured": true
+  },
+  "native_persistence": {
+    "preferences_file": "shared_prefs/CapacitorStorage.xml",
+    "restart": {
+      "before_pid": "17113",
+      "pid_after_stop": null,
+      "after_pid": "17516"
+    },
+    "present_ids": [
+      "EVT-002"
+    ],
+    "passed": true,
+    "after_sha256": "36A50D3E18232D0A1A0C7DF47989EEFD3EA161509C3DEDBA39AE81F7AC951622",
+    "key": "event-check-in.tech-meetup-2026.v1",
+    "before_sha256": "36A50D3E18232D0A1A0C7DF47989EEFD3EA161509C3DEDBA39AE81F7AC951622"
+  },
+  "apk": {
+    "standalone": true,
+    "path": "artifacts/android/event-check-in-ionic-debug.apk",
+    "bytes": 39754506,
+    "sha256": "1517E756A6FCB14EAB9F8AE836CFBFE8111C68474F754AAF530504A478F0B7D3"
+  },
+  "limitations": [
+    "No iOS build on Windows",
+    "No reboot/reinstall/upgrade persistence test",
+    "Denied permission, scan cancellation and absent camera not retested on this phone"
+  ]
+}

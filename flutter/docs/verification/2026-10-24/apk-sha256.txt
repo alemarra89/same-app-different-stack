@@ -1,0 +1,5 @@
+
+Algorithm : SHA256
+Hash      : E7897A92B822110D20C23133EB6907A6EFAAC2878A87F3D1CC8C72D090DDFDDB
+Path      : C:\Users\utente\progetti\same-app-different-stack\flutter\artifacts\android\event-check-in-flutter-debug.apk
+

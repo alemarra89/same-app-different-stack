@@ -1,0 +1,12 @@
+{
+  "capturedAt": "2026-10-24T19:16:27.8944493+02:00",
+  "adbReverse": "",
+  "flutterRunOrAttachProcesses": [],
+  "installedDebuggable": false,
+  "apkInternetPermissionPresent": false,
+  "aotLibraries": [
+    "lib/arm64-v8a/libapp.so",
+    "lib/armeabi-v7a/libapp.so",
+    "lib/x86_64/libapp.so"
+  ]
+}

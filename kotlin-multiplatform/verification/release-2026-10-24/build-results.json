@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-24",
+  "timezone": "Europe/Rome",
+  "offline": true,
+  "download_seconds_this_run": 0,
+  "historical_download_seconds": null,
+  "phases": [
+    {
+      "name": "prepare-offline",
+      "tool": "C:\\Users\\utente\\progetti\\same-app-different-stack\\kotlin-multiplatform\\gradlew.bat",
+      "arguments": [
+        "clean",
+        ":androidApp:dependencies",
+        "--configuration",
+        "releaseRuntimeClasspath",
+        "--offline",
+        "--no-daemon",
+        "--max-workers=2",
+        "--console=plain"
+      ],
+      "started_utc": "2026-10-24T17:26:58.8368472+00:00",
+      "finished_utc": "2026-10-24T17:27:20.7254054+00:00",
+      "elapsed_seconds": 21.874,
+      "exit_code": 0
+    },
+    {
+      "name": "build-release-attempt-1",
+      "tool": "C:\\Users\\utente\\progetti\\same-app-different-stack\\kotlin-multiplatform\\gradlew.bat",
+      "arguments": [
+        ":androidApp:assembleRelease",
+        "--offline",
+        "--no-build-cache",
+        "--no-daemon",
+        "--max-workers=2",
+        "--console=plain"
+      ],
+      "started_utc": "2026-10-24T17:27:20.7933492+00:00",
+      "finished_utc": "2026-10-24T17:28:43.4637890+00:00",
+      "elapsed_seconds": 82.67,
+      "exit_code": 0
+    },
+    {
+      "name": "sign-release",
+      "tool": "C:\\Users\\utente\\AppData\\Local\\Android\\Sdk\\build-tools\\37.0.0\\apksigner.bat",
+      "arguments": [
+        "sign",
+        "--ks",
+        "C:\\Users\\utente\\.android\\debug.keystore",
+        "--ks-key-alias",
+        "androiddebugkey",
+        "--ks-pass",
+        "pass:android",
+        "--key-pass",
+        "pass:android",
+        "--out",
+        "C:\\Users\\utente\\progetti\\same-app-different-stack\\kotlin-multiplatform\\artifacts\\android\\event-check-in-kmp-release.apk",
+        "C:\\Users\\utente\\progetti\\same-app-different-stack\\kotlin-multiplatform\\androidApp\\build\\outputs\\apk\\release\\androidApp-release-unsigned.apk"
+      ],
+      "started_utc": "2026-10-24T17:28:43.4920746+00:00",
+      "finished_utc": "2026-10-24T17:28:45.1253615+00:00",
+      "elapsed_seconds": 1.633,
+      "exit_code": 0
+    }
+  ]
+}
