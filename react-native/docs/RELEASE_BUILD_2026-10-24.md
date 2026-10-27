@@ -1,5 +1,7 @@
 # React Native — Release Android senza server di sviluppo
 
+**Controllo successivo del 26/10/2026:** in questa Release il lettore QR non si inizializza a causa dei costruttori ML Kit rimossi da R8. Il check-in manuale documentato qui rimane valido. La [correzione e la nuova prova ottica su telefono](QR_RELEASE_FIX_2026-10-26.md) sono documentate separatamente; per installare la versione corretta usare l'APK con suffisso `-qr-fix`.
+
 Verifica del **24/10/2026**, fuso Europe/Rome. APK **Release ARM64** compilato, installato e avviato sul telefono **M2101K9G, Android 12 / API 31**, package `it.demo.eventcheckin.reactnative`. Il nuovo check-in manuale e la persistenza dopo arresto completo funzionano con Metro fermo e senza tunnel ADB.
 
 ## Risultati e tempi

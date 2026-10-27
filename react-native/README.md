@@ -8,6 +8,8 @@ Il [resoconto del confronto](docs/VERIFICATION.md) distingue test eseguiti, bund
 
 **Release Android del 24/10/2026:** [build, misure e video senza Metro](docs/RELEASE_BUILD_2026-10-24.md). APK ARM64 da 29,65 MB, compilato al terzo tentativo in 328,93 s; download e preparazione separati. Installazione, nuovo check-in e persistenza dopo arresto completo verificati sul telefono senza server di sviluppo. Release per test locale firmata con la chiave debug del template.
 
+**Correzione scanner Release del 26/10/2026:** [diagnosi, regola R8 e verifica del QR su telefono](docs/QR_RELEASE_FIX_2026-10-26.md). Ripristinati i costruttori dei registrar ML Kit eliminati dall'ottimizzazione. Il nuovo APK con suffisso `-qr-fix` legge `EVT-005` e registra Fabio; il vecchio APK Release del 24/10 è conservato come artefatto storico.
+
 ## Requisiti verificati al 23/10/2026
 
 - Node **22.13.x o successivo della linea 22**, oppure 24.3+ della linea 24, oppure 26+; rispettare `engines` in `package.json`. Ambiente usato: Node 22.13.1, npm 11.6.2, Windows.

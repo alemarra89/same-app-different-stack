@@ -56,3 +56,13 @@ Rigenerare l’inventario con `node scripts/inventory.cjs`.
 - [tests/checkIn.test.cjs](../tests/checkIn.test.cjs)
 - [tsconfig.json](../tsconfig.json)
 - [tsconfig.test.json](../tsconfig.test.json)
+
+## Correzione scanner Release del 26/10/2026
+
+File aggiunti dopo l'inventario iniziale:
+
+- [plugins/withMlKitRegistrars.cjs](../plugins/withMlKitRegistrars.cjs)
+- [proguard-rules.pro](../proguard-rules.pro)
+- [docs/QR_RELEASE_FIX_2026-10-26.md](QR_RELEASE_FIX_2026-10-26.md)
+- [docs/verification/qr-release-2026-10-26/before-errors.txt](verification/qr-release-2026-10-26/before-errors.txt)
+- [docs/verification/qr-release-2026-10-26/results.json](verification/qr-release-2026-10-26/results.json)

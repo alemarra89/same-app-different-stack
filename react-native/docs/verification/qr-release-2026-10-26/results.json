@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-26",
+  "framework": "React Native / Expo SDK 58",
+  "package": "it.demo.eventcheckin.reactnative",
+  "device": "Xiaomi M2101K9G",
+  "android": "12",
+  "cause": "R8 removed the public no-argument constructors of the three ML Kit ComponentRegistrar implementations",
+  "typecheckExitCode": 0,
+  "lintExitCode": 0,
+  "build": {
+    "exitCode": 0,
+    "seconds": 271.1889983
+  },
+  "apk": {
+    "file": "artifacts/android/event-check-in-release-arm64-v8a-qr-fix.apk",
+    "bytes": 29652817,
+    "sha256": "B3F2A3D91D28F7637E31E37F5F487FF1F7CAFA71AD724BE06A3DF634C5819383",
+    "debuggable": false
+  },
+  "registrarConstructorsVerified": [
+    "com.google.mlkit.common.internal.CommonComponentRegistrar",
+    "com.google.mlkit.vision.common.internal.VisionCommonRegistrar",
+    "com.google.mlkit.vision.barcode.internal.BarcodeRegistrar"
+  ],
+  "installMode": "adb install -r",
+  "scan": {
+    "payload": "EVT-005",
+    "participant": "Fabio Conti",
+    "userConfirmed": true,
+    "initialCounter": "0 / 6",
+    "observedUi": [
+      "1 / 6 presenti",
+      "Check-in già effettuato",
+      "Event Check-in",
+      "Partecipanti presenti"
+    ],
+    "registrarOrAnalyzerErrors": 0
+  },
+  "iosVerified": false,
+  "restartPersistenceRetested": false
+}

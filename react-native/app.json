@@ -38,7 +38,7 @@
       "microphonePermission": false,
       "recordAudioAndroid": false,
       "barcodeScannerEnabled": true
-    }], "./plugins/withShortAndroidPaths.cjs"],
+    }], "./plugins/withShortAndroidPaths.cjs", "./plugins/withMlKitRegistrars.cjs"],
     "updates": { "enabled": false }
   }
 }

@@ -1,0 +1,4 @@
+10-26 10:09:34.430  8274  8274 W ComponentDiscovery: Caused by: java.lang.NoSuchMethodException: com.google.mlkit.common.internal.CommonComponentRegistrar.<init> []
+10-26 10:09:34.430  8274  8274 W ComponentDiscovery: Caused by: java.lang.NoSuchMethodException: com.google.mlkit.vision.barcode.internal.BarcodeRegistrar.<init> []
+10-26 10:09:34.430  8274  8274 W ComponentDiscovery: Caused by: java.lang.NoSuchMethodException: com.google.mlkit.vision.common.internal.VisionCommonRegistrar.<init> []
+10-26 10:09:37.442  8274  8274 E s10     : Failed to initialize BarcodeAnalyzer: Attempt to read from field 'ig5 e75.a' on a null object reference in method 'void jl.<init>(java.util.List, j11)'
