@@ -1,8 +1,8 @@
 # Same App, Different Stack
 
-Un unico repository con quattro implementazioni indipendenti della stessa app mobile **Event Check-in**, per confrontare quattro tecnologie sullo stesso caso d'uso.
+Un unico repository con cinque implementazioni indipendenti della stessa app **Event Check-in**, per confrontare cinque tecnologie sullo stesso caso d'uso.
 
-La demo gestisce il check-in locale dei sei partecipanti al **Tech Meetup 2026 · 23/10/2026**: ricerca, scansione QR su mobile, inserimento manuale, contatore presenze, persistenza locale e reset. L'interfaccia è in italiano; non serve un backend.
+La demo gestisce il check-in locale dei sei partecipanti al **Tech Meetup 2026 · 23/10/2026**: ricerca, scansione QR, inserimento manuale, contatore presenze, persistenza locale e reset. L'interfaccia è in italiano; non serve un backend.
 
 ## Progetti
 
@@ -12,8 +12,9 @@ La demo gestisce il check-in locale dei sei partecipanti al **Tech Meetup 2026 �
 | `ionic/` | Ionic React, TypeScript e Capacitor | [Requisiti, avvio e verifiche](ionic/README.md) |
 | `kotlin-multiplatform/` | Kotlin Multiplatform e Compose Multiplatform | [Requisiti, avvio e verifiche](kotlin-multiplatform/README.md) |
 | `react-native/` | React Native, Expo e TypeScript | [Requisiti, avvio e verifiche](react-native/README.md) |
+| `vanilla-pwa/` | HTML, CSS e JavaScript: Web, Android e desktop installabili | [Avvio, installazione e verifiche](vanilla-pwa/README.md) |
 
-Ogni cartella è un progetto autonomo, con dipendenze, toolchain, test e configurazione nativa propri. Eseguire installazione, avvio e build dalla cartella dell'app scelta. Non esiste un'installazione delle dipendenze comune alla radice.
+Ogni cartella è un progetto autonomo, con configurazioni, test e istruzioni proprie. Eseguire i comandi dalla cartella dell'app scelta: le quattro app native hanno dipendenze e toolchain dedicate; `vanilla-pwa` non richiede installazione o build. Non esiste un'installazione delle dipendenze comune alla radice.
 
 ## Installazione simultanea
 
@@ -74,6 +75,8 @@ npm run android
 Per iOS usare `npm run ios` su macOS. I progetti nativi Expo vengono generati dalla configurazione e non sono versionati.
 
 ## Verifica e confronto
+
+La quinta implementazione si avvia senza installazione o build: `cd vanilla-pwa` e `node scripts/serve.mjs`, poi aprire `http://localhost:4174/`. Lo stesso contenuto si pubblica su un server statico HTTPS e si installa su Android e desktop dal browser. Include scanner camera Web e uso offline; le presenze restano locali a dispositivo, origine e profilo browser. Vedere il [README dedicato](vanilla-pwa/README.md) per la demo nelle tre modalità e i test effettivamente eseguiti.
 
 I README delle singole app e i relativi report riportano test eseguiti e limiti delle verifiche. La compilazione iOS richiede macOS/Xcode; la prova effettiva della fotocamera richiede un dispositivo adatto. Le anteprime Web disponibili in Flutter, Ionic e React Native usano il modulo manuale per il check-in.
 

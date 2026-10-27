@@ -1,0 +1,12 @@
+{
+  "name": "event-check-in-vanilla-pwa",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Event Check-in statico, senza build né dipendenze di runtime da installare",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "test:browser": "node tests/browser.mjs"
+  }
+}

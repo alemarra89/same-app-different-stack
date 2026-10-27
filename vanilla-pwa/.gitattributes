@@ -1,0 +1,3 @@
+# Preserve the vendored distribution byte-for-byte, including on Windows clones.
+vendor/jsQR.js -text
+vendor/jsQR.LICENSE -text

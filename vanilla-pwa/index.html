@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#184e3b">
+  <meta name="description" content="Accoglienza e check-in partecipanti al Tech Meetup 2026.">
+  <title>Event Check-in · Tech Meetup 2026</title>
+  <link rel="icon" href="./icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./src/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Vai al contenuto</a>
+  <div class="app-shell">
+    <header class="brand-row">
+      <a class="brand" href="./" aria-label="Event Check-in, pagina iniziale">
+        <img src="./icons/icon.svg" width="44" height="44" alt="">
+        <span><strong>Event Check-in</strong><span class="eyebrow">ACCOGLIENZA PARTECIPANTI</span></span>
+      </a>
+      <span class="header-note"><span class="status-dot" aria-hidden="true"></span> Benvenuti al meetup</span>
+    </header>
+
+    <main id="main">
+      <section class="event-card" aria-labelledby="event-name">
+        <div class="event-copy">
+          <p class="event-date"><time id="event-date" datetime="2026-10-23">23/10/2026</time> <span aria-hidden="true">·</span> MEETUP</p>
+          <h1 id="event-name">Tech Meetup 2026</h1>
+          <p class="event-subtitle">Un incontro, tante connessioni. Si parte da qui.</p>
+        </div>
+        <div class="attendance">
+          <div class="count-row"><strong id="count" aria-live="polite" aria-atomic="true">Caricamento presenze…</strong><span id="waiting">6 in attesa</span></div>
+          <progress id="progress" max="6" value="0" aria-label="Partecipanti presenti">0 di 6</progress>
+        </div>
+      </section>
+
+      <div class="workspace">
+        <section class="card check-in-card" aria-labelledby="check-in-title">
+          <p class="section-kicker">IL PROSSIMO INGRESSO</p>
+          <h2 id="check-in-title">Registra un ingresso</h2>
+          <p class="description">Scansiona il QR del partecipante o inserisci il suo codice.</p>
+          <button id="open-scanner" class="button primary scan-button" type="button" aria-controls="scanner" aria-expanded="false" disabled>Scansiona QR</button>
+
+          <div id="scanner" class="scanner" hidden>
+            <div class="video-frame">
+              <video id="video" autoplay muted playsinline aria-label="Anteprima fotocamera per scansione QR"></video>
+              <span class="viewfinder" aria-hidden="true"></span>
+            </div>
+            <p id="scanner-status" class="scanner-status" role="status" aria-live="polite"></p>
+            <button id="retry-camera" class="button secondary" type="button" hidden>Riprova fotocamera</button>
+          </div>
+
+          <div class="divider"><span>oppure usa il codice</span></div>
+          <form id="check-in-form">
+            <label for="code">Codice partecipante</label>
+            <input id="code" name="code" placeholder="Es. EVT-001" autocomplete="off" autocapitalize="characters" spellcheck="false" aria-describedby="code-hint" required disabled>
+            <p id="code-hint" class="input-hint">Il codice riportato sul biglietto dell’evento.</p>
+            <button id="submit" class="button secondary" type="submit" disabled>Conferma check-in</button>
+          </form>
+          <div id="feedback" class="feedback" role="status" aria-live="polite" aria-atomic="true"></div>
+          <button id="retry" class="button secondary" type="button" hidden>Riprova caricamento</button>
+        </section>
+
+        <section class="participants-section" aria-labelledby="participants-title">
+          <div class="section-heading"><h2 id="participants-title">Partecipanti</h2><span id="list-count">6 di 6</span></div>
+          <label class="search-label" for="search">Cerca per nome o ID</label>
+          <input id="search" name="search" type="search" placeholder="Cerca per nome o ID" autocomplete="off" spellcheck="false" aria-controls="participants">
+          <ul id="participants" class="participants" aria-label="Elenco partecipanti"></ul>
+          <p id="empty-list" class="empty-list" role="status" hidden>Nessun partecipante trovato.</p>
+        </section>
+      </div>
+      <noscript><p class="feedback error">Abilita JavaScript per gestire i check-in e usare la fotocamera.</p></noscript>
+    </main>
+
+    <footer class="footer">
+      <div><p>Solo su questo dispositivo · Dati salvati in locale</p><p id="offline-status" role="status">Preparazione per l’uso offline…</p></div>
+      <div class="footer-actions"><button id="update-app" class="button secondary compact" type="button" hidden>Aggiorna app</button><button id="open-reset" class="reset-button" type="button">Reimposta demo</button></div>
+    </footer>
+  </div>
+
+  <dialog id="reset-dialog" aria-labelledby="reset-title" aria-describedby="reset-description">
+    <h2 id="reset-title">Reimpostare la demo?</h2>
+    <p id="reset-description">Tutti i check-in salvati su questo dispositivo saranno azzerati. I sei partecipanti torneranno in attesa.</p>
+    <p id="reset-error" class="error-text" role="alert"></p>
+    <div class="dialog-actions"><button id="cancel-reset" class="button secondary" type="button" autofocus>Annulla</button><button id="confirm-reset" class="button primary" type="button">Sì, reimposta demo</button></div>
+  </dialog>
+</body>
+</html>

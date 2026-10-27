@@ -1,0 +1,83 @@
+{
+  "date": "2026-10-27T12:19:26.226Z",
+  "environment": "Headless Chromium/Edge 156.0.4314.42 on win32; camera: Y4M fixture, not physical hardware",
+  "passed": [
+    "desktop: six originals, event title/date and no overflow",
+    "manual: valid, duplicate, unknown, invalid, trim, case-sensitive; search",
+    "persistence: refresh and closed/reopened tab with real localStorage",
+    "reset: cancel, confirm, list/count/search update and unrelated key preserved",
+    "decoder: all six real PNG QR images plus unknown and invalid",
+    "camera: actual getUserMedia video → canvas → jsQR → check-in; duplicate; close stops tracks",
+    "camera: reset and simulated background event release all tracks",
+    "camera: denied/missing/busy errors, retry, delayed permission after close",
+    "storage: corrupt/blocked reads and quota/reset failures do not report saved success",
+    "mobile: 390px and 320px, readable list and no horizontal overflow",
+    "manifest: parse, relative start/scope/icons, PNG dimensions and Chromium installability",
+    "offline: reload, closed/new tab, persisted check-in, camera and reset without network",
+    "subdirectory: scoped worker/cache/storage, offline launch and camera",
+    "cache update: wait for user action, activate v2, preserve local data and unrelated caches",
+    "failed cache installation: missing resource keeps previous version active/offline usable",
+    "persistence: complete browser process restart with retained profile"
+  ],
+  "failures": [],
+  "consoleErrors": [],
+  "installability": {
+    "installabilityErrors": [
+      {
+        "errorId": "in-incognito",
+        "errorArguments": []
+      }
+    ]
+  },
+  "requests": [
+    "/",
+    "/styles.css",
+    "/src/app.js",
+    "/icons/icon.svg",
+    "/src/controller.js",
+    "/src/storage.js",
+    "/src/scanner.js",
+    "/src/ui.js",
+    "/src/pwa.js",
+    "/src/data.js",
+    "/src/check-in.js",
+    "/vendor/jsQR.js",
+    "/sw.js",
+    "/index.html",
+    "/manifest.webmanifest",
+    "/icons/icon-192.png",
+    "/icons/icon-512.png",
+    "/icons/maskable-512.png",
+    "/icons/apple-touch-icon.png",
+    "/docs/qr/EVT-001.png",
+    "/docs/qr/EVT-002.png",
+    "/docs/qr/EVT-003.png",
+    "/docs/qr/EVT-004.png",
+    "/docs/qr/EVT-005.png",
+    "/docs/qr/EVT-006.png",
+    "/docs/qr/EVT-999.png",
+    "/docs/qr/invalid.png",
+    "/demo/events/",
+    "/demo/events/styles.css",
+    "/demo/events/src/app.js",
+    "/demo/events/icons/icon.svg",
+    "/demo/events/src/controller.js",
+    "/demo/events/src/storage.js",
+    "/demo/events/src/scanner.js",
+    "/demo/events/src/ui.js",
+    "/demo/events/src/pwa.js",
+    "/demo/events/src/data.js",
+    "/demo/events/src/check-in.js",
+    "/demo/events/vendor/jsQR.js",
+    "/demo/events/sw.js",
+    "/demo/events/index.html",
+    "/demo/events/manifest.webmanifest",
+    "/demo/events/icons/icon-192.png",
+    "/demo/events/icons/icon-512.png",
+    "/demo/events/icons/maskable-512.png",
+    "/demo/events/icons/apple-touch-icon.png"
+  ],
+  "persistentProfileInstallability": {
+    "installabilityErrors": []
+  }
+}
