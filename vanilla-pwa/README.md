@@ -87,6 +87,12 @@ Prima della pubblicazione esegue i test Node; non installa dipendenze dell’app
 Documentazione, video di test, profili browser e altre quattro implementazioni
 non sono inclusi nel sito pubblicato.
 
+Lo stato e l’indirizzo di ogni pubblicazione sono disponibili nella pagina
+[Actions — Publish Event Check-in](https://github.com/alemarra89/same-app-different-stack/actions/workflows/deploy-vanilla-pwa.yml).
+Se un’esecuzione fallisce perché Pages non era ancora attivo, selezionare
+**GitHub Actions** nelle impostazioni Pages e avviare **Run workflow** dalla
+pagina Actions, oppure pubblicare un nuovo aggiornamento di questa cartella.
+
 In **Settings → Pages → Build and deployment**, la sorgente deve essere
 **GitHub Actions**. Il workflow espone l’indirizzo effettivo nel risultato del
 deployment; con il repository attuale l’indirizzo previsto è
