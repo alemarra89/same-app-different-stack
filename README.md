@@ -4,6 +4,10 @@ Un unico repository con cinque implementazioni indipendenti della stessa app **E
 
 La demo gestisce il check-in locale dei sei partecipanti al **Tech Meetup 2026 · 23/10/2026**: ricerca, scansione QR, inserimento manuale, contatore presenze, persistenza locale e reset. L'interfaccia è in italiano; non serve un backend.
 
+## Documentazione generale
+
+La cartella [docs/](docs/README.md) raccoglie la presentazione, i prompt originali e i [sei QR dei partecipanti](docs/README.md#qr-dei-partecipanti).
+
 ## Progetti
 
 | Cartella | Tecnologia | Documentazione |
