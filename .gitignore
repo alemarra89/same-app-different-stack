@@ -42,6 +42,5 @@ key.properties
 Thumbs.db
 *.log
 
-# Presentazione in revisione: conservare le copie locali fuori dai commit.
-/docs/Same_App_Different_Stack.html
+# Copia locale della precedente esportazione PDF.
 /output/pdf/Same_App_Different_Stack.pdf

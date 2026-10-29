@@ -2,11 +2,13 @@
 
 Materiali comuni alle implementazioni di Event Check-in.
 
-## Prompt
+## Presentazione e prompt
 
+- [Presentazione — Same App, Different Stack (HTML)](Same_App_Different_Stack.html)
+- [Presentazione — Same App, Different Stack (PDF)](Same_App_Different_Stack.pdf)
 - [Prompt — Event Check-in](Event_Checkin_4_Prompt.html)
 
-Il file HTML è una copia inalterata del documento fornito. Per visualizzarlo, aprirlo con un browser.
+I file sono copie inalterate dei documenti forniti. Per visualizzare i file HTML, aprirli con un browser.
 
 ## QR dei partecipanti
 

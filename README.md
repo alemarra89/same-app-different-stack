@@ -6,7 +6,7 @@ La demo gestisce il check-in locale dei sei partecipanti al **Tech Meetup 2026 Â
 
 ## Documentazione generale
 
-La cartella [docs/](docs/README.md) raccoglie i prompt originali e i [sei QR dei partecipanti](docs/README.md#qr-dei-partecipanti).
+La cartella [docs/](docs/README.md) raccoglie la presentazione in [HTML](docs/Same_App_Different_Stack.html) e [PDF](docs/Same_App_Different_Stack.pdf), i prompt originali e i [sei QR dei partecipanti](docs/README.md#qr-dei-partecipanti).
 
 ## Progetti
 
