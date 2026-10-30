@@ -80,23 +80,27 @@ Mostrarli su un secondo schermo o stamparli, con il bordo bianco visibile.
 
 ### GitHub Pages
 
-Il workflow [Publish Event Check-in](../.github/workflows/deploy-vanilla-pwa.yml)
-pubblica solo i file necessari all’app, senza compilazione. Si avvia per modifiche
-a `vanilla-pwa/` su `main`, per modifiche al workflow oppure manualmente da Actions.
+Il workflow [Publish demo and presentation](../.github/workflows/deploy-vanilla-pwa.yml)
+pubblica i file necessari all’app alla radice del sito, senza compilazione, insieme
+alla [presentazione](https://alemarra89.github.io/same-app-different-stack/talk/)
+in `/talk/` e ai sei QR dei partecipanti in `/qr/`.
+Si avvia per modifiche a `vanilla-pwa/`, a `docs/Same_App_Different_Stack.html`,
+a `docs/qr/` o al workflow su `main`, oppure manualmente da Actions.
 Prima della pubblicazione esegue i test Node; non installa dipendenze dell’app.
-Documentazione, video di test, profili browser e altre quattro implementazioni
-non sono inclusi nel sito pubblicato.
+Le altre quattro implementazioni, i report di test e i profili browser non sono
+inclusi nel sito pubblicato. La presentazione incorpora i propri video dimostrativi.
+Per i percorsi e le anteprime QR vedere il [README principale](../README.md#demo-web-e-presentazione-online).
 
 Lo stato e l’indirizzo di ogni pubblicazione sono disponibili nella pagina
-[Actions — Publish Event Check-in](https://github.com/alemarra89/same-app-different-stack/actions/workflows/deploy-vanilla-pwa.yml).
+[Actions — Publish demo and presentation](https://github.com/alemarra89/same-app-different-stack/actions/workflows/deploy-vanilla-pwa.yml).
 Se un’esecuzione fallisce perché Pages non era ancora attivo, selezionare
 **GitHub Actions** nelle impostazioni Pages e avviare **Run workflow** dalla
 pagina Actions, oppure pubblicare un nuovo aggiornamento di questa cartella.
 
 In **Settings → Pages → Build and deployment**, la sorgente deve essere
 **GitHub Actions**. Il workflow espone l’indirizzo effettivo nel risultato del
-deployment; con il repository attuale l’indirizzo previsto è
-`https://alemarra89.github.io/same-app-different-stack/`.
+deployment; con il repository attuale la demo è disponibile su
+[alemarra89.github.io/same-app-different-stack](https://alemarra89.github.io/same-app-different-stack/).
 
 Aprire l’URL HTTPS in Chrome su Android o Edge/Chrome su desktop, attendere
 `Pronta anche senza connessione` e installare dal browser. Non serve il server locale,

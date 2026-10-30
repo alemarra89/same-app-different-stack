@@ -4,6 +4,42 @@ Un unico repository con cinque implementazioni indipendenti della stessa app **E
 
 La demo gestisce il check-in locale dei sei partecipanti al **Tech Meetup 2026 · 23/10/2026**: ricerca, scansione QR, inserimento manuale, contatore presenze, persistenza locale e reset. L'interfaccia è in italiano; non serve un backend.
 
+## Demo Web e presentazione online
+
+| Contenuto | Link su GitHub Pages |
+| --- | --- |
+| **Demo Event Check-in** — implementazione Vanilla PWA | [Apri la demo](https://alemarra89.github.io/same-app-different-stack/) |
+| **Presentazione Same App, Different Stack** | [Apri la presentazione](https://alemarra89.github.io/same-app-different-stack/talk/) |
+
+La demo funziona nel browser ed è installabile su Android e desktop. Per provare lo scanner, consentire l'accesso alla fotocamera e inquadrare uno dei QR qui sotto da un altro schermo o da una stampa. Le presenze restano locali al dispositivo e al profilo browser. Per installazione e uso offline consultare il [README della PWA](vanilla-pwa/README.md#github-pages).
+
+### QR scansionabili dei partecipanti
+
+Cliccare un'anteprima per aprire il PNG a dimensione originale. Ogni QR contiene **solo l'ID del partecipante**, ad esempio `EVT-001`.
+
+| Giulia Rossi · `EVT-001` | Marco Bianchi · `EVT-002` | Sara De Luca · `EVT-003` |
+| --- | --- | --- |
+| [![QR EVT-001](docs/qr/EVT-001.png)](docs/qr/EVT-001.png) | [![QR EVT-002](docs/qr/EVT-002.png)](docs/qr/EVT-002.png) | [![QR EVT-003](docs/qr/EVT-003.png)](docs/qr/EVT-003.png) |
+| Davide Greco · `EVT-004` | Fabio Conti · `EVT-005` | Ivan Moretti · `EVT-006` |
+| [![QR EVT-004](docs/qr/EVT-004.png)](docs/qr/EVT-004.png) | [![QR EVT-005](docs/qr/EVT-005.png)](docs/qr/EVT-005.png) | [![QR EVT-006](docs/qr/EVT-006.png)](docs/qr/EVT-006.png) |
+
+I PNG sono pubblicati anche su Pages: [EVT-001](https://alemarra89.github.io/same-app-different-stack/qr/EVT-001.png), [EVT-002](https://alemarra89.github.io/same-app-different-stack/qr/EVT-002.png), [EVT-003](https://alemarra89.github.io/same-app-different-stack/qr/EVT-003.png), [EVT-004](https://alemarra89.github.io/same-app-different-stack/qr/EVT-004.png), [EVT-005](https://alemarra89.github.io/same-app-different-stack/qr/EVT-005.png), [EVT-006](https://alemarra89.github.io/same-app-different-stack/qr/EVT-006.png).
+
+### Pubblicazione e percorsi
+
+Il workflow [Publish demo and presentation](.github/workflows/deploy-vanilla-pwa.yml) pubblica insieme la demo, la presentazione e i QR in un unico sito. In [Settings → Pages](https://github.com/alemarra89/same-app-different-stack/settings/pages), **Build and deployment → Source** deve essere **GitHub Actions**. Dopo il push su `main`, il workflow parte automaticamente quando cambiano `vanilla-pwa/`, l'HTML della presentazione, `docs/qr/` o il workflow stesso; è disponibile anche **Run workflow** nella [pagina Actions](https://github.com/alemarra89/same-app-different-stack/actions/workflows/deploy-vanilla-pwa.yml). I nuovi percorsi diventano disponibili dopo la prima pubblicazione riuscita che include questa configurazione.
+
+GitHub Pages consente [un sito per repository](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages), con [più pagine e sottocartelle](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site). Il percorso si configura con la struttura dei file pubblicati:
+
+```text
+_site/
+├── index.html                 ← demo Web: /same-app-different-stack/
+├── talk/index.html            ← slide: /same-app-different-stack/talk/
+└── qr/EVT-001.png … EVT-006.png
+```
+
+Il workflow copia `docs/Same_App_Different_Stack.html` in `_site/talk/index.html`, senza modificarlo: si continua ad aggiornare solo il file originale. L'HTML incorpora già stili, script, immagini e video. Per scegliere un altro percorso, ad esempio `/slides/`, cambiare la cartella di destinazione nei comandi `mkdir` e `cp` del workflow e aggiornare i link nei README. Non occorre creare un secondo workflow di pubblicazione. Un dominio personalizzato si configura invece nelle impostazioni Pages e nel DNS; il dominio e la parte `/same-app-different-stack/` dell'URL predefinito dipendono rispettivamente dall'account e dal nome del repository.
+
 ## Documentazione generale
 
 La cartella [docs/](docs/README.md) raccoglie la presentazione in [HTML](docs/Same_App_Different_Stack.html) e [PDF](docs/Same_App_Different_Stack.pdf), i prompt originali e i [sei QR dei partecipanti](docs/README.md#qr-dei-partecipanti).

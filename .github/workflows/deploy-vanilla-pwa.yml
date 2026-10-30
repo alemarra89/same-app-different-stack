@@ -1,10 +1,12 @@
-name: Publish Event Check-in
+name: Publish demo and presentation
 
 on:
   push:
     branches: [main]
     paths:
       - vanilla-pwa/**
+      - docs/Same_App_Different_Stack.html
+      - docs/qr/**
       - .github/workflows/deploy-vanilla-pwa.yml
   workflow_dispatch:
 
@@ -37,10 +39,12 @@ jobs:
         run: node --test vanilla-pwa/tests/*.test.mjs
       - name: Prepare static files without a build
         run: |
-          mkdir -p _site/vendor
+          mkdir -p _site/vendor _site/talk _site/qr
           cp vanilla-pwa/index.html vanilla-pwa/styles.css vanilla-pwa/manifest.webmanifest vanilla-pwa/sw.js _site/
           cp -R vanilla-pwa/src vanilla-pwa/icons _site/
           cp vanilla-pwa/vendor/jsQR.js vanilla-pwa/vendor/jsQR.LICENSE _site/vendor/
+          cp docs/Same_App_Different_Stack.html _site/talk/index.html
+          cp docs/qr/*.png _site/qr/
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload static site
